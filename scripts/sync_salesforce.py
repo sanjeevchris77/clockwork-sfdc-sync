@@ -472,6 +472,7 @@ def main():
         acct = o.get("Account") or {}
         d = domain_of(acct.get("Website"))
         if d and d in domains_2025:
+            roles = (o.get("OpportunityContactRoles") or {}).get("records", [])
             opps_2025.append({
                 "opp_id": o.get("Id"),
                 "owner": (o.get("Owner") or {}).get("Name"),
@@ -479,6 +480,12 @@ def main():
                 "domain": d,
                 "amount": o.get("Amount"),
                 "stage": o.get("StageName"),
+                "contacts": [
+                    {"name": (r.get("Contact") or {}).get("Name"),
+                     "title": (r.get("Contact") or {}).get("Title"),
+                     "email": (r.get("Contact") or {}).get("Email")}
+                    for r in roles
+                ],
             })
 
     def stage_funnel(lead_list):
