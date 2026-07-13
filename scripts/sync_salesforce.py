@@ -317,6 +317,43 @@ def main():
     print(f"Wrote {len(leads_out)} leads, {len(opps_out)} rep-owned opportunities, "
           f"and {len(account_summary)} account rollups to {OUT_DIR}")
 
+    # --- Discovery: find ALL Campaigns with "Raise" in the name (any year),
+    # so we can identify the RAISE 2025 campaign(s) for a year-over-year
+    # comparison without guessing IDs. This is read-only/exploratory --
+    # doesn't affect the 2026 booth-scan outputs above.
+    discovery_query = """
+        SELECT Id, Name, StartDate, EndDate, Status, Type, NumberOfLeads,
+               NumberOfConvertedLeads, NumberOfOpportunities, NumberOfWonOpportunities,
+               AmountAllOpportunities, ParentId, Parent.Name
+        FROM Campaign
+        WHERE Name LIKE '%Raise%'
+        ORDER BY StartDate ASC NULLS LAST
+    """
+    try:
+        raise_campaigns = soql(instance_url, token, discovery_query)
+    except error.HTTPError:
+        raise_campaigns = []
+        print("Campaign discovery query failed (non-fatal) -- see stderr above.", file=sys.stderr)
+
+    campaigns_out = [{
+        "id": c.get("Id"),
+        "name": c.get("Name"),
+        "start_date": c.get("StartDate"),
+        "end_date": c.get("EndDate"),
+        "status": c.get("Status"),
+        "type": c.get("Type"),
+        "number_of_leads": c.get("NumberOfLeads"),
+        "number_of_converted_leads": c.get("NumberOfConvertedLeads"),
+        "number_of_opportunities": c.get("NumberOfOpportunities"),
+        "number_of_won_opportunities": c.get("NumberOfWonOpportunities"),
+        "amount_all_opportunities": c.get("AmountAllOpportunities"),
+        "parent_id": c.get("ParentId"),
+        "parent_name": (c.get("Parent") or {}).get("Name"),
+    } for c in raise_campaigns]
+
+    (OUT_DIR / "campaigns_raise.json").write_text(json.dumps(campaigns_out, indent=2))
+    print(f"Wrote {len(campaigns_out)} Raise-named campaigns (any year) to {OUT_DIR}/campaigns_raise.json")
+
 
 if __name__ == "__main__":
     main()
