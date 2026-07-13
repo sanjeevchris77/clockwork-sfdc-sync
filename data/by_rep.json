@@ -18,7 +18,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGqy2AF/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGqy2AF/view",
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-09-2026",
@@ -37,7 +38,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGr02AF/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGr02AF/view",
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-09-2026",
@@ -56,7 +58,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsL2AV/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsL2AV/view",
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
@@ -75,7 +78,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuB9c2AF/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuB9c2AF/view",
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
@@ -94,7 +98,8 @@
         "lead_source": "Event",
         "notes": "mobile network budapest",
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuBJB2A3/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuBJB2A3/view",
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
@@ -113,7 +118,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuBRI2A3/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuBRI2A3/view",
+        "company_already_engaged": "No"
       }
     ],
     "opportunities": [
@@ -196,7 +202,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MQL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000UeFjt2AF/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000UeFjt2AF/view",
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-09-2026",
@@ -215,7 +222,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (SAL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGqv2AF/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGqv2AF/view",
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-09-2026",
@@ -234,7 +242,8 @@
         "lead_source": "Event",
         "notes": "Dan: met him at the lounge. The tech enablement team reports to him",
         "lifecycle_stage": "In Progress (SAL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsP2AV/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsP2AV/view",
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-09-2026",
@@ -253,7 +262,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsR2AV/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsR2AV/view",
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-09-2026",
@@ -272,7 +282,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsS2AV/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsS2AV/view",
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-09-2026",
@@ -291,7 +302,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsU2AV/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsU2AV/view",
+        "company_already_engaged": "No"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-09-2026",
@@ -310,7 +322,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsZ2AV/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsZ2AV/view",
+        "company_already_engaged": "No"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-09-2026",
@@ -329,7 +342,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsd2AF/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsd2AF/view",
+        "company_already_engaged": "No"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-09-2026",
@@ -348,7 +362,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (SAL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsf2AF/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsf2AF/view",
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
@@ -367,7 +382,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000Xc3x92AB/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000Xc3x92AB/view",
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
@@ -386,7 +402,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000Zu9qw2AB/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000Zu9qw2AB/view",
+        "company_already_engaged": "No"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
@@ -405,7 +422,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuB6M2AV/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuB6M2AV/view",
+        "company_already_engaged": "No"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
@@ -424,7 +442,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuB6Q2AV/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuB6Q2AV/view",
+        "company_already_engaged": "No"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
@@ -443,7 +462,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuB802AF/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuB802AF/view",
+        "company_already_engaged": "No"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
@@ -462,7 +482,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuB842AF/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuB842AF/view",
+        "company_already_engaged": "No"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
@@ -481,7 +502,8 @@
         "lead_source": "Event",
         "notes": "System untegratir. His Ceo is in Palo Alto",
         "lifecycle_stage": "In Progress (SAL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuB9Z2AV/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuB9Z2AV/view",
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
@@ -500,7 +522,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuBKo2AN/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuBKo2AN/view",
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
@@ -519,7 +542,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuBO12AN/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuBO12AN/view",
+        "company_already_engaged": "No"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
@@ -538,7 +562,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuBRH2A3/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuBRH2A3/view",
+        "company_already_engaged": "No"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
@@ -557,7 +582,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuBSs2AN/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuBSs2AN/view",
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
@@ -576,7 +602,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (SAL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuEP72AN/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuEP72AN/view",
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-07-2026",
@@ -595,10 +622,30 @@
         "lead_source": "Event",
         "notes": "Super micro BD",
         "lifecycle_stage": "In Progress (MQL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuA8b2AF/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuA8b2AF/view",
+        "company_already_engaged": "Yes"
       }
     ],
     "opportunities": [
+      {
+        "opp_id": "006TV00000OtKGRYA3",
+        "owner": "Greg Mark",
+        "account": "Cisco",
+        "account_website": "www.cisco.com",
+        "domain": "cisco.com",
+        "amount": 200000,
+        "stage": "Closed Lost",
+        "lead_source": "Sales",
+        "campaign": null,
+        "contacts": [
+          {
+            "name": "samir parkikh",
+            "title": "product managmen exec",
+            "email": "saparikh@cisco.com"
+          }
+        ],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000OtKGRYA3/view"
+      },
       {
         "opp_id": "006TV00000SnzDVYAZ",
         "owner": "Greg Mark",
@@ -637,25 +684,6 @@
           }
         ],
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000SnzDVYAZ/view"
-      },
-      {
-        "opp_id": "006TV00000OtKGRYA3",
-        "owner": "Greg Mark",
-        "account": "Cisco",
-        "account_website": "www.cisco.com",
-        "domain": "cisco.com",
-        "amount": 200000,
-        "stage": "Closed Lost",
-        "lead_source": "Sales",
-        "campaign": null,
-        "contacts": [
-          {
-            "name": "samir parkikh",
-            "title": "product managmen exec",
-            "email": "saparikh@cisco.com"
-          }
-        ],
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000OtKGRYA3/view"
       }
     ]
   },
@@ -682,7 +710,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGqk2AF/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGqk2AF/view",
+        "company_already_engaged": "No"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-09-2026",
@@ -701,7 +730,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGqt2AF/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGqt2AF/view",
+        "company_already_engaged": "No"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-09-2026",
@@ -720,7 +750,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGqu2AF/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGqu2AF/view",
+        "company_already_engaged": "No"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-09-2026",
@@ -739,7 +770,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsj2AF/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsj2AF/view",
+        "company_already_engaged": "No"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
@@ -758,7 +790,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000Zu9qx2AB/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000Zu9qx2AB/view",
+        "company_already_engaged": "No"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
@@ -777,7 +810,8 @@
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000Zu9qz2AB/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000Zu9qz2AB/view",
+        "company_already_engaged": "No"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
@@ -796,7 +830,8 @@
         "lead_source": "Event",
         "notes": "Video creation for Raise",
         "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuBFx2AN/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuBFx2AN/view",
+        "company_already_engaged": "No"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
@@ -815,7 +850,8 @@
         "lead_source": "Event",
         "notes": "AI agent company wirh telco operators. They deploy their own gpu infra for telcos",
         "lifecycle_stage": "In Progress (MQL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuBJC2A3/view"
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuBJC2A3/view",
+        "company_already_engaged": "No"
       }
     ],
     "opportunities": []

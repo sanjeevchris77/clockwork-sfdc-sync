@@ -1,0 +1,1985 @@
+[
+  {
+    "domain": null,
+    "company": "OpsAgents AI",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Michal Shatz",
+        "title": "Founder",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": null,
+    "company": "[not provided]",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Mohamed El GAMAL",
+        "title": "Architecht",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "accel.com",
+    "company": "Accel",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Dana Eliaz",
+        "title": "Vice President",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "airhelp.com",
+    "company": "AirHelp",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Vlad Margulis",
+        "title": "VP",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "alqais.ai",
+    "company": "ALQAIS",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Abdelghani HALIMI",
+        "title": "CTO",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "aploi.de",
+    "company": "Eyed Softwares",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Carlo Esposito",
+        "title": "Founder & CEO",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "arista.com",
+    "company": "Arista Networks",
+    "booth_scan_lead_count": 2,
+    "personas": [
+      {
+        "name": "Thomas Sillaber",
+        "title": "Senior Technical Lead, Systems Engineering",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Greg Mark"
+      },
+      {
+        "name": "Alexis Dacquay",
+        "title": "AI Senior Tech Lead",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 2
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "arkmind.ai",
+    "company": "Arkmind AI",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Victor Gomez",
+        "title": "AI Engineer",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "arqus-solutions.eu",
+    "company": "ArQus Solutions",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Ivan Cvitic",
+        "title": "Co-Founder",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "aubay.com",
+    "company": "Aubay",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Wenting Zhu",
+        "title": "Data AI Delivery Manager",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "bankofamerica.com",
+    "company": "BofA",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Max Cornish",
+        "title": "Investment Banking",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Sean Coughlin"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": true,
+    "engaged_via_existing_contact": true,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": [
+      {
+        "owner": "Sean Coughlin",
+        "stage": "Closed Lost",
+        "amount": 655000.0
+      }
+    ]
+  },
+  {
+    "domain": "blackrock.com",
+    "company": "BlackRock",
+    "booth_scan_lead_count": 2,
+    "personas": [
+      {
+        "name": "Zoltan Radnai",
+        "title": "Director of Product",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Sean Coughlin"
+      },
+      {
+        "name": "Krisztian Fekete",
+        "title": "Director of Engineering",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Sean Coughlin"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 2
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": true,
+    "engaged_via_existing_contact": true,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": [
+      {
+        "owner": "Sean Coughlin",
+        "stage": "Closed Lost",
+        "amount": 275000.0
+      }
+    ]
+  },
+  {
+    "domain": "bull.com",
+    "company": "Bull",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Thomas Moreau",
+        "title": "Senior Architect & Senior Consultant",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "bytebt.com",
+    "company": "BBT BV ( Bytebridge solutions)",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Prabhu Deva",
+        "title": "EMEA Director",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "cea.nic.in",
+    "company": "CEA",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "S\u00e9lim Jomaa",
+        "title": "AI Engineer",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "celfocus.com",
+    "company": "Celfocus",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Jo\u00e3o Maia",
+        "title": "Director of Products",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "cfex.ai",
+    "company": "CFEX AI",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Jian Zhang",
+        "title": "Founder and CEO",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "cisco.com",
+    "company": "Cisco",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Jordan Aug\u00e9",
+        "title": "Tech lead",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": true,
+    "engaged_via_existing_contact": true,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": [
+      {
+        "owner": "Greg Mark",
+        "stage": "Closed Lost",
+        "amount": 200000
+      }
+    ]
+  },
+  {
+    "domain": "crms.org",
+    "company": "Crms",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "simon kaperski",
+        "title": "Ai engineer",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "cudocompute.com",
+    "company": "CUDO Compute",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Mohamed Alibi",
+        "title": "Senior HPC Infrastructure Engineer",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": true,
+    "engaged_via_existing_contact": true,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": [
+      {
+        "owner": "Sean Coughlin",
+        "stage": "00 - Prospecting",
+        "amount": 200000.0
+      }
+    ]
+  },
+  {
+    "domain": "danone.com",
+    "company": "Danone",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Satish Ananthanarayanan",
+        "title": "DATA AND ANALYTICS DIRECTOR",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Joe Tarantino"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "datadoghq.com",
+    "company": "Datadog",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Mohamed Hachem OUERTANI",
+        "title": "SWE",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Sean Coughlin"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "deepmarketmaking.com",
+    "company": "Deep Market Making",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Fran\u00e7ois Lehner Mas",
+        "title": "Quantiative AI Architect",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Chris Bowen"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "defense.gouv.fr",
+    "company": "minist?\u00aere des arm?\u00a9es",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Fran\u00e7ois Videau",
+        "title": "Architecte capacitaire data/IA",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "distillabs.ai",
+    "company": "distil labs",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Selim Nowicki",
+        "title": "CEO",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "drivenets.com",
+    "company": "DriveNets",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Adam Wolman",
+        "title": "VP Biz Dev AI Networking",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Sean Coughlin"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": true,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "ed-hidalgo.com",
+    "company": "Hidalgo Education Consulting",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Paula Hidalgo",
+        "title": "Consultant",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "ed.ac.uk",
+    "company": "The University of Edinburgh",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Abdulwahid Yaich",
+        "title": "Student",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "efrei.fr",
+    "company": "Efrei Paris",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Bilal Lamsili",
+        "title": "Doctoral researcher",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "emma-sleep.com",
+    "company": "emma",
+    "booth_scan_lead_count": 3,
+    "personas": [
+      {
+        "name": "Ilia Tychinin",
+        "title": "Deputy Head Of Engineering",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      },
+      {
+        "name": "Andrei Dugarov",
+        "title": "Backend Developer",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      },
+      {
+        "name": "Aliaksandr Yakubovich",
+        "title": "QA Team Lead",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 3
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "epflaiteam.ch",
+    "company": "EPFL AI Team",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Stefan Ciacli",
+        "title": "Student",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "epita.fr",
+    "company": "EPITA",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Christian Chabrerie",
+        "title": "Pr",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "era4.com",
+    "company": "Era4",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Chester Reid",
+        "title": "Chief Financial Officer",
+        "lifecycle_stage": "In Progress (MQL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MQL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "fronius.com",
+    "company": "Fronius International GmbH",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Marouane Zhani",
+        "title": "Team Lead GenAI & Data Analytics",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "genci.fr",
+    "company": "GENCI",
+    "booth_scan_lead_count": 2,
+    "personas": [
+      {
+        "name": "Cedric Auliac",
+        "title": "AI Program Director",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Joe Tarantino"
+      },
+      {
+        "name": "Raphaelle Achach",
+        "title": "AI project manager - AI Factory France",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Joe Tarantino"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 2
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "getsensable.com",
+    "company": "Sensable Inc",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Anurag Maunder",
+        "title": "Founder",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "greenference.com",
+    "company": "Greenference SAS",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Mustafa Demirkol",
+        "title": "CEO & Co-founder",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "greensparc.com",
+    "company": "Greensparc",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Sam Enoka",
+        "title": "Founder & CEO",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "harvia.com",
+    "company": "Harvia",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Perttu R\u00f6nkk\u00f6",
+        "title": "Head of Digital",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "huawei.com",
+    "company": "Huawei",
+    "booth_scan_lead_count": 5,
+    "personas": [
+      {
+        "name": "Zhen Zhang",
+        "title": "CSI",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      },
+      {
+        "name": "Ruixuan Wang",
+        "title": "CSI",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      },
+      {
+        "name": "liang zhang",
+        "title": "Director",
+        "lifecycle_stage": "In Progress (MQL)",
+        "owner": "Abrahem Miya"
+      },
+      {
+        "name": "Bo Wang",
+        "title": "Director",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      },
+      {
+        "name": "Tingyao Wu",
+        "title": "Principal Engineer",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 4,
+      "In Progress (MQL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "iforce.uk",
+    "company": "iForce Connect",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Anastasia Kalmykova",
+        "title": "Founder",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "ingroupe.com",
+    "company": "Nexus",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Assem Chammah",
+        "title": "CEO",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "inlustro.co",
+    "company": "Inlustro Learning Pvt. Ltd.",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Aditya Sambamoorthy",
+        "title": "Founder & CEO",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "internetdownloadmanager.com",
+    "company": "IDM",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Alexandre Da Silva",
+        "title": "Software Engineer",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Chris Bowen"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "invigilo.ai",
+    "company": "Invigilo AI",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Anand Kumar",
+        "title": "Co-Founder",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "ironmountain.com",
+    "company": "Iron Mountain",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Patrick Cooper",
+        "title": "Sr BDE, Hyperscale & Neocloud",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Sean Coughlin"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "it-works.io",
+    "company": "ITWorks",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Vangjush Stavro",
+        "title": "Co-Founder",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "legrand.com",
+    "company": "Legrand",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Benoit Watrigant",
+        "title": "CDO APAC/MEA/LATAM",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "lexyra.ai",
+    "company": "Lexyra AI",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Jean-Luc Vuattoux",
+        "title": "Founder & CEO",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "liangroup.io",
+    "company": "LIAN Group",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Rishi Malhan",
+        "title": "Director, Capital Markets and IR",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "llyll.com",
+    "company": "Llyll",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Lisa Darmon",
+        "title": "Production Coordinator",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Chris Bowen"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "maman.consulting",
+    "company": "Maman Consulting",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Anthony Dechelette",
+        "title": "Project Manager - Datacenter",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "meridiam.com",
+    "company": "Meridiam",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Mohamed Ali Bounemra",
+        "title": "Analyst",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "microsoft.com",
+    "company": "Microsoft",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Nisha Gheewalla",
+        "title": "GM, Corporate Strategy",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": true,
+    "engaged_via_existing_contact": true,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": [
+      {
+        "owner": "Greg Mark",
+        "stage": "03 - Technical Validation",
+        "amount": 300000.0
+      }
+    ]
+  },
+  {
+    "domain": "minimax.io",
+    "company": "MiniMax",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Elliott Davies",
+        "title": "Global GTM",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "mister-e-liquid.com",
+    "company": "Mister-E",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "edouard cockenpot",
+        "title": "Developper",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Chris Bowen"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "multiversecomputing.com",
+    "company": "Multiverse Computing",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Michel Kurek",
+        "title": "CEO France",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "naddod.com",
+    "company": "Naddod",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Ethan Sung",
+        "title": "SVP of Sales",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "nebul.com",
+    "company": "Nebul",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Arnold Juffer",
+        "title": "CEO",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Joe Tarantino"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "netris.io",
+    "company": "Netris",
+    "booth_scan_lead_count": 3,
+    "personas": [
+      {
+        "name": "Alex Saroyan",
+        "title": "CEO",
+        "lifecycle_stage": "In Progress (MQL)",
+        "owner": "Greg Mark"
+      },
+      {
+        "name": "Gary Sevounts",
+        "title": "CMO",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Greg Mark"
+      },
+      {
+        "name": "Jason Klein",
+        "title": "Head of PR and Communications",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MQL)": 1,
+      "In Progress (MEL)": 2
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "neysa.ai",
+    "company": "Neysa",
+    "booth_scan_lead_count": 2,
+    "personas": [
+      {
+        "name": "Prashant Pandey",
+        "title": "Global Head Unicorn Startup",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Joe Tarantino"
+      },
+      {
+        "name": "Sujit Janardanan",
+        "title": "Chief Marketing Officer",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Joe Tarantino"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 2
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "outscale.com",
+    "company": "OUTSCALE \u201a\u00c4\u00ec Dassault Syst?\u00aemes",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Gilbert Gaspard",
+        "title": "Head of AI",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Joe Tarantino"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "oxortis.com",
+    "company": "Oxortis",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Vikas Pandurkar",
+        "title": "Director",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "oxylabs.io",
+    "company": "Oxylabs",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Karolis Dubinskas",
+        "title": "Business Development Manager",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "pearlresearch.ai",
+    "company": "Pearl Research Labs",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Sacha Elkoubi",
+        "title": "Product Manager",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "pernod-ricard.com",
+    "company": "Pernod Ricard",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Th\u00e9o DING",
+        "title": "Senior AI Engineer",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Joe Tarantino"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "portaone.com",
+    "company": "PortaOne",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Ernest Zarichnyi",
+        "title": "Business Development Specialist",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "se.com",
+    "company": "Schneide Electric",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Virgile Dier",
+        "title": "Ai partnership",
+        "lifecycle_stage": "In Progress (MQL)",
+        "owner": "Joe Tarantino"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MQL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "simplon.com",
+    "company": "Simplon",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Fouzia Ouaj",
+        "title": "Web Developper",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "spitze.ai",
+    "company": "Spitze.AI",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "yoav Kan-Tor",
+        "title": "CEO",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "startparis.fr",
+    "company": "START Paris",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Lisa Colas",
+        "title": "Partnership",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "stripe.com",
+    "company": "Stripe",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Mayank Pant",
+        "title": "Solution Architect",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": true,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "supermicro.com",
+    "company": "Supermicro",
+    "booth_scan_lead_count": 2,
+    "personas": [
+      {
+        "name": "Vik Malyala",
+        "title": "Chief Business Officer",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Greg Mark"
+      },
+      {
+        "name": "Alessia Vitale",
+        "title": "Business Development Manager",
+        "lifecycle_stage": "In Progress (MQL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1,
+      "In Progress (MQL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": true,
+    "engaged_via_existing_contact": true,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": [
+      {
+        "owner": "Sean Coughlin",
+        "stage": "Closed Lost",
+        "amount": 350000.0
+      }
+    ]
+  },
+  {
+    "domain": "swirlai.com",
+    "company": "Swirlai",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Philippe de Meulenaer",
+        "title": "AI Engineer",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "taviactive.com",
+    "company": "Tavi",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Victor Sund\u00e9n",
+        "title": "Co-founder & CEO",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "telnyx.com",
+    "company": "Telnyx",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Arkady Sorokin",
+        "title": "Director Vendor Relations",
+        "lifecycle_stage": "In Progress (MQL)",
+        "owner": "Chris Bowen"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MQL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "terraparis.fr",
+    "company": "T?\u00a9ra | Start Paris",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Tanaka Dhombo",
+        "title": "Co-Founder and CEO | RTSS Lead",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "tetrapak.com",
+    "company": "Tetra Pak",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Youssef HADINE",
+        "title": "Strategic Workforce Management Director",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "trendone.com",
+    "company": "Trendone",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Priscila Gomes",
+        "title": "Strategy Partner",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "twodelta.com",
+    "company": "Two Delta",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Ofek Feller",
+        "title": "Head of Product & GTM",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "uber.com",
+    "company": "Uber AI Solutions",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Tom Staelens",
+        "title": "Marketing manager",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": true,
+    "engaged_via_existing_contact": true,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "usembassy.gov",
+    "company": "French Embassy in the USA Intern",
+    "booth_scan_lead_count": 3,
+    "personas": [
+      {
+        "name": "Abraham Lent",
+        "title": "Front Office Aide",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Chris Bowen"
+      },
+      {
+        "name": "Sundus Ahmed",
+        "title": "Tech Fellow Desk Officer",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Greg Mark"
+      },
+      {
+        "name": "Carl de Becdeli\u00e8vre",
+        "title": "Business and Innovation Team",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 3
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "viavisolutions.com",
+    "company": "VIAVI Solutions",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Gareth Challonder",
+        "title": "Security SME - EMEA",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "vimarock.com",
+    "company": "VIMA ROCK",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Ido Gutman",
+        "title": "CTO & Co-Founder",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "vinci-energies.com",
+    "company": "VINCI energies",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Santiago Rivadeneira Quintero",
+        "title": "Agentic AI Engineer & Consultant",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "waibsummit.com",
+    "company": "WAIBSUMMIT MONACO",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "joseph Sente",
+        "title": "Founder/Co-Founder",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "weathercompany.com",
+    "company": "The Weather Company",
+    "booth_scan_lead_count": 2,
+    "personas": [
+      {
+        "name": "Matthew Drooker",
+        "title": "CTO",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Chris Bowen"
+      },
+      {
+        "name": "Brian ONeil",
+        "title": "SVP, AI & Platform Engineering",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Chris Bowen"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 2
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  },
+  {
+    "domain": "zayoeurope.com",
+    "company": "Zayo Europe",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Muriel Corset",
+        "title": "Account Director",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": []
+  }
+]
