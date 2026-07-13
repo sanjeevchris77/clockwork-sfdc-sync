@@ -28,6 +28,7 @@ Client Credentials Flow).
 """
 import json
 import os
+import re
 import sys
 from pathlib import Path
 from urllib import request, parse, error
@@ -84,6 +85,21 @@ def soql(instance_url, token, query):
     return records
 
 
+def domain_of(url):
+    """Normalize a website URL down to a bare registrable-ish domain for
+    matching Leads to Opportunities/Accounts, e.g.
+    'https://www.Acme.com/about' -> 'acme.com'. Returns None for blank input."""
+    if not url:
+        return None
+    u = url.strip().lower()
+    u = re.sub(r"^[a-z]+://", "", u)   # strip scheme
+    u = re.sub(r"^www\.", "", u)       # strip leading www.
+    u = u.split("/")[0]                # strip path
+    u = u.split("?")[0].split("#")[0]  # strip query/fragment (belt & suspenders)
+    u = u.split(":")[0]                # strip port
+    return u or None
+
+
 def classify_lifecycle(status, notes):
     """Best-effort MQL/MEL classification when Status doesn't already reflect it.
     Falls back to reading free-text Notes for qualification signals.
@@ -107,10 +123,10 @@ def main():
     # Campaign members -> Leads (booth scans are almost always Leads, not Contacts)
     cm_query = f"""
         SELECT CampaignId, Campaign.Name, Status, LeadId,
-               Lead.OwnerId, Lead.Owner.Name, Lead.Company, Lead.FirstName,
-               Lead.LastName, Lead.Title, Lead.Email, Lead.MobilePhone,
-               Lead.LeadSource, Lead.Status, Lead.Lead_Notes__c,
-               Lead.LinkedIn__c
+               Lead.OwnerId, Lead.Owner.Name, Lead.Company, Lead.Website,
+               Lead.FirstName, Lead.LastName, Lead.Title, Lead.Email,
+               Lead.MobilePhone, Lead.LeadSource, Lead.Status,
+               Lead.Lead_Notes__c, Lead.LinkedIn__c
         FROM CampaignMember
         WHERE CampaignId IN ({campaign_id_list}) AND LeadId != null
     """
@@ -127,6 +143,8 @@ def main():
             "lead_id": m.get("LeadId"),
             "owner": (lead.get("Owner") or {}).get("Name"),
             "company": lead.get("Company"),
+            "website": lead.get("Website"),
+            "domain": domain_of(lead.get("Website")),
             "first_name": lead.get("FirstName"),
             "last_name": lead.get("LastName"),
             "title": lead.get("Title"),
@@ -139,26 +157,41 @@ def main():
             "sfdc_link": f"{instance_url}/lightning/r/Lead/{m.get('LeadId')}/view",
         })
 
-    # Opportunities owned by the 4 reps, tied to the same campaigns (as primary
-    # campaign source) -- adjust the WHERE clause if your org tracks Raise
-    # differently (e.g. a custom Event__c field instead of CampaignId).
-    owner_list = ",".join(f"'{n}'" for n in REP_NAMES)
+    # Opportunities owned by the 4 reps -- matched to booth-scan Leads by
+    # WEBSITE DOMAIN rather than Account.Name (fuzzy text) or CampaignId
+    # (most Opportunities won't be tagged with the campaign directly). We
+    # pull every open Opportunity these 4 reps own, along with the Account's
+    # Website, normalize both sides down to a bare domain (e.g.
+    # 'https://www.acme.com/x' -> 'acme.com'), and keep only the Opps whose
+    # Account domain matches a domain seen on one of the booth-scan Leads.
+    lead_domains = {l["domain"] for l in leads_out if l.get("domain")}
+
+    def esc(s):
+        return s.replace("\\", "\\\\").replace("'", "\\'")
+
+    owner_list = ",".join(f"'{esc(n)}'" for n in REP_NAMES)
     opp_query = f"""
-        SELECT Id, OwnerId, Owner.Name, Account.Name, Amount, StageName,
-               LeadSource, CampaignId, Campaign.Name,
+        SELECT Id, OwnerId, Owner.Name, Account.Name, Account.Website, Amount,
+               StageName, LeadSource, CampaignId, Campaign.Name,
                (SELECT Contact.Name, Contact.Title, Contact.Email FROM OpportunityContactRoles)
         FROM Opportunity
-        WHERE CampaignId IN ({campaign_id_list}) AND Owner.Name IN ({owner_list})
+        WHERE Owner.Name IN ({owner_list})
     """
     opps = soql(instance_url, token, opp_query)
 
     opps_out = []
     for o in opps:
+        acct = o.get("Account") or {}
+        opp_domain = domain_of(acct.get("Website"))
+        if not lead_domains or opp_domain not in lead_domains:
+            continue
         roles = (o.get("OpportunityContactRoles") or {}).get("records", [])
         opps_out.append({
             "opp_id": o.get("Id"),
             "owner": (o.get("Owner") or {}).get("Name"),
-            "account": (o.get("Account") or {}).get("Name"),
+            "account": acct.get("Name"),
+            "account_website": acct.get("Website"),
+            "domain": opp_domain,
             "amount": o.get("Amount") or DEFAULT_OPP_AMOUNT,
             "stage": o.get("StageName"),
             "lead_source": o.get("LeadSource"),
