@@ -47,6 +47,12 @@ CAMPAIGN_IDS = [
 REP_NAMES = ["Sean Coughlin", "Greg Mark", "Abrahem Miya", "Chris Bowen"]  # NOTE: "Abrahem" matches the exact spelling of this Owner.Name in Salesforce
 DEFAULT_OPP_AMOUNT = 200000
 
+# RAISE 2025's directly-comparable in-person booth campaign (booth-only
+# apples-to-apples comparison, per user direction -- NOT the full RAISE 2025
+# event, which also has separate Sponsors/Attendees/Speakers/On-Site-Meetings
+# /Virtual-Booth campaigns under the same "RAISE Summit 2025" parent).
+RAISE_2025_BOOTH_CAMPAIGN_ID = "701TV00000SLsriYAD"  # Booth Visitors | Post-Conf | RAISE 2025
+
 OUT_DIR = Path(__file__).resolve().parent.parent / "data"
 
 
@@ -353,6 +359,143 @@ def main():
 
     (OUT_DIR / "campaigns_raise.json").write_text(json.dumps(campaigns_out, indent=2))
     print(f"Wrote {len(campaigns_out)} Raise-named campaigns (any year) to {OUT_DIR}/campaigns_raise.json")
+
+    # --- RAISE 2025 vs RAISE 2026 comparison (booth-only, apples-to-apples,
+    # per user direction -- NOT the full multi-campaign RAISE event for
+    # either year). Pulls the 2025 in-person booth campaign the same way the
+    # 2026 booth campaigns were pulled above, then compares lead/opportunity
+    # counts, exact lifecycle-stage funnel (Lead/MEL/MQL/SAL/SQL/SQO -- real
+    # Salesforce Status values, whatever they are), and a UNIFORM pipegen
+    # potential of $200,000 per Opportunity for BOTH years (not real Amounts,
+    # per explicit user direction, so the two years are compared on the same
+    # yardstick). Also flags which specific leads (by email) and which
+    # companies (by domain) attended/appear in BOTH years.
+    cm_2025_query = f"""
+        SELECT CampaignId, Campaign.Name, Status, LeadId,
+               Lead.OwnerId, Lead.Owner.Name, Lead.Company, Lead.Website,
+               Lead.FirstName, Lead.LastName, Lead.Title, Lead.Email,
+               Lead.MobilePhone, Lead.LeadSource, Lead.Status,
+               Lead.Lead_Notes__c, Lead.LinkedIn__c
+        FROM CampaignMember
+        WHERE CampaignId = '{RAISE_2025_BOOTH_CAMPAIGN_ID}' AND LeadId != null
+    """
+    members_2025 = soql(instance_url, token, cm_2025_query)
+
+    leads_2025 = []
+    for m in members_2025:
+        lead = m.get("Lead") or {}
+        notes = lead.get("Lead_Notes__c")
+        status = lead.get("Status")
+        leads_2025.append({
+            "campaign": (m.get("Campaign") or {}).get("Name"),
+            "lead_id": m.get("LeadId"),
+            "owner": (lead.get("Owner") or {}).get("Name"),
+            "company": lead.get("Company"),
+            "website": lead.get("Website"),
+            "domain": domain_of(lead.get("Website")),
+            "first_name": lead.get("FirstName"),
+            "last_name": lead.get("LastName"),
+            "title": lead.get("Title"),
+            "email": lead.get("Email"),
+            "mobile": lead.get("MobilePhone"),
+            "linkedin_url": lead.get("LinkedIn__c"),
+            "lead_source": lead.get("LeadSource"),
+            "notes": notes,
+            "lifecycle_stage": classify_lifecycle(status, notes),
+            "sfdc_link": f"{instance_url}/lightning/r/Lead/{m.get('LeadId')}/view",
+        })
+
+    domains_2025 = {l["domain"] for l in leads_2025 if l.get("domain")}
+
+    # Re-use the already-fetched org-wide `all_opps` (Account.Website != null,
+    # no year/campaign filter) and domain-match it against the 2025 booth
+    # leads' companies, exactly as done for 2026 above -- the Campaign's own
+    # NumberOfOpportunities rollup undercounts (same limitation observed on
+    # the 2026 booth campaigns, which show 0 there despite 6 real domain-
+    # matched Opportunities), so domain-matching is the consistent method
+    # for BOTH years.
+    opps_2025 = []
+    for o in all_opps:
+        acct = o.get("Account") or {}
+        d = domain_of(acct.get("Website"))
+        if d and d in domains_2025:
+            opps_2025.append({
+                "opp_id": o.get("Id"),
+                "owner": (o.get("Owner") or {}).get("Name"),
+                "account": acct.get("Name"),
+                "domain": d,
+                "amount": o.get("Amount"),
+                "stage": o.get("StageName"),
+            })
+
+    def stage_funnel(lead_list):
+        counts = {}
+        for l in lead_list:
+            s = l.get("lifecycle_stage") or "Unknown"
+            counts[s] = counts.get(s, 0) + 1
+        return counts
+
+    emails_2025 = {(l.get("email") or "").strip().lower() for l in leads_2025 if l.get("email")}
+    emails_2026 = {(l.get("email") or "").strip().lower() for l in leads_out if l.get("email")}
+    overlap_emails = emails_2025 & emails_2026
+
+    overlap_leads = {
+        "2025": [l for l in leads_2025 if (l.get("email") or "").strip().lower() in overlap_emails],
+        "2026": [l for l in leads_out if (l.get("email") or "").strip().lower() in overlap_emails],
+    }
+
+    overlap_domains = domains_2025 & lead_domains
+    overlap_companies = sorted(overlap_domains)
+
+    overlap_opps = {
+        "2025": [o for o in opps_2025 if o["domain"] in overlap_domains],
+        "2026": [{"opp_id": o["opp_id"], "owner": o["owner"], "account": o["account"],
+                   "domain": o["domain"], "amount": o["amount"], "stage": o["stage"]}
+                  for o in all_opps
+                  if domain_of((o.get("Account") or {}).get("Website")) in overlap_domains],
+    }
+
+    comparison = {
+        "methodology": ("Booth-only comparison: RAISE 2025 'Booth Visitors | Post-Conf' campaign "
+                         "vs RAISE 2026's 3 'Booth Scans' campaigns. Opportunities matched to booth "
+                         "leads by website domain (not CampaignId, which undercounts for both years). "
+                         "Pipegen potential uses a UNIFORM $200,000 per Opportunity for both years "
+                         "(not real Opportunity Amounts), per explicit request, so the two years are "
+                         "compared on the same yardstick."),
+        "raise_2025": {
+            "campaign_id": RAISE_2025_BOOTH_CAMPAIGN_ID,
+            "lead_count": len(leads_2025),
+            "opportunity_count": len(opps_2025),
+            "lifecycle_stage_counts": stage_funnel(leads_2025),
+            "pipegen_potential": len(opps_2025) * DEFAULT_OPP_AMOUNT,
+            "real_opportunity_amount_total": sum(o["amount"] or 0 for o in opps_2025),
+        },
+        "raise_2026": {
+            "campaign_ids": CAMPAIGN_IDS,
+            "lead_count": len(leads_out),
+            "opportunity_count": len([o for o in all_opps
+                                        if domain_of((o.get("Account") or {}).get("Website")) in lead_domains]),
+            "lifecycle_stage_counts": stage_funnel(leads_out),
+            "pipegen_potential": len([o for o in all_opps
+                                        if domain_of((o.get("Account") or {}).get("Website")) in lead_domains]) * DEFAULT_OPP_AMOUNT,
+            "real_opportunity_amount_total": sum(
+                o.get("Amount") or 0 for o in all_opps
+                if domain_of((o.get("Account") or {}).get("Website")) in lead_domains
+            ),
+        },
+        "overlap": {
+            "overlapping_lead_emails": sorted(overlap_emails),
+            "overlapping_leads_2025": overlap_leads["2025"],
+            "overlapping_leads_2026": overlap_leads["2026"],
+            "overlapping_companies": overlap_companies,
+            "overlapping_opportunities_2025": overlap_opps["2025"],
+            "overlapping_opportunities_2026": overlap_opps["2026"],
+        },
+    }
+
+    (OUT_DIR / "raise2025_booth_leads.json").write_text(json.dumps(leads_2025, indent=2))
+    (OUT_DIR / "year_comparison.json").write_text(json.dumps(comparison, indent=2))
+    print(f"Wrote {len(leads_2025)} RAISE 2025 booth leads and year_comparison.json to {OUT_DIR}")
 
 
 if __name__ == "__main__":
