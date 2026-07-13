@@ -120,13 +120,15 @@ def classify_lifecycle(status, notes):
     return "Marketing Engaged Lead"
 
 
-def main():
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    token, instance_url = get_access_token()
+def esc(s):
+    return s.replace("\\", "\\\\").replace("'", "\\'")
 
-    campaign_id_list = ",".join(f"'{c}'" for c in CAMPAIGN_IDS)
 
-    # Campaign members -> Leads (booth scans are almost always Leads, not Contacts)
+def pull_campaign_leads(instance_url, token, campaign_ids):
+    """Pull CampaignMember->Lead rows for a list of Campaign Ids, shaped
+    identically for both the 2026 booth-scan campaigns and the 2025
+    comparison campaign."""
+    id_list = ",".join(f"'{c}'" for c in campaign_ids)
     cm_query = f"""
         SELECT CampaignId, Campaign.Name, Status, LeadId,
                Lead.OwnerId, Lead.Owner.Name, Lead.Company, Lead.Website,
@@ -134,16 +136,16 @@ def main():
                Lead.MobilePhone, Lead.LeadSource, Lead.Status,
                Lead.Lead_Notes__c, Lead.LinkedIn__c
         FROM CampaignMember
-        WHERE CampaignId IN ({campaign_id_list}) AND LeadId != null
+        WHERE CampaignId IN ({id_list}) AND LeadId != null
     """
     members = soql(instance_url, token, cm_query)
 
-    leads_out = []
+    out = []
     for m in members:
         lead = m.get("Lead") or {}
         notes = lead.get("Lead_Notes__c")
         status = lead.get("Status")
-        leads_out.append({
+        out.append({
             "campaign": (m.get("Campaign") or {}).get("Name"),
             "member_status": m.get("Status"),
             "lead_id": m.get("LeadId"),
@@ -162,12 +164,25 @@ def main():
             "lifecycle_stage": classify_lifecycle(status, notes),
             "sfdc_link": f"{instance_url}/lightning/r/Lead/{m.get('LeadId')}/view",
         })
+    return out
+
+
+def main():
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    token, instance_url = get_access_token()
+
+    # --- Pull both years' booth-scan leads up front, so engagement detection
+    # below can correctly exclude EACH year's own attendees (not just 2026's)
+    # when looking for "some other Lead already at this company" evidence.
+    leads_out = pull_campaign_leads(instance_url, token, CAMPAIGN_IDS)
+    leads_2025 = pull_campaign_leads(instance_url, token, [RAISE_2025_BOOTH_CAMPAIGN_ID])
 
     lead_domains = {l["domain"] for l in leads_out if l.get("domain")}
-    booth_scan_lead_ids = {l["lead_id"] for l in leads_out if l.get("lead_id")}
+    domains_2025 = {l["domain"] for l in leads_2025 if l.get("domain")}
 
-    def esc(s):
-        return s.replace("\\", "\\\\").replace("'", "\\'")
+    booth_scan_lead_ids = {l["lead_id"] for l in leads_out if l.get("lead_id")}
+    lead_ids_2025 = {l["lead_id"] for l in leads_2025 if l.get("lead_id")}
+    all_booth_lead_ids = booth_scan_lead_ids | lead_ids_2025
 
     # --- Opportunities: pulled for ALL owners (not just the 4 reps) so we can
     # detect "this account already has SOME opportunity, even if a different
@@ -186,15 +201,19 @@ def main():
     all_opps = soql(instance_url, token, opp_query)
 
     opps_out = []
-    company_engaged_via_opp = set()
+    company_engaged_via_opp = set()       # domains from 2026 lead set
+    company_engaged_via_opp_2025 = set()  # domains from 2025 lead set
     for o in all_opps:
         acct = o.get("Account") or {}
         opp_domain = domain_of(acct.get("Website"))
-        if not opp_domain or opp_domain not in lead_domains:
+        if not opp_domain:
             continue
         owner_name = (o.get("Owner") or {}).get("Name")
-        company_engaged_via_opp.add(opp_domain)  # any owner counts as "already engaged"
-        if owner_name in REP_NAMES:
+        if opp_domain in lead_domains:
+            company_engaged_via_opp.add(opp_domain)  # any owner counts as "already engaged"
+        if opp_domain in domains_2025:
+            company_engaged_via_opp_2025.add(opp_domain)
+        if opp_domain in lead_domains and owner_name in REP_NAMES:
             roles = (o.get("OpportunityContactRoles") or {}).get("records", [])
             opps_out.append({
                 "opp_id": o.get("Id"),
@@ -226,18 +245,26 @@ def main():
     contacts = soql(instance_url, token, contact_query)
 
     company_engaged_via_contact = set()
+    company_engaged_via_contact_2025 = set()
     for c in contacts:
         acct = c.get("Account") or {}
         d = domain_of(acct.get("Website"))
-        if d and d in lead_domains:
+        if not d:
+            continue
+        if d in lead_domains:
             company_engaged_via_contact.add(d)
+        if d in domains_2025:
+            company_engaged_via_contact_2025.add(d)
 
     # --- Other Leads: any OTHER open (unconverted) Lead at the same domain,
-    # excluding the booth-scan Leads themselves, means someone else from that
-    # company is already a separate active thread with us.
+    # excluding BOTH years' own booth-scan Leads, means someone else from that
+    # company is already a separate active thread with us. Excluding both
+    # years (not just 2026) avoids each year's attendees being mistaken for
+    # "outside" evidence of engagement against themselves or each other.
     company_engaged_via_other_lead = set()
-    if booth_scan_lead_ids:
-        exclude_ids = ",".join(f"'{esc(i)}'" for i in booth_scan_lead_ids)
+    company_engaged_via_other_lead_2025 = set()
+    if all_booth_lead_ids:
+        exclude_ids = ",".join(f"'{esc(i)}'" for i in all_booth_lead_ids)
         other_lead_query = f"""
             SELECT Id, Company, Website, Status, OwnerId, Owner.Name, CreatedDate
             FROM Lead
@@ -247,17 +274,27 @@ def main():
         other_leads = soql(instance_url, token, other_lead_query)
         for ol in other_leads:
             d = domain_of(ol.get("Website"))
-            if d and d in lead_domains:
+            if not d:
+                continue
+            if d in lead_domains:
                 company_engaged_via_other_lead.add(d)
+            if d in domains_2025:
+                company_engaged_via_other_lead_2025.add(d)
 
     company_already_engaged = (company_engaged_via_opp
                                 | company_engaged_via_contact
                                 | company_engaged_via_other_lead)
+    company_already_engaged_2025 = (company_engaged_via_opp_2025
+                                     | company_engaged_via_contact_2025
+                                     | company_engaged_via_other_lead_2025)
 
     # Stamp each booth-scan lead with the company-level engagement flag.
     for l in leads_out:
         d = l.get("domain")
         l["company_already_engaged"] = "Yes" if (d and d in company_already_engaged) else "No"
+    for l in leads_2025:
+        d = l.get("domain")
+        l["company_already_engaged"] = "Yes" if (d and d in company_already_engaged_2025) else "No"
 
     # --- Account-level (ABM/ABX) rollup: one row per company seen at the
     # booth, tracking BOTH the breadth (how many leads/personas we're adding)
@@ -362,58 +399,12 @@ def main():
 
     # --- RAISE 2025 vs RAISE 2026 comparison (booth-only, apples-to-apples,
     # per user direction -- NOT the full multi-campaign RAISE event for
-    # either year). Pulls the 2025 in-person booth campaign the same way the
-    # 2026 booth campaigns were pulled above, then compares lead/opportunity
-    # counts, exact lifecycle-stage funnel (Lead/MEL/MQL/SAL/SQL/SQO -- real
-    # Salesforce Status values, whatever they are), and a UNIFORM pipegen
-    # potential of $200,000 per Opportunity for BOTH years (not real Amounts,
-    # per explicit user direction, so the two years are compared on the same
-    # yardstick). Also flags which specific leads (by email) and which
-    # companies (by domain) attended/appear in BOTH years.
-    cm_2025_query = f"""
-        SELECT CampaignId, Campaign.Name, Status, LeadId,
-               Lead.OwnerId, Lead.Owner.Name, Lead.Company, Lead.Website,
-               Lead.FirstName, Lead.LastName, Lead.Title, Lead.Email,
-               Lead.MobilePhone, Lead.LeadSource, Lead.Status,
-               Lead.Lead_Notes__c, Lead.LinkedIn__c
-        FROM CampaignMember
-        WHERE CampaignId = '{RAISE_2025_BOOTH_CAMPAIGN_ID}' AND LeadId != null
-    """
-    members_2025 = soql(instance_url, token, cm_2025_query)
-
-    leads_2025 = []
-    for m in members_2025:
-        lead = m.get("Lead") or {}
-        notes = lead.get("Lead_Notes__c")
-        status = lead.get("Status")
-        leads_2025.append({
-            "campaign": (m.get("Campaign") or {}).get("Name"),
-            "lead_id": m.get("LeadId"),
-            "owner": (lead.get("Owner") or {}).get("Name"),
-            "company": lead.get("Company"),
-            "website": lead.get("Website"),
-            "domain": domain_of(lead.get("Website")),
-            "first_name": lead.get("FirstName"),
-            "last_name": lead.get("LastName"),
-            "title": lead.get("Title"),
-            "email": lead.get("Email"),
-            "mobile": lead.get("MobilePhone"),
-            "linkedin_url": lead.get("LinkedIn__c"),
-            "lead_source": lead.get("LeadSource"),
-            "notes": notes,
-            "lifecycle_stage": classify_lifecycle(status, notes),
-            "sfdc_link": f"{instance_url}/lightning/r/Lead/{m.get('LeadId')}/view",
-        })
-
-    domains_2025 = {l["domain"] for l in leads_2025 if l.get("domain")}
-
-    # Re-use the already-fetched org-wide `all_opps` (Account.Website != null,
-    # no year/campaign filter) and domain-match it against the 2025 booth
-    # leads' companies, exactly as done for 2026 above -- the Campaign's own
-    # NumberOfOpportunities rollup undercounts (same limitation observed on
-    # the 2026 booth campaigns, which show 0 there despite 6 real domain-
-    # matched Opportunities), so domain-matching is the consistent method
-    # for BOTH years.
+    # either year). Compares lead/opportunity counts, exact lifecycle-stage
+    # funnel (real Salesforce Status values, whatever they are), and a
+    # UNIFORM pipegen potential of $200,000 per Opportunity for BOTH years
+    # (not real Amounts, per explicit user direction, so the two years are
+    # compared on the same yardstick). Also flags which specific leads (by
+    # email) and which companies (by domain) attended/appear in BOTH years.
     opps_2025 = []
     for o in all_opps:
         acct = o.get("Account") or {}
@@ -499,7 +490,8 @@ def main():
 
     (OUT_DIR / "raise2025_booth_leads.json").write_text(json.dumps(leads_2025, indent=2))
     (OUT_DIR / "year_comparison.json").write_text(json.dumps(comparison, indent=2))
-    print(f"Wrote {len(leads_2025)} RAISE 2025 booth leads and year_comparison.json to {OUT_DIR}")
+    print(f"Wrote {len(leads_2025)} RAISE 2025 booth leads (with engagement flag) "
+          f"and year_comparison.json to {OUT_DIR}")
 
 
 if __name__ == "__main__":
