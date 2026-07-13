@@ -11,6 +11,10 @@
       "Nurture": 6,
       "Remarket": 1
     },
+    "opp_stage_counts": {
+      "Closed Lost": 3,
+      "00 - Prospecting": 2
+    },
     "pipegen_potential": 1000000,
     "real_opportunity_amount_total": 290000.0,
     "opportunities": [
@@ -21,7 +25,8 @@
         "domain": "gresearch.co.uk",
         "amount": 0.0,
         "stage": "Closed Lost",
-        "contacts": []
+        "contacts": [],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkS6IAJ/view"
       },
       {
         "opp_id": "006Kb00000JlkSSIAZ",
@@ -36,7 +41,8 @@
             "title": "Solutions Architect",
             "email": "ramesh.ragunathan@gresearch.co.uk"
           }
-        ]
+        ],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkSSIAZ/view"
       },
       {
         "opp_id": "006Kb00000JlkV3IAJ",
@@ -45,7 +51,8 @@
         "domain": "gresearch.co.uk",
         "amount": null,
         "stage": "Closed Lost",
-        "contacts": []
+        "contacts": [],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkV3IAJ/view"
       },
       {
         "opp_id": "006TV00000OtANWYA3",
@@ -54,7 +61,8 @@
         "domain": "cudocompute.com",
         "amount": 200000.0,
         "stage": "00 - Prospecting",
-        "contacts": []
+        "contacts": [],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000OtANWYA3/view"
       },
       {
         "opp_id": "006TV00000Wz0aAYAR",
@@ -63,7 +71,8 @@
         "domain": "gresearch.co.uk",
         "amount": 0.0,
         "stage": "00 - Prospecting",
-        "contacts": []
+        "contacts": [],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000Wz0aAYAR/view"
       }
     ]
   },
@@ -80,8 +89,304 @@
       "In Progress (MEL)": 90,
       "In Progress (SAL)": 8
     },
+    "opp_stage_counts": {
+      "Closed Lost": 12,
+      "Closed Won": 2,
+      "03 - Technical Validation": 2,
+      "00 - Prospecting": 2
+    },
     "pipegen_potential": 3600000,
-    "real_opportunity_amount_total": 7780000.0
+    "real_opportunity_amount_total": 7780000.0,
+    "opportunities": [
+      {
+        "opp_id": "006Kb00000JlkRyIAJ",
+        "owner": "Kent Kawahara",
+        "account": "Microsoft",
+        "domain": "microsoft.com",
+        "amount": 0.0,
+        "stage": "Closed Lost",
+        "contacts": [
+          {
+            "name": "Gavin Freyberg",
+            "title": null,
+            "email": "gavin.freyberg@microsoft.com"
+          }
+        ],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkRyIAJ/view"
+      },
+      {
+        "opp_id": "006Kb00000JlkSxIAJ",
+        "owner": "Kent Kawahara",
+        "account": "Microsoft",
+        "domain": "microsoft.com",
+        "amount": 0.0,
+        "stage": "Closed Lost",
+        "contacts": [
+          {
+            "name": "Umesh Madan",
+            "title": null,
+            "email": "umeshma@microsoft.com"
+          }
+        ],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkSxIAJ/view"
+      },
+      {
+        "opp_id": "006Kb00000JlkTqIAJ",
+        "owner": "Amy Lee",
+        "account": "Uber",
+        "domain": "uber.com",
+        "amount": 1500000.0,
+        "stage": "Closed Won",
+        "contacts": [],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkTqIAJ/view"
+      },
+      {
+        "opp_id": "006Kb00000JlkUuIAJ",
+        "owner": "Kent Kawahara",
+        "account": "Microsoft",
+        "domain": "microsoft.com",
+        "amount": null,
+        "stage": "Closed Lost",
+        "contacts": [],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkUuIAJ/view"
+      },
+      {
+        "opp_id": "006Kb00000JlkUyIAJ",
+        "owner": "Kent Kawahara",
+        "account": "Bank of America",
+        "domain": "bankofamerica.com",
+        "amount": null,
+        "stage": "Closed Lost",
+        "contacts": [],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkUyIAJ/view"
+      },
+      {
+        "opp_id": "006Kb00000JlkV1IAJ",
+        "owner": "Kent Kawahara",
+        "account": "Microsoft",
+        "domain": "microsoft.com",
+        "amount": null,
+        "stage": "Closed Lost",
+        "contacts": [],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkV1IAJ/view"
+      },
+      {
+        "opp_id": "006Kb00000JlkVFIAZ",
+        "owner": "Kent Kawahara",
+        "account": "Cisco",
+        "domain": "cisco.com",
+        "amount": null,
+        "stage": "Closed Lost",
+        "contacts": [],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkVFIAZ/view"
+      },
+      {
+        "opp_id": "006Kb00000JlmiYIAR",
+        "owner": "Amy Lee",
+        "account": "Cisco",
+        "domain": "cisco.com",
+        "amount": 250000.0,
+        "stage": "Closed Lost",
+        "contacts": [
+          {
+            "name": "Joel Jose",
+            "title": "Solutions Engineer",
+            "email": "joeljos@cisco.com"
+          }
+        ],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlmiYIAR/view"
+      },
+      {
+        "opp_id": "006TV000009u2I9YAI",
+        "owner": "Amy Lee",
+        "account": "Uber",
+        "domain": "uber.com",
+        "amount": 1500000.0,
+        "stage": "Closed Lost",
+        "contacts": [],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV000009u2I9YAI/view"
+      },
+      {
+        "opp_id": "006TV00000A9g0iYAB",
+        "owner": "Sean Coughlin",
+        "account": "BlackRock",
+        "domain": "blackrock.com",
+        "amount": 275000.0,
+        "stage": "Closed Lost",
+        "contacts": [
+          {
+            "name": "Leon Flaksin",
+            "title": "Managing Director, Head of Technology Risk",
+            "email": "leon.flaksin@blackrock.com"
+          }
+        ],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000A9g0iYAB/view"
+      },
+      {
+        "opp_id": "006TV00000A9g0nYAB",
+        "owner": "Sean Coughlin",
+        "account": "Bank of America",
+        "domain": "bankofamerica.com",
+        "amount": 655000.0,
+        "stage": "Closed Lost",
+        "contacts": [],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000A9g0nYAB/view"
+      },
+      {
+        "opp_id": "006TV00000Dg090YAB",
+        "owner": "Dan Zheng",
+        "account": "Uber",
+        "domain": "uber.com",
+        "amount": 1000000.0,
+        "stage": "Closed Won",
+        "contacts": [
+          {
+            "name": "Namit Jain",
+            "title": "Senior Director of Engineering",
+            "email": "namit.jain@uber.com"
+          },
+          {
+            "name": "Kamran Zargahi",
+            "title": "Sr. Director of Tech Strategy",
+            "email": null
+          }
+        ],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000Dg090YAB/view"
+      },
+      {
+        "opp_id": "006TV00000FBuB7YAL",
+        "owner": "Sean Coughlin",
+        "account": "SuperMicro",
+        "domain": "supermicro.com",
+        "amount": 350000.0,
+        "stage": "Closed Lost",
+        "contacts": [],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000FBuB7YAL/view"
+      },
+      {
+        "opp_id": "006TV00000IT9OvYAL",
+        "owner": "Dan Zheng",
+        "account": "Cisco",
+        "domain": "cisco.com",
+        "amount": 750000.0,
+        "stage": "03 - Technical Validation",
+        "contacts": [],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000IT9OvYAL/view"
+      },
+      {
+        "opp_id": "006TV00000Mk6tnYAB",
+        "owner": "Dan Zheng",
+        "account": "Uber",
+        "domain": "uber.com",
+        "amount": 1000000.0,
+        "stage": "00 - Prospecting",
+        "contacts": [
+          {
+            "name": "Cecilia Deng",
+            "title": null,
+            "email": "dcecilia@uber.com"
+          },
+          {
+            "name": "Xinlong Zhang",
+            "title": null,
+            "email": "xinlongz@uber.com"
+          },
+          {
+            "name": "Wen Luo",
+            "title": null,
+            "email": "wenl@uber.com"
+          },
+          {
+            "name": "Shoucong Chen",
+            "title": "Tech Lead / Senior Staff Software Engineer",
+            "email": "shoucong.chen@uber.com"
+          },
+          {
+            "name": "Sandeep Sheshadri",
+            "title": "Director of Engineering",
+            "email": "sandeep.sheshadri@uber.com"
+          },
+          {
+            "name": "Feng Min",
+            "title": "Senior Staff Engineer",
+            "email": "fengm@uber.com"
+          },
+          {
+            "name": "Namit Jain",
+            "title": "Senior Director of Engineering",
+            "email": "namit.jain@uber.com"
+          },
+          {
+            "name": "Kamran Zargahi",
+            "title": "Sr. Director of Tech Strategy",
+            "email": null
+          }
+        ],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000Mk6tnYAB/view"
+      },
+      {
+        "opp_id": "006TV00000OtANWYA3",
+        "owner": "Sean Coughlin",
+        "account": "Cudo Compute",
+        "domain": "cudocompute.com",
+        "amount": 200000.0,
+        "stage": "00 - Prospecting",
+        "contacts": [],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000OtANWYA3/view"
+      },
+      {
+        "opp_id": "006TV00000OtKGRYA3",
+        "owner": "Greg Mark",
+        "account": "Cisco",
+        "domain": "cisco.com",
+        "amount": null,
+        "stage": "Closed Lost",
+        "contacts": [
+          {
+            "name": "samir parkikh",
+            "title": "product managmen exec",
+            "email": "saparikh@cisco.com"
+          }
+        ],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000OtKGRYA3/view"
+      },
+      {
+        "opp_id": "006TV00000SnzDVYAZ",
+        "owner": "Greg Mark",
+        "account": "Microsoft",
+        "domain": "microsoft.com",
+        "amount": 300000.0,
+        "stage": "03 - Technical Validation",
+        "contacts": [
+          {
+            "name": "Deepak Bansal",
+            "title": "General Manager and Corporate Vice President",
+            "email": "dbansal@microsoft.com"
+          },
+          {
+            "name": "Chandan Aggarwal",
+            "title": "Partner Group Engineering Manager, Azure Core",
+            "email": "chandan.aggarwal@microsoft.com"
+          },
+          {
+            "name": "Mathew Merrick",
+            "title": null,
+            "email": "mathew.merrick@microsoft.com"
+          },
+          {
+            "name": "Marina Gonzalez",
+            "title": "Sr Software Engineer",
+            "email": "marina.gonzalez@wayve.ai"
+          },
+          {
+            "name": "Ashvin Deodhar",
+            "title": "Principal Software Engineer",
+            "email": "ashvin.deodhar@microsoft.com"
+          }
+        ],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000SnzDVYAZ/view"
+      }
+    ]
   },
   "overlap": {
     "overlapping_lead_emails": [],
@@ -98,7 +403,8 @@
         "domain": "cudocompute.com",
         "amount": 200000.0,
         "stage": "00 - Prospecting",
-        "contacts": []
+        "contacts": [],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000OtANWYA3/view"
       }
     ],
     "overlapping_opportunities_2026": [
