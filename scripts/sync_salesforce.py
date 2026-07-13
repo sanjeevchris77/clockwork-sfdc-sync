@@ -46,6 +46,7 @@ CAMPAIGN_IDS = [
 
 REP_NAMES = ["Sean Coughlin", "Greg Mark", "Abrahem Miya", "Chris Bowen"]  # NOTE: "Abrahem" matches the exact spelling of this Owner.Name in Salesforce
 DEFAULT_OPP_AMOUNT = 200000
+QUALIFIED_STAGES = {"In Progress (MQL)", "In Progress (SAL)"}  # matches dashboard's "Qualified" definition
 
 # RAISE 2025's directly-comparable in-person booth campaign (booth-only
 # apples-to-apples comparison, per user direction -- NOT the full RAISE 2025
@@ -122,6 +123,13 @@ def classify_lifecycle(status, notes):
 
 def esc(s):
     return s.replace("\\", "\\\\").replace("'", "\\'")
+
+
+def is_open_stage(stage):
+    """An Opportunity stage counts as still-open (live) pipeline unless it's
+    a Closed Won or Closed Lost terminal stage. Matched loosely on the word
+    'Closed' since orgs vary in exact stage-name spelling."""
+    return "closed" not in (stage or "").lower()
 
 
 def pull_campaign_leads(instance_url, token, campaign_ids):
@@ -203,6 +211,11 @@ def main():
     opps_out = []
     company_engaged_via_opp = set()       # domains from 2026 lead set
     company_engaged_via_opp_2025 = set()  # domains from 2025 lead set
+    # ALL-owner opportunities by domain (2026 booth-company domains only) --
+    # used for the account-level "open opportunity" pipeline calc below, so a
+    # real deal owned outside the 4 tracked reps still counts with its real
+    # $ and stage instead of being silently dropped/estimated.
+    opps_all_owners_by_domain = {}
     for o in all_opps:
         acct = o.get("Account") or {}
         opp_domain = domain_of(acct.get("Website"))
@@ -213,6 +226,17 @@ def main():
             company_engaged_via_opp.add(opp_domain)  # any owner counts as "already engaged"
         if opp_domain in domains_2025:
             company_engaged_via_opp_2025.add(opp_domain)
+        if opp_domain in lead_domains:
+            stage = o.get("StageName")
+            opps_all_owners_by_domain.setdefault(opp_domain, []).append({
+                "opp_id": o.get("Id"),
+                "owner": owner_name,
+                "account": acct.get("Name"),
+                "stage": stage,
+                "amount": o.get("Amount") or DEFAULT_OPP_AMOUNT,
+                "is_open": is_open_stage(stage),
+                "sfdc_link": f"{instance_url}/lightning/r/Opportunity/{o.get('Id')}/view",
+            })
         if opp_domain in lead_domains and owner_name in REP_NAMES:
             roles = (o.get("OpportunityContactRoles") or {}).get("records", [])
             opps_out.append({
@@ -223,6 +247,7 @@ def main():
                 "domain": opp_domain,
                 "amount": o.get("Amount") or DEFAULT_OPP_AMOUNT,
                 "stage": o.get("StageName"),
+                "is_open": is_open_stage(o.get("StageName")),
                 "lead_source": o.get("LeadSource"),
                 "campaign": (o.get("Campaign") or {}).get("Name"),
                 "contacts": [
@@ -312,6 +337,30 @@ def main():
         for g in group:
             stage = g.get("lifecycle_stage") or "Unknown"
             stage_counts[stage] = stage_counts.get(stage, 0) + 1
+
+        # ALL-owner opportunities at this domain (not just the 4 tracked
+        # reps), so real deal amounts owned by other teams are visible
+        # instead of silently falling back to the $200K estimate.
+        domain_opps = [] if d.startswith("__no_domain__:") else opps_all_owners_by_domain.get(d, [])
+        open_opps = [o for o in domain_opps if o["is_open"]]
+        open_opp_amount_total = sum(o["amount"] for o in open_opps)
+        is_qualified = any((g.get("lifecycle_stage") in QUALIFIED_STAGES) for g in group)
+
+        # Potential Pipeline, computed per account (per user direction):
+        # every company that showed up at the RAISE 2026 booth counts as a
+        # pipeline opportunity in its own right -- attendance IS the
+        # opportunity, no separate lifecycle-stage qualification gate.
+        # 1) if the account has ANY open (non-Closed) Opportunity from ANY
+        #    owner, use the real sum of those open Opportunity amounts.
+        # 2) else, use the flat $200K estimate (once per account, not per
+        #    contact/persona met there).
+        if open_opps:
+            pipeline_amount = open_opp_amount_total
+            pipeline_basis = "real_open_opportunity"
+        else:
+            pipeline_amount = DEFAULT_OPP_AMOUNT
+            pipeline_basis = "estimated"
+
         account_summary.append({
             "domain": None if d.startswith("__no_domain__:") else d,
             "company": sorted(companies)[0] if companies else group[0].get("company"),
@@ -329,9 +378,15 @@ def main():
             "engaged_via_existing_contact": d in company_engaged_via_contact,
             "engaged_via_other_open_lead": d in company_engaged_via_other_lead,
             "existing_opportunities_all_owners": [
-                {"owner": o["owner"], "stage": o["stage"], "amount": o["amount"]}
-                for o in opps_out if o["domain"] == d
-            ] if not d.startswith("__no_domain__:") else [],
+                {"opp_id": o["opp_id"], "owner": o["owner"], "account": o["account"],
+                 "stage": o["stage"], "amount": o["amount"], "is_open": o["is_open"],
+                 "sfdc_link": o["sfdc_link"]}
+                for o in domain_opps
+            ],
+            "has_open_opportunity": bool(open_opps),
+            "is_qualified_contact": is_qualified,
+            "potential_pipeline_amount": pipeline_amount,
+            "potential_pipeline_basis": pipeline_basis,
         })
 
     # Rep-specific breakdown (leads + opps each rep owns)
@@ -355,6 +410,13 @@ def main():
         "distinct_companies": len(account_summary),
         "companies_already_engaged": sum(1 for a in account_summary if a["company_already_engaged"] == "Yes"),
         "companies_net_new": sum(1 for a in account_summary if a["company_already_engaged"] == "No"),
+        "potential_pipeline_real_open_opportunity_total": sum(
+            a["potential_pipeline_amount"] for a in account_summary
+            if a["potential_pipeline_basis"] == "real_open_opportunity"),
+        "potential_pipeline_estimated_total": sum(
+            a["potential_pipeline_amount"] for a in account_summary
+            if a["potential_pipeline_basis"] == "estimated"),
+        "potential_pipeline_total": sum(a["potential_pipeline_amount"] for a in account_summary),
     }, indent=2))
 
     print(f"Wrote {len(leads_out)} leads, {len(opps_out)} rep-owned opportunities, "
