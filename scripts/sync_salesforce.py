@@ -105,12 +105,19 @@ def main():
     campaign_id_list = ",".join(f"'{c}'" for c in CAMPAIGN_IDS)
 
     # Campaign members -> Leads (booth scans are almost always Leads, not Contacts)
+    #
+    # NOTE: Lead.Description and Lead.LinkedIn_URL__c are NOT valid field API
+    # names in this org (Description isn't a standard Lead field, and the
+    # LinkedIn field name was only a guess). Both are temporarily removed
+    # below so the sync can succeed -- once the real API names for "booth
+    # scan notes" and "LinkedIn URL" are confirmed (Setup -> Object Manager
+    # -> Lead -> Fields & Relationships), add them back to both the SELECT
+    # list and the two .get(...) lookups just below.
     cm_query = f"""
         SELECT CampaignId, Campaign.Name, Status, LeadId,
                Lead.OwnerId, Lead.Owner.Name, Lead.Company, Lead.FirstName,
                Lead.LastName, Lead.Title, Lead.Email, Lead.MobilePhone,
-               Lead.LeadSource, Lead.Status, Lead.Description,
-               Lead.LinkedIn_URL__c
+               Lead.LeadSource, Lead.Status
         FROM CampaignMember
         WHERE CampaignId IN ({campaign_id_list}) AND LeadId != null
     """
@@ -119,7 +126,7 @@ def main():
     leads_out = []
     for m in members:
         lead = m.get("Lead") or {}
-        notes = lead.get("Description")
+        notes = None  # TODO: replace with lead.get("<real_notes_field__c>") once known
         status = lead.get("Status")
         leads_out.append({
             "campaign": (m.get("Campaign") or {}).get("Name"),
@@ -132,7 +139,7 @@ def main():
             "title": lead.get("Title"),
             "email": lead.get("Email"),
             "mobile": lead.get("MobilePhone"),
-            "linkedin_url": lead.get("LinkedIn_URL__c"),
+            "linkedin_url": None,  # TODO: replace with lead.get("<real_linkedin_field__c>") once known
             "lead_source": lead.get("LeadSource"),
             "notes": notes,
             "lifecycle_stage": classify_lifecycle(status, notes),
