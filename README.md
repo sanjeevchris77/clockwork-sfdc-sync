@@ -8,19 +8,23 @@ without giving anyone direct Salesforce credentials.
 ## One-time setup
 
 1. **Add repo secrets** (Settings -> Secrets and variables -> Actions -> New
-   repository secret). Use the Connected App / login you already have for
-   your other Salesforce dashboards:
-   - `SF_CLIENT_ID` -- Connected App Consumer Key
-   - `SF_CLIENT_SECRET` -- Connected App Consumer Secret
-   - `SF_USERNAME` -- Salesforce login username
-   - `SF_PASSWORD` -- Salesforce login password
-   - `SF_SECURITY_TOKEN` -- Salesforce security token
-   - `SF_LOGIN_URL` -- optional, defaults to `https://login.salesforce.com`
-     (use `https://test.salesforce.com` for a sandbox)
+   repository secret), using the "Clockwork SFDC Sync" External Client App
+   and its Client Credentials Flow:
+   - `SF_CLIENT_ID` -- External Client App Consumer Key
+   - `SF_CLIENT_SECRET` -- External Client App Consumer Secret
+   - `SF_LOGIN_URL` -- your org's My Domain URL, e.g.
+     `https://yourorg.my.salesforce.com` (must be the specific My Domain,
+     not the generic login.salesforce.com -- Client Credentials Flow
+     requires it)
 
    None of these are ever seen by Claude or committed to the repo -- they
    live only in GitHub's encrypted secrets store and are injected as env
    vars at Action runtime.
+
+   Before this works, the External Client App also needs a "Run As" user
+   set under its Policies tab -> Client Credentials Flow section -- that
+   user's permissions determine what Leads/Opportunities this script can
+   see.
 
 2. **Run the workflow once manually**: go to the Actions tab -> "Sync
    Salesforce data" -> "Run workflow". This creates the first `data/*.json`
@@ -39,19 +43,21 @@ without giving anyone direct Salesforce credentials.
   MQL/MEL lifecycle classification when Status isn't already set.
 - `data/opportunities.json` -- Opportunities on those campaigns owned by
   Sean Coughlin, Greg Mark, Abraham Miya, or Chris Bowen, with Amount
-  (defaulting to $50,000 if blank), Stage, and associated contact roles.
+  (defaulting to $200,000 if blank), Stage, and associated contact roles.
 - `data/by_rep.json` -- the same data pre-split per rep.
 - `data/meta.json` -- campaign IDs, rep names, and counts for a quick sanity
   check.
 
 ## Notes / caveats
 
-- Auth uses the OAuth 2.0 Username-Password flow, which Salesforce has been
-  deprecating for newly created Connected Apps (existing ones, like the one
-  you're reusing here, typically still work). If the Action fails with an
-  `unsupported_grant_type` error, the org has this flow disabled and we'd
-  need to switch to the JWT Bearer flow instead (different secrets: a
-  private key instead of username/password).
+- Auth uses the OAuth 2.0 Client Credentials flow via a Salesforce External
+  Client App -- simpler than the old Username-Password flow since it only
+  needs a Client ID + Secret, but it authenticates as a specific "Run As"
+  user configured on the app, so that user needs read access to the
+  relevant Leads/Opportunities. If the Action fails with
+  `invalid_client_id` or similar, double check `SF_LOGIN_URL` is the org's
+  exact My Domain URL, and that "Enable Client Credentials Flow" is checked
+  and saved on the app's Settings tab.
 - The lifecycle classification (MQL vs MEL) from the Notes field is a
   simple keyword heuristic -- review it before trusting it fully. If your
   org already sets Lead Status accurately, that value is used as-is instead.

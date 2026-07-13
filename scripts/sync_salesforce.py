@@ -5,24 +5,26 @@ campaigns into flat JSON files under data/, so they can be read by other tools
 (e.g. Claude via the GitHub connector) without ever needing direct Salesforce API
 access.
 
-Auth: OAuth 2.0 "Username-Password" flow. Requires a Connected App with the
-password grant enabled. Credentials are read ONLY from environment variables
-(populated by GitHub Actions secrets) -- never hardcoded, never logged.
+Auth: OAuth 2.0 "Client Credentials" flow, via a Salesforce External Client
+App (the newer replacement for classic Connected Apps). This flow only needs
+a Client ID + Client Secret -- no username, password, or security token.
+Credentials are read ONLY from environment variables (populated by GitHub
+Actions secrets) -- never hardcoded, never logged.
 
 Required env vars:
-  SF_LOGIN_URL       optional, defaults to https://login.salesforce.com
-                      (use https://test.salesforce.com for a sandbox org)
-  SF_CLIENT_ID       Connected App Consumer Key
-  SF_CLIENT_SECRET   Connected App Consumer Secret
-  SF_USERNAME        Salesforce username
-  SF_PASSWORD        Salesforce password
-  SF_SECURITY_TOKEN  Salesforce security token (appended to password internally)
+  SF_LOGIN_URL       your org's My Domain login URL, e.g.
+                      https://yourorg.my.salesforce.com
+                      (use the sandbox My Domain URL for a sandbox org)
+  SF_CLIENT_ID       External Client App Consumer Key
+  SF_CLIENT_SECRET   External Client App Consumer Secret
 
-Note: Salesforce has been deprecating the Username-Password OAuth flow for new
-Connected Apps (it must be explicitly enabled). If auth fails with
-"unsupported_grant_type" or similar, the existing Connected App used for your
-other dashboards should already have this enabled -- otherwise switch to the
-JWT Bearer flow (ask for a variant of this script if needed).
+Note: Client Credentials Flow authenticates as whatever "Run As" user is
+configured under the External Client App's Policies tab -> Client
+Credentials Flow section -- that user's permissions determine what data this
+script can see, so make sure it's a user with access to the relevant
+Leads/Opportunities. SF_LOGIN_URL must be the org's specific My Domain URL
+for this flow (the generic https://login.salesforce.com will not work for
+Client Credentials Flow).
 """
 import json
 import os
@@ -30,12 +32,9 @@ import sys
 from pathlib import Path
 from urllib import request, parse, error
 
-SF_LOGIN_URL = os.environ.get("SF_LOGIN_URL", "https://login.salesforce.com")
+SF_LOGIN_URL = os.environ["SF_LOGIN_URL"]
 CLIENT_ID = os.environ["SF_CLIENT_ID"]
 CLIENT_SECRET = os.environ["SF_CLIENT_SECRET"]
-USERNAME = os.environ["SF_USERNAME"]
-PASSWORD = os.environ["SF_PASSWORD"]
-SECURITY_TOKEN = os.environ.get("SF_SECURITY_TOKEN", "")
 
 # The 3 RAISE 2026 Booth Scan campaigns (Paris)
 CAMPAIGN_IDS = [
@@ -45,7 +44,7 @@ CAMPAIGN_IDS = [
 ]
 
 REP_NAMES = ["Sean Coughlin", "Greg Mark", "Abraham Miya", "Chris Bowen"]
-DEFAULT_OPP_AMOUNT = 50000
+DEFAULT_OPP_AMOUNT = 200000
 
 OUT_DIR = Path(__file__).resolve().parent.parent / "data"
 
@@ -53,11 +52,9 @@ OUT_DIR = Path(__file__).resolve().parent.parent / "data"
 def get_access_token():
     url = f"{SF_LOGIN_URL}/services/oauth2/token"
     payload = parse.urlencode({
-        "grant_type": "password",
+        "grant_type": "client_credentials",
         "client_id": CLIENT_ID,
         "client_secret": CLIENT_SECRET,
-        "username": USERNAME,
-        "password": PASSWORD + SECURITY_TOKEN,
     }).encode()
     req = request.Request(url, data=payload, method="POST")
     try:
