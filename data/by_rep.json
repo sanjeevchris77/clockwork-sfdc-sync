@@ -131,6 +131,7 @@
         "domain": "blackrock.com",
         "amount": 275000.0,
         "stage": "Closed Lost",
+        "is_open": false,
         "lead_source": "Event",
         "campaign": null,
         "contacts": [
@@ -150,6 +151,7 @@
         "domain": "bankofamerica.com",
         "amount": 655000.0,
         "stage": "Closed Lost",
+        "is_open": false,
         "lead_source": "Sales",
         "campaign": null,
         "contacts": [],
@@ -163,6 +165,7 @@
         "domain": "supermicro.com",
         "amount": 350000.0,
         "stage": "Closed Lost",
+        "is_open": false,
         "lead_source": "Sales",
         "campaign": null,
         "contacts": [],
@@ -176,6 +179,7 @@
         "domain": "cudocompute.com",
         "amount": 200000.0,
         "stage": "00 - Prospecting",
+        "is_open": true,
         "lead_source": "Sales",
         "campaign": null,
         "contacts": [],
@@ -635,6 +639,7 @@
         "domain": "cisco.com",
         "amount": 200000,
         "stage": "Closed Lost",
+        "is_open": false,
         "lead_source": "Sales",
         "campaign": null,
         "contacts": [
@@ -654,6 +659,7 @@
         "domain": "microsoft.com",
         "amount": 300000.0,
         "stage": "03 - Technical Validation",
+        "is_open": true,
         "lead_source": "Event",
         "campaign": null,
         "contacts": [

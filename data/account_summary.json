@@ -18,7 +18,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": null,
@@ -39,7 +43,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "accel.com",
@@ -60,7 +68,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "airhelp.com",
@@ -81,7 +93,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "alqais.ai",
@@ -102,7 +118,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "aploi.de",
@@ -123,7 +143,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "arista.com",
@@ -150,7 +174,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": true,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "arkmind.ai",
@@ -171,7 +199,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "arqus-solutions.eu",
@@ -192,7 +224,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "aubay.com",
@@ -213,7 +249,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "bankofamerica.com",
@@ -236,11 +276,28 @@
     "engaged_via_other_open_lead": true,
     "existing_opportunities_all_owners": [
       {
-        "owner": "Sean Coughlin",
+        "opp_id": "006Kb00000JlkUyIAJ",
+        "owner": "Kent Kawahara",
+        "account": "Bank of America",
         "stage": "Closed Lost",
-        "amount": 655000.0
+        "amount": 200000,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkUyIAJ/view"
+      },
+      {
+        "opp_id": "006TV00000A9g0nYAB",
+        "owner": "Sean Coughlin",
+        "account": "Bank of America",
+        "stage": "Closed Lost",
+        "amount": 655000.0,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000A9g0nYAB/view"
       }
-    ]
+    ],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "blackrock.com",
@@ -269,11 +326,19 @@
     "engaged_via_other_open_lead": true,
     "existing_opportunities_all_owners": [
       {
+        "opp_id": "006TV00000A9g0iYAB",
         "owner": "Sean Coughlin",
+        "account": "BlackRock",
         "stage": "Closed Lost",
-        "amount": 275000.0
+        "amount": 275000.0,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000A9g0iYAB/view"
       }
-    ]
+    ],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "bull.com",
@@ -294,7 +359,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "bytebt.com",
@@ -315,7 +384,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": true,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "cea.nic.in",
@@ -336,7 +409,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "celfocus.com",
@@ -357,7 +434,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "cfex.ai",
@@ -378,7 +459,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "cisco.com",
@@ -401,11 +486,46 @@
     "engaged_via_other_open_lead": true,
     "existing_opportunities_all_owners": [
       {
-        "owner": "Greg Mark",
+        "opp_id": "006Kb00000JlkVFIAZ",
+        "owner": "Kent Kawahara",
+        "account": "Cisco",
         "stage": "Closed Lost",
-        "amount": 200000
+        "amount": 200000,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkVFIAZ/view"
+      },
+      {
+        "opp_id": "006Kb00000JlmiYIAR",
+        "owner": "Amy Lee",
+        "account": "Cisco",
+        "stage": "Closed Lost",
+        "amount": 250000.0,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlmiYIAR/view"
+      },
+      {
+        "opp_id": "006TV00000IT9OvYAL",
+        "owner": "Dan Zheng",
+        "account": "Cisco",
+        "stage": "03 - Technical Validation",
+        "amount": 750000.0,
+        "is_open": true,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000IT9OvYAL/view"
+      },
+      {
+        "opp_id": "006TV00000OtKGRYA3",
+        "owner": "Greg Mark",
+        "account": "Cisco",
+        "stage": "Closed Lost",
+        "amount": 200000,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000OtKGRYA3/view"
       }
-    ]
+    ],
+    "has_open_opportunity": true,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 750000.0,
+    "potential_pipeline_basis": "real_open_opportunity"
   },
   {
     "domain": "crms.org",
@@ -426,7 +546,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "cudocompute.com",
@@ -449,11 +573,19 @@
     "engaged_via_other_open_lead": true,
     "existing_opportunities_all_owners": [
       {
+        "opp_id": "006TV00000OtANWYA3",
         "owner": "Sean Coughlin",
+        "account": "Cudo Compute",
         "stage": "00 - Prospecting",
-        "amount": 200000.0
+        "amount": 200000.0,
+        "is_open": true,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000OtANWYA3/view"
       }
-    ]
+    ],
+    "has_open_opportunity": true,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000.0,
+    "potential_pipeline_basis": "real_open_opportunity"
   },
   {
     "domain": "danone.com",
@@ -474,7 +606,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": true,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "datadoghq.com",
@@ -495,7 +631,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": true,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "deepmarketmaking.com",
@@ -516,7 +656,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "defense.gouv.fr",
@@ -537,7 +681,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "distillabs.ai",
@@ -558,7 +706,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "drivenets.com",
@@ -579,7 +731,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": true,
     "engaged_via_other_open_lead": true,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "ed-hidalgo.com",
@@ -600,7 +756,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "ed.ac.uk",
@@ -621,7 +781,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "efrei.fr",
@@ -642,7 +806,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "emma-sleep.com",
@@ -675,7 +843,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "epflaiteam.ch",
@@ -696,7 +868,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "epita.fr",
@@ -717,7 +893,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "era4.com",
@@ -738,7 +918,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "fronius.com",
@@ -759,7 +943,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "genci.fr",
@@ -786,7 +974,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": true,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "getsensable.com",
@@ -807,7 +999,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "greenference.com",
@@ -828,7 +1024,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "greensparc.com",
@@ -849,7 +1049,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "harvia.com",
@@ -870,7 +1074,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "huawei.com",
@@ -916,7 +1124,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": true,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "iforce.uk",
@@ -937,7 +1149,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "ingroupe.com",
@@ -958,7 +1174,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "inlustro.co",
@@ -979,7 +1199,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "internetdownloadmanager.com",
@@ -1000,7 +1224,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "invigilo.ai",
@@ -1021,7 +1249,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "ironmountain.com",
@@ -1042,7 +1274,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "it-works.io",
@@ -1063,7 +1299,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "legrand.com",
@@ -1084,7 +1324,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "lexyra.ai",
@@ -1105,7 +1349,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "liangroup.io",
@@ -1126,7 +1374,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "llyll.com",
@@ -1147,7 +1399,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "maman.consulting",
@@ -1168,7 +1424,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "meridiam.com",
@@ -1189,7 +1449,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "microsoft.com",
@@ -1212,11 +1476,55 @@
     "engaged_via_other_open_lead": true,
     "existing_opportunities_all_owners": [
       {
+        "opp_id": "006Kb00000JlkRyIAJ",
+        "owner": "Kent Kawahara",
+        "account": "Microsoft",
+        "stage": "Closed Lost",
+        "amount": 200000,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkRyIAJ/view"
+      },
+      {
+        "opp_id": "006Kb00000JlkSxIAJ",
+        "owner": "Kent Kawahara",
+        "account": "Microsoft",
+        "stage": "Closed Lost",
+        "amount": 200000,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkSxIAJ/view"
+      },
+      {
+        "opp_id": "006Kb00000JlkUuIAJ",
+        "owner": "Kent Kawahara",
+        "account": "Microsoft",
+        "stage": "Closed Lost",
+        "amount": 200000,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkUuIAJ/view"
+      },
+      {
+        "opp_id": "006Kb00000JlkV1IAJ",
+        "owner": "Kent Kawahara",
+        "account": "Microsoft",
+        "stage": "Closed Lost",
+        "amount": 200000,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkV1IAJ/view"
+      },
+      {
+        "opp_id": "006TV00000SnzDVYAZ",
         "owner": "Greg Mark",
+        "account": "Microsoft",
         "stage": "03 - Technical Validation",
-        "amount": 300000.0
+        "amount": 300000.0,
+        "is_open": true,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000SnzDVYAZ/view"
       }
-    ]
+    ],
+    "has_open_opportunity": true,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 300000.0,
+    "potential_pipeline_basis": "real_open_opportunity"
   },
   {
     "domain": "minimax.io",
@@ -1237,7 +1545,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "mister-e-liquid.com",
@@ -1258,7 +1570,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "multiversecomputing.com",
@@ -1279,7 +1595,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "naddod.com",
@@ -1300,7 +1620,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "nebul.com",
@@ -1321,7 +1645,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "netris.io",
@@ -1355,7 +1683,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": true,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "neysa.ai",
@@ -1382,7 +1714,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "outscale.com",
@@ -1403,7 +1739,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "oxortis.com",
@@ -1424,7 +1764,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "oxylabs.io",
@@ -1445,7 +1789,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "pearlresearch.ai",
@@ -1466,7 +1814,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "pernod-ricard.com",
@@ -1487,7 +1839,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "portaone.com",
@@ -1508,7 +1864,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "se.com",
@@ -1529,7 +1889,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": true,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "simplon.com",
@@ -1550,7 +1914,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "spitze.ai",
@@ -1571,7 +1939,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "startparis.fr",
@@ -1592,7 +1964,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "stripe.com",
@@ -1613,7 +1989,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": true,
     "engaged_via_other_open_lead": true,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "supermicro.com",
@@ -1643,11 +2023,19 @@
     "engaged_via_other_open_lead": true,
     "existing_opportunities_all_owners": [
       {
+        "opp_id": "006TV00000FBuB7YAL",
         "owner": "Sean Coughlin",
+        "account": "SuperMicro",
         "stage": "Closed Lost",
-        "amount": 350000.0
+        "amount": 350000.0,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000FBuB7YAL/view"
       }
-    ]
+    ],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "swirlai.com",
@@ -1668,7 +2056,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "taviactive.com",
@@ -1689,7 +2081,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "telnyx.com",
@@ -1710,7 +2106,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "terraparis.fr",
@@ -1731,7 +2131,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "tetrapak.com",
@@ -1752,7 +2156,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "trendone.com",
@@ -1773,7 +2181,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "twodelta.com",
@@ -1794,7 +2206,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "uber.com",
@@ -1815,7 +2231,48 @@
     "engaged_via_existing_opportunity": true,
     "engaged_via_existing_contact": true,
     "engaged_via_other_open_lead": true,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [
+      {
+        "opp_id": "006Kb00000JlkTqIAJ",
+        "owner": "Amy Lee",
+        "account": "Uber",
+        "stage": "Closed Won",
+        "amount": 1500000.0,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkTqIAJ/view"
+      },
+      {
+        "opp_id": "006TV000009u2I9YAI",
+        "owner": "Amy Lee",
+        "account": "Uber",
+        "stage": "Closed Lost",
+        "amount": 1500000.0,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV000009u2I9YAI/view"
+      },
+      {
+        "opp_id": "006TV00000Dg090YAB",
+        "owner": "Dan Zheng",
+        "account": "Uber",
+        "stage": "Closed Won",
+        "amount": 1000000.0,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000Dg090YAB/view"
+      },
+      {
+        "opp_id": "006TV00000Mk6tnYAB",
+        "owner": "Dan Zheng",
+        "account": "Uber",
+        "stage": "00 - Prospecting",
+        "amount": 1000000.0,
+        "is_open": true,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000Mk6tnYAB/view"
+      }
+    ],
+    "has_open_opportunity": true,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 1000000.0,
+    "potential_pipeline_basis": "real_open_opportunity"
   },
   {
     "domain": "usembassy.gov",
@@ -1848,7 +2305,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "viavisolutions.com",
@@ -1869,7 +2330,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "vimarock.com",
@@ -1890,7 +2355,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "vinci-energies.com",
@@ -1911,7 +2380,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "waibsummit.com",
@@ -1932,7 +2405,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "weathercompany.com",
@@ -1959,7 +2436,11 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "zayoeurope.com",
@@ -1980,6 +2461,10 @@
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
-    "existing_opportunities_all_owners": []
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   }
 ]

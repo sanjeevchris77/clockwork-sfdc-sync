@@ -15,5 +15,8 @@
   "opp_count": 6,
   "distinct_companies": 88,
   "companies_already_engaged": 17,
-  "companies_net_new": 71
+  "companies_net_new": 71,
+  "potential_pipeline_real_open_opportunity_total": 2250000.0,
+  "potential_pipeline_estimated_total": 16800000,
+  "potential_pipeline_total": 19050000.0
 }
