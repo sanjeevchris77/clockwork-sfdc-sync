@@ -1,0 +1,61 @@
+{
+  "methodology": "Booth-only comparison: RAISE 2025 'Booth Visitors | Post-Conf' campaign vs RAISE 2026's 3 'Booth Scans' campaigns. Opportunities matched to booth leads by website domain (not CampaignId, which undercounts for both years). Pipegen potential uses a UNIFORM $200,000 per Opportunity for both years (not real Opportunity Amounts), per explicit request, so the two years are compared on the same yardstick.",
+  "raise_2025": {
+    "campaign_id": "701TV00000SLsriYAD",
+    "lead_count": 41,
+    "opportunity_count": 5,
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 9,
+      "Unqualified": 20,
+      "In Progress (MQL)": 5,
+      "Nurture": 6,
+      "Remarket": 1
+    },
+    "pipegen_potential": 1000000,
+    "real_opportunity_amount_total": 290000.0
+  },
+  "raise_2026": {
+    "campaign_ids": [
+      "701TV00000oNI18YAG",
+      "701TV00000o71ibYAA",
+      "701TV00000o6wcTYAQ"
+    ],
+    "lead_count": 104,
+    "opportunity_count": 18,
+    "lifecycle_stage_counts": {
+      "In Progress (MQL)": 6,
+      "In Progress (MEL)": 90,
+      "In Progress (SAL)": 8
+    },
+    "pipegen_potential": 3600000,
+    "real_opportunity_amount_total": 7780000.0
+  },
+  "overlap": {
+    "overlapping_lead_emails": [],
+    "overlapping_leads_2025": [],
+    "overlapping_leads_2026": [],
+    "overlapping_companies": [
+      "cudocompute.com"
+    ],
+    "overlapping_opportunities_2025": [
+      {
+        "opp_id": "006TV00000OtANWYA3",
+        "owner": "Sean Coughlin",
+        "account": "Cudo Compute",
+        "domain": "cudocompute.com",
+        "amount": 200000.0,
+        "stage": "00 - Prospecting"
+      }
+    ],
+    "overlapping_opportunities_2026": [
+      {
+        "opp_id": "006TV00000OtANWYA3",
+        "owner": "Sean Coughlin",
+        "account": "Cudo Compute",
+        "domain": "cudocompute.com",
+        "amount": 200000.0,
+        "stage": "00 - Prospecting"
+      }
+    ]
+  }
+}
