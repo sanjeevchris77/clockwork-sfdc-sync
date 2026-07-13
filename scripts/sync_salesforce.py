@@ -71,11 +71,16 @@ def soql(instance_url, token, query):
     url = f"{instance_url}/services/data/v60.0/query/?q={parse.quote(query)}"
     while url:
         req = request.Request(url, headers={"Authorization": f"Bearer {token}"})
-        with request.urlopen(req) as resp:
-            data = json.loads(resp.read())
-            records.extend(data["records"])
-            next_url = data.get("nextRecordsUrl")
-            url = f"{instance_url}{next_url}" if next_url else None
+        try:
+            with request.urlopen(req) as resp:
+                data = json.loads(resp.read())
+        except error.HTTPError as e:
+            print("SOQL query failed:", e.read().decode(), file=sys.stderr)
+            print("Query was:", query, file=sys.stderr)
+            raise
+        records.extend(data["records"])
+        next_url = data.get("nextRecordsUrl")
+        url = f"{instance_url}{next_url}" if next_url else None
     return records
 
 
