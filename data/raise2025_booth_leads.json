@@ -1,6 +1,7 @@
 [
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4Azc2AF",
     "owner": "Conor McAdoo",
     "company": "io.net",
@@ -15,10 +16,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "In Progress (SAL)",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azc2AF/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azc2AF/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4Aza2AF",
     "owner": "Conor McAdoo",
     "company": "Kalavai",
@@ -33,10 +36,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "In Progress (SAL)",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Aza2AF/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Aza2AF/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4AzJ2AV",
     "owner": "Conor McAdoo",
     "company": "Digital Realty",
@@ -51,10 +56,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "In Progress (SAL)",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzJ2AV/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzJ2AV/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4AzK2AV",
     "owner": "Sean Coughlin",
     "company": "Adobe",
@@ -69,10 +76,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "In Progress (SAL)",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzK2AV/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzK2AV/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000GNbCW2A1",
     "owner": "Sean Coughlin",
     "company": "BNP Paribas",
@@ -87,10 +96,12 @@
     "lead_source": "Event",
     "notes": "7/17/25 - SC - Sean sent email follow up asking for Zoom session. Will continue to contact",
     "lifecycle_stage": "In Progress (SAL)",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000GNbCW2A1/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000GNbCW2A1/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4Aze2AF",
     "owner": "Conor McAdoo",
     "company": "Daytona",
@@ -105,10 +116,12 @@
     "lead_source": "Event",
     "notes": "custom F/U - email Toma with our value prop",
     "lifecycle_stage": "In Progress (SAL)",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Aze2AF/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Aze2AF/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4AzQ2AV",
     "owner": "Conor McAdoo",
     "company": "AI Tinkerers",
@@ -123,10 +136,12 @@
     "lead_source": "Event",
     "notes": "send f/u email",
     "lifecycle_stage": "In Progress (SAL)",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzQ2AV/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzQ2AV/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4AzG2AV",
     "owner": "Amy Lee",
     "company": "Freelance",
@@ -141,10 +156,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Unqualified",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzG2AV/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzG2AV/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4AzH2AV",
     "owner": "Joe Tarantino",
     "company": "ValueLabs",
@@ -159,10 +176,12 @@
     "lead_source": "Email",
     "notes": null,
     "lifecycle_stage": "In Progress (MQL)",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzH2AV/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzH2AV/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4AzI2AV",
     "owner": "Amy Lee",
     "company": "SGDL/ai",
@@ -177,10 +196,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Nurture",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzI2AV/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzI2AV/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4AzL2AV",
     "owner": "Sean Coughlin",
     "company": "CUDO Compute",
@@ -195,10 +216,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "In Progress (MQL)",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzL2AV/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzL2AV/view",
+    "company_already_engaged": "Yes"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4AzM2AV",
     "owner": "Joe Tarantino",
     "company": "The Geneva Learning Foundation",
@@ -213,10 +236,12 @@
     "lead_source": "Email",
     "notes": null,
     "lifecycle_stage": "In Progress (MQL)",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzM2AV/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzM2AV/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4AzN2AV",
     "owner": "Sean Coughlin",
     "company": "MARA",
@@ -231,10 +256,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Unqualified",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzN2AV/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzN2AV/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4AzO2AV",
     "owner": "Amy Lee",
     "company": "Novomatic Technologies Poland",
@@ -249,10 +276,12 @@
     "lead_source": "Event",
     "notes": "too small - no use case",
     "lifecycle_stage": "Unqualified",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzO2AV/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzO2AV/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4AzR2AV",
     "owner": "Joe Tarantino",
     "company": "Axelera AI",
@@ -267,10 +296,12 @@
     "lead_source": "Email",
     "notes": null,
     "lifecycle_stage": "In Progress (MQL)",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzR2AV/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzR2AV/view",
+    "company_already_engaged": "Yes"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4AzS2AV",
     "owner": "Amy Lee",
     "company": "undefined",
@@ -285,10 +316,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Nurture",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzS2AV/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzS2AV/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4AzT2AV",
     "owner": "Amy Lee",
     "company": "Environmental Dialogue Network",
@@ -303,10 +336,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Nurture",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzT2AV/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzT2AV/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4AzU2AV",
     "owner": "Amy Lee",
     "company": "Geometric Labs",
@@ -321,10 +356,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Nurture",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzU2AV/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzU2AV/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4AzV2AV",
     "owner": "Amy Lee",
     "company": "Geometric Labs",
@@ -339,10 +376,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "In Progress (MQL)",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzV2AV/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzV2AV/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4AzW2AV",
     "owner": "Amy Lee",
     "company": "Discoby",
@@ -357,10 +396,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Remarket",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzW2AV/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzW2AV/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4AzX2AV",
     "owner": "Sean Coughlin",
     "company": "G-Research",
@@ -375,10 +416,12 @@
     "lead_source": "Email",
     "notes": null,
     "lifecycle_stage": "In Progress (SAL)",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzX2AV/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzX2AV/view",
+    "company_already_engaged": "Yes"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4AzY2AV",
     "owner": "Amy Lee",
     "company": "InnoTorque",
@@ -393,10 +436,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Nurture",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzY2AV/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzY2AV/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4AzZ2AV",
     "owner": "Amy Lee",
     "company": "Calcore",
@@ -411,10 +456,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Unqualified",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzZ2AV/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzZ2AV/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4Azb2AF",
     "owner": "Amy Lee",
     "company": "TWINLIFE LLC",
@@ -429,10 +476,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Unqualified",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azb2AF/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azb2AF/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4Azd2AF",
     "owner": "Amy Lee",
     "company": "Clean energy and Sustainability",
@@ -447,10 +496,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Unqualified",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azd2AF/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azd2AF/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4Azf2AF",
     "owner": "Amy Lee",
     "company": "MPI-SWS",
@@ -465,10 +516,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Unqualified",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azf2AF/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azf2AF/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4Azg2AF",
     "owner": "Amy Lee",
     "company": "ByteDance",
@@ -483,10 +536,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Unqualified",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azg2AF/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azg2AF/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4Azh2AF",
     "owner": "Sean Coughlin",
     "company": "Columbia University",
@@ -501,10 +556,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Unqualified",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azh2AF/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azh2AF/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4Azi2AF",
     "owner": "Amy Lee",
     "company": "Credo",
@@ -519,10 +576,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Unqualified",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azi2AF/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azi2AF/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4Azj2AF",
     "owner": "Sean Coughlin",
     "company": "N/A",
@@ -537,10 +596,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Unqualified",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azj2AF/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azj2AF/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4Azk2AF",
     "owner": "Amy Lee",
     "company": "Thoughtworks",
@@ -555,10 +616,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Unqualified",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azk2AF/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azk2AF/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4Azl2AF",
     "owner": "Amy Lee",
     "company": "Start Campus",
@@ -573,10 +636,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Unqualified",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azl2AF/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azl2AF/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4Azm2AF",
     "owner": "Amy Lee",
     "company": "Yoan Rock",
@@ -591,10 +656,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Unqualified",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azm2AF/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azm2AF/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4Azn2AF",
     "owner": "Amy Lee",
     "company": "DSTI School of Engineering",
@@ -609,10 +676,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Unqualified",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azn2AF/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azn2AF/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4Azo2AF",
     "owner": "Sean Coughlin",
     "company": "BUZZ HPC",
@@ -627,10 +696,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Nurture",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azo2AF/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azo2AF/view",
+    "company_already_engaged": "Yes"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4Azq2AF",
     "owner": "Amy Lee",
     "company": "ProLabs (UK) Ltd",
@@ -645,10 +716,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Unqualified",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azq2AF/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azq2AF/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4Azr2AF",
     "owner": "Amy Lee",
     "company": "Invest Lithuania",
@@ -663,10 +736,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Unqualified",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azr2AF/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azr2AF/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4Azs2AF",
     "owner": "Amy Lee",
     "company": "PROGRAMMEZ",
@@ -681,10 +756,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Unqualified",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azs2AF/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azs2AF/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4Azt2AF",
     "owner": "Greg Mark",
     "company": "Mirantis",
@@ -699,10 +776,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Unqualified",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azt2AF/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azt2AF/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Visited Booth",
     "lead_id": "00QTV00000M4Azu2AF",
     "owner": "Joe Tarantino",
     "company": "Scaleway",
@@ -717,10 +796,12 @@
     "lead_source": "Event",
     "notes": null,
     "lifecycle_stage": "Unqualified",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azu2AF/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4Azu2AF/view",
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
+    "member_status": "Meeting Booked",
     "lead_id": "00QTV00000M4AzP2AV",
     "owner": "Sean Coughlin",
     "company": "Core42",
@@ -735,6 +816,7 @@
     "lead_source": "Event",
     "notes": "7/17/25 - SC - Suresh sent note to Edmondo via email to schedule session in Bay area as per Edmondo's travel plans",
     "lifecycle_stage": "In Progress (SAL)",
-    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzP2AV/view"
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzP2AV/view",
+    "company_already_engaged": "No"
   }
 ]
