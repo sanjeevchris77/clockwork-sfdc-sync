@@ -157,52 +157,138 @@ def main():
             "sfdc_link": f"{instance_url}/lightning/r/Lead/{m.get('LeadId')}/view",
         })
 
-    # Opportunities owned by the 4 reps -- matched to booth-scan Leads by
-    # WEBSITE DOMAIN rather than Account.Name (fuzzy text) or CampaignId
-    # (most Opportunities won't be tagged with the campaign directly). We
-    # pull every open Opportunity these 4 reps own, along with the Account's
-    # Website, normalize both sides down to a bare domain (e.g.
-    # 'https://www.acme.com/x' -> 'acme.com'), and keep only the Opps whose
-    # Account domain matches a domain seen on one of the booth-scan Leads.
     lead_domains = {l["domain"] for l in leads_out if l.get("domain")}
+    booth_scan_lead_ids = {l["lead_id"] for l in leads_out if l.get("lead_id")}
 
     def esc(s):
         return s.replace("\\", "\\\\").replace("'", "\\'")
 
-    owner_list = ",".join(f"'{esc(n)}'" for n in REP_NAMES)
-    opp_query = f"""
-        SELECT Id, OwnerId, Owner.Name, Account.Name, Account.Website, Amount,
-               StageName, LeadSource, CampaignId, Campaign.Name,
+    # --- Opportunities: pulled for ALL owners (not just the 4 reps) so we can
+    # detect "this account already has SOME opportunity, even if a different
+    # rep/team owns it" for the company-level engagement flag below. The
+    # rep-specific pipeline list (opps_out) is then filtered down to just the
+    # 4 reps from this same result set. Matched to booth-scan Leads by WEBSITE
+    # DOMAIN rather than Account.Name (fuzzy text) or CampaignId (most Opps
+    # won't be tagged with the campaign directly).
+    opp_query = """
+        SELECT Id, OwnerId, Owner.Name, AccountId, Account.Name, Account.Website,
+               Amount, StageName, LeadSource, CampaignId, Campaign.Name,
                (SELECT Contact.Name, Contact.Title, Contact.Email FROM OpportunityContactRoles)
         FROM Opportunity
-        WHERE Owner.Name IN ({owner_list})
+        WHERE Account.Website != null
     """
-    opps = soql(instance_url, token, opp_query)
+    all_opps = soql(instance_url, token, opp_query)
 
     opps_out = []
-    for o in opps:
+    company_engaged_via_opp = set()
+    for o in all_opps:
         acct = o.get("Account") or {}
         opp_domain = domain_of(acct.get("Website"))
-        if not lead_domains or opp_domain not in lead_domains:
+        if not opp_domain or opp_domain not in lead_domains:
             continue
-        roles = (o.get("OpportunityContactRoles") or {}).get("records", [])
-        opps_out.append({
-            "opp_id": o.get("Id"),
-            "owner": (o.get("Owner") or {}).get("Name"),
-            "account": acct.get("Name"),
-            "account_website": acct.get("Website"),
-            "domain": opp_domain,
-            "amount": o.get("Amount") or DEFAULT_OPP_AMOUNT,
-            "stage": o.get("StageName"),
-            "lead_source": o.get("LeadSource"),
-            "campaign": (o.get("Campaign") or {}).get("Name"),
-            "contacts": [
-                {"name": (r.get("Contact") or {}).get("Name"),
-                 "title": (r.get("Contact") or {}).get("Title"),
-                 "email": (r.get("Contact") or {}).get("Email")}
-                for r in roles
+        owner_name = (o.get("Owner") or {}).get("Name")
+        company_engaged_via_opp.add(opp_domain)  # any owner counts as "already engaged"
+        if owner_name in REP_NAMES:
+            roles = (o.get("OpportunityContactRoles") or {}).get("records", [])
+            opps_out.append({
+                "opp_id": o.get("Id"),
+                "owner": owner_name,
+                "account": acct.get("Name"),
+                "account_website": acct.get("Website"),
+                "domain": opp_domain,
+                "amount": o.get("Amount") or DEFAULT_OPP_AMOUNT,
+                "stage": o.get("StageName"),
+                "lead_source": o.get("LeadSource"),
+                "campaign": (o.get("Campaign") or {}).get("Name"),
+                "contacts": [
+                    {"name": (r.get("Contact") or {}).get("Name"),
+                     "title": (r.get("Contact") or {}).get("Title"),
+                     "email": (r.get("Contact") or {}).get("Email")}
+                    for r in roles
+                ],
+                "sfdc_link": f"{instance_url}/lightning/r/Opportunity/{o.get('Id')}/view",
+            })
+
+    # --- Contacts: any Contact already sitting on one of these Accounts is a
+    # strong "someone here is already a known relationship" signal, regardless
+    # of who owns the Account.
+    contact_query = """
+        SELECT Id, Name, Title, Email, AccountId, Account.Name, Account.Website
+        FROM Contact
+        WHERE Account.Website != null
+    """
+    contacts = soql(instance_url, token, contact_query)
+
+    company_engaged_via_contact = set()
+    for c in contacts:
+        acct = c.get("Account") or {}
+        d = domain_of(acct.get("Website"))
+        if d and d in lead_domains:
+            company_engaged_via_contact.add(d)
+
+    # --- Other Leads: any OTHER open (unconverted) Lead at the same domain,
+    # excluding the booth-scan Leads themselves, means someone else from that
+    # company is already a separate active thread with us.
+    company_engaged_via_other_lead = set()
+    if booth_scan_lead_ids:
+        exclude_ids = ",".join(f"'{esc(i)}'" for i in booth_scan_lead_ids)
+        other_lead_query = f"""
+            SELECT Id, Company, Website, Status, OwnerId, Owner.Name, CreatedDate
+            FROM Lead
+            WHERE Website != null AND IsConverted = false
+                  AND Id NOT IN ({exclude_ids})
+        """
+        other_leads = soql(instance_url, token, other_lead_query)
+        for ol in other_leads:
+            d = domain_of(ol.get("Website"))
+            if d and d in lead_domains:
+                company_engaged_via_other_lead.add(d)
+
+    company_already_engaged = (company_engaged_via_opp
+                                | company_engaged_via_contact
+                                | company_engaged_via_other_lead)
+
+    # Stamp each booth-scan lead with the company-level engagement flag.
+    for l in leads_out:
+        d = l.get("domain")
+        l["company_already_engaged"] = "Yes" if (d and d in company_already_engaged) else "No"
+
+    # --- Account-level (ABM/ABX) rollup: one row per company seen at the
+    # booth, tracking BOTH the breadth (how many leads/personas we're adding)
+    # and the depth (funnel stage of each, plus whether the account already
+    # had a relationship before RAISE).
+    by_domain = {}
+    for l in leads_out:
+        d = l.get("domain") or f"__no_domain__:{l.get('company')}"
+        by_domain.setdefault(d, []).append(l)
+
+    account_summary = []
+    for d, group in sorted(by_domain.items(), key=lambda kv: kv[0]):
+        companies = {g.get("company") for g in group if g.get("company")}
+        stage_counts = {}
+        for g in group:
+            stage = g.get("lifecycle_stage") or "Unknown"
+            stage_counts[stage] = stage_counts.get(stage, 0) + 1
+        account_summary.append({
+            "domain": None if d.startswith("__no_domain__:") else d,
+            "company": sorted(companies)[0] if companies else group[0].get("company"),
+            "booth_scan_lead_count": len(group),
+            "personas": [
+                {"name": f"{g.get('first_name') or ''} {g.get('last_name') or ''}".strip(),
+                 "title": g.get("title"),
+                 "lifecycle_stage": g.get("lifecycle_stage"),
+                 "owner": g.get("owner")}
+                for g in group
             ],
-            "sfdc_link": f"{instance_url}/lightning/r/Opportunity/{o.get('Id')}/view",
+            "lifecycle_stage_counts": stage_counts,
+            "company_already_engaged": "Yes" if d in company_already_engaged else "No",
+            "engaged_via_existing_opportunity": d in company_engaged_via_opp,
+            "engaged_via_existing_contact": d in company_engaged_via_contact,
+            "engaged_via_other_open_lead": d in company_engaged_via_other_lead,
+            "existing_opportunities_all_owners": [
+                {"owner": o["owner"], "stage": o["stage"], "amount": o["amount"]}
+                for o in opps_out if o["domain"] == d
+            ] if not d.startswith("__no_domain__:") else [],
         })
 
     # Rep-specific breakdown (leads + opps each rep owns)
@@ -216,15 +302,20 @@ def main():
     (OUT_DIR / "leads.json").write_text(json.dumps(leads_out, indent=2))
     (OUT_DIR / "opportunities.json").write_text(json.dumps(opps_out, indent=2))
     (OUT_DIR / "by_rep.json").write_text(json.dumps(by_rep, indent=2))
+    (OUT_DIR / "account_summary.json").write_text(json.dumps(account_summary, indent=2))
     (OUT_DIR / "meta.json").write_text(json.dumps({
         "campaign_ids": CAMPAIGN_IDS,
         "rep_names": REP_NAMES,
         "default_opp_amount": DEFAULT_OPP_AMOUNT,
         "lead_count": len(leads_out),
         "opp_count": len(opps_out),
+        "distinct_companies": len(account_summary),
+        "companies_already_engaged": sum(1 for a in account_summary if a["company_already_engaged"] == "Yes"),
+        "companies_net_new": sum(1 for a in account_summary if a["company_already_engaged"] == "No"),
     }, indent=2))
 
-    print(f"Wrote {len(leads_out)} leads and {len(opps_out)} opportunities to {OUT_DIR}")
+    print(f"Wrote {len(leads_out)} leads, {len(opps_out)} rep-owned opportunities, "
+          f"and {len(account_summary)} account rollups to {OUT_DIR}")
 
 
 if __name__ == "__main__":
