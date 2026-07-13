@@ -44,7 +44,7 @@ CAMPAIGN_IDS = [
     "701TV00000o6wcTYAQ",  # Booth Scans | 07-09-2026
 ]
 
-REP_NAMES = ["Sean Coughlin", "Greg Mark", "Abraham Miya", "Chris Bowen"]
+REP_NAMES = ["Sean Coughlin", "Greg Mark", "Abrahem Miya", "Chris Bowen"]  # NOTE: "Abrahem" matches the exact spelling of this Owner.Name in Salesforce
 DEFAULT_OPP_AMOUNT = 200000
 
 OUT_DIR = Path(__file__).resolve().parent.parent / "data"
