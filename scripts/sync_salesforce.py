@@ -526,6 +526,7 @@ def main():
             "lifecycle_stage_counts": stage_funnel(leads_2025),
             "pipegen_potential": len(opps_2025) * DEFAULT_OPP_AMOUNT,
             "real_opportunity_amount_total": sum(o["amount"] or 0 for o in opps_2025),
+            "opportunities": opps_2025,
         },
         "raise_2026": {
             "campaign_ids": CAMPAIGN_IDS,
