@@ -12,7 +12,49 @@
       "Remarket": 1
     },
     "pipegen_potential": 1000000,
-    "real_opportunity_amount_total": 290000.0
+    "real_opportunity_amount_total": 290000.0,
+    "opportunities": [
+      {
+        "opp_id": "006Kb00000JlkS6IAJ",
+        "owner": "Dan Zheng",
+        "account": "G-Research",
+        "domain": "gresearch.co.uk",
+        "amount": 0.0,
+        "stage": "Closed Lost"
+      },
+      {
+        "opp_id": "006Kb00000JlkSSIAZ",
+        "owner": "Amy Lee",
+        "account": "G-Research",
+        "domain": "gresearch.co.uk",
+        "amount": 90000.0,
+        "stage": "Closed Lost"
+      },
+      {
+        "opp_id": "006Kb00000JlkV3IAJ",
+        "owner": "Kent Kawahara",
+        "account": "G-Research",
+        "domain": "gresearch.co.uk",
+        "amount": null,
+        "stage": "Closed Lost"
+      },
+      {
+        "opp_id": "006TV00000OtANWYA3",
+        "owner": "Sean Coughlin",
+        "account": "Cudo Compute",
+        "domain": "cudocompute.com",
+        "amount": 200000.0,
+        "stage": "00 - Prospecting"
+      },
+      {
+        "opp_id": "006TV00000Wz0aAYAR",
+        "owner": "Sean Coughlin",
+        "account": "G-Research",
+        "domain": "gresearch.co.uk",
+        "amount": 0.0,
+        "stage": "00 - Prospecting"
+      }
+    ]
   },
   "raise_2026": {
     "campaign_ids": [
