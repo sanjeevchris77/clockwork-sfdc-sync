@@ -449,10 +449,14 @@ def main():
 
     overlap_opps = {
         "2025": [o for o in opps_2025 if o["domain"] in overlap_domains],
-        "2026": [{"opp_id": o["opp_id"], "owner": o["owner"], "account": o["account"],
-                   "domain": o["domain"], "amount": o["amount"], "stage": o["stage"]}
-                  for o in all_opps
-                  if domain_of((o.get("Account") or {}).get("Website")) in overlap_domains],
+        "2026": [
+            {"opp_id": o.get("Id"), "owner": (o.get("Owner") or {}).get("Name"),
+             "account": (o.get("Account") or {}).get("Name"),
+             "domain": domain_of((o.get("Account") or {}).get("Website")),
+             "amount": o.get("Amount"), "stage": o.get("StageName")}
+            for o in all_opps
+            if domain_of((o.get("Account") or {}).get("Website")) in overlap_domains
+        ],
     }
 
     comparison = {
