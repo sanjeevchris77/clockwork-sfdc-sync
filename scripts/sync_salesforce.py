@@ -92,6 +92,23 @@ def soql(instance_url, token, query):
     return records
 
 
+def fetch_report(instance_url, token, report_id):
+    """Fetch a saved Salesforce Report's data via the Analytics/Reports REST
+    API (read-only). Returns the raw report JSON (reportMetadata + factMap +
+    groupings), whose shape depends on the report's format (tabular, summary,
+    or matrix) -- exploratory, so callers should inspect the result before
+    assuming a specific structure. Returns None (non-fatal) if the API user
+    lacks Reports API access or the report doesn't exist/isn't visible to it."""
+    url = f"{instance_url}/services/data/v60.0/analytics/reports/{report_id}"
+    req = request.Request(url, headers={"Authorization": f"Bearer {token}"})
+    try:
+        with request.urlopen(req) as resp:
+            return json.loads(resp.read())
+    except error.HTTPError as e:
+        print(f"Report fetch failed for {report_id}:", e.read().decode(), file=sys.stderr)
+        return None
+
+
 def domain_of(url):
     """Normalize a website URL down to a bare registrable-ish domain for
     matching Leads to Opportunities/Accounts, e.g.
@@ -486,12 +503,46 @@ def main():
                      "email": (r.get("Contact") or {}).get("Email")}
                     for r in roles
                 ],
+                "sfdc_link": f"{instance_url}/lightning/r/Opportunity/{o.get('Id')}/view",
+            })
+
+    # Same shape, for the 2026 side -- ALL owners (org-wide), matched by
+    # domain, so the YoY Opportunity-stage comparison and drill-down can show
+    # every real 2026 Opportunity (not just the 4 tracked reps') with a
+    # Salesforce link, mirroring opps_2025 above.
+    opps_2026_all = []
+    for o in all_opps:
+        acct = o.get("Account") or {}
+        d = domain_of(acct.get("Website"))
+        if d and d in lead_domains:
+            roles = (o.get("OpportunityContactRoles") or {}).get("records", [])
+            opps_2026_all.append({
+                "opp_id": o.get("Id"),
+                "owner": (o.get("Owner") or {}).get("Name"),
+                "account": acct.get("Name"),
+                "domain": d,
+                "amount": o.get("Amount"),
+                "stage": o.get("StageName"),
+                "contacts": [
+                    {"name": (r.get("Contact") or {}).get("Name"),
+                     "title": (r.get("Contact") or {}).get("Title"),
+                     "email": (r.get("Contact") or {}).get("Email")}
+                    for r in roles
+                ],
+                "sfdc_link": f"{instance_url}/lightning/r/Opportunity/{o.get('Id')}/view",
             })
 
     def stage_funnel(lead_list):
         counts = {}
         for l in lead_list:
             s = l.get("lifecycle_stage") or "Unknown"
+            counts[s] = counts.get(s, 0) + 1
+        return counts
+
+    def opp_stage_funnel(opp_list):
+        counts = {}
+        for o in opp_list:
+            s = o.get("stage") or "Unknown"
             counts[s] = counts.get(s, 0) + 1
         return counts
 
@@ -531,6 +582,7 @@ def main():
             "lead_count": len(leads_2025),
             "opportunity_count": len(opps_2025),
             "lifecycle_stage_counts": stage_funnel(leads_2025),
+            "opp_stage_counts": opp_stage_funnel(opps_2025),
             "pipegen_potential": len(opps_2025) * DEFAULT_OPP_AMOUNT,
             "real_opportunity_amount_total": sum(o["amount"] or 0 for o in opps_2025),
             "opportunities": opps_2025,
@@ -538,15 +590,12 @@ def main():
         "raise_2026": {
             "campaign_ids": CAMPAIGN_IDS,
             "lead_count": len(leads_out),
-            "opportunity_count": len([o for o in all_opps
-                                        if domain_of((o.get("Account") or {}).get("Website")) in lead_domains]),
+            "opportunity_count": len(opps_2026_all),
             "lifecycle_stage_counts": stage_funnel(leads_out),
-            "pipegen_potential": len([o for o in all_opps
-                                        if domain_of((o.get("Account") or {}).get("Website")) in lead_domains]) * DEFAULT_OPP_AMOUNT,
-            "real_opportunity_amount_total": sum(
-                o.get("Amount") or 0 for o in all_opps
-                if domain_of((o.get("Account") or {}).get("Website")) in lead_domains
-            ),
+            "opp_stage_counts": opp_stage_funnel(opps_2026_all),
+            "pipegen_potential": len(opps_2026_all) * DEFAULT_OPP_AMOUNT,
+            "real_opportunity_amount_total": sum(o["amount"] or 0 for o in opps_2026_all),
+            "opportunities": opps_2026_all,
         },
         "overlap": {
             "overlapping_lead_emails": sorted(overlap_emails),
@@ -562,6 +611,19 @@ def main():
     (OUT_DIR / "year_comparison.json").write_text(json.dumps(comparison, indent=2))
     print(f"Wrote {len(leads_2025)} RAISE 2025 booth leads (with engagement flag) "
           f"and year_comparison.json to {OUT_DIR}")
+
+    # --- One-off, exploratory pull of a specific saved Salesforce Report
+    # (Report Id, "00O" prefix -- NOT a Campaign) that the user referenced.
+    # Read-only, non-fatal: dumps the raw Reports API response as-is so its
+    # actual structure (tabular/summary/matrix) can be inspected before any
+    # further processing is built around it.
+    AD_HOC_REPORT_ID = "00OTV00000RC7fi2AD"
+    report_data = fetch_report(instance_url, token, AD_HOC_REPORT_ID)
+    if report_data is not None:
+        (OUT_DIR / f"report_{AD_HOC_REPORT_ID}.json").write_text(json.dumps(report_data, indent=2))
+        print(f"Wrote raw Report {AD_HOC_REPORT_ID} data to {OUT_DIR}/report_{AD_HOC_REPORT_ID}.json")
+    else:
+        print(f"Report {AD_HOC_REPORT_ID} fetch failed or unavailable (see stderr above) -- non-fatal.", file=sys.stderr)
 
 
 if __name__ == "__main__":
