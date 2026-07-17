@@ -958,13 +958,13 @@
         "name": "Cedric Auliac",
         "title": "AI Program Director",
         "lifecycle_stage": "In Progress (MEL)",
-        "owner": "Joe Tarantino"
+        "owner": "Abrahem Miya"
       },
       {
         "name": "Raphaelle Achach",
         "title": "AI project manager - AI Factory France",
         "lifecycle_stage": "In Progress (MEL)",
-        "owner": "Joe Tarantino"
+        "owner": "Abrahem Miya"
       }
     ],
     "lifecycle_stage_counts": {
@@ -1635,7 +1635,7 @@
         "name": "Arnold Juffer",
         "title": "CEO",
         "lifecycle_stage": "In Progress (MEL)",
-        "owner": "Joe Tarantino"
+        "owner": "Abrahem Miya"
       }
     ],
     "lifecycle_stage_counts": {
@@ -1722,14 +1722,14 @@
   },
   {
     "domain": "outscale.com",
-    "company": "OUTSCALE \u201a\u00c4\u00ec Dassault Syst?\u00aemes",
+    "company": "OUTSCALE \u201a\u00c4\u00ec Dassault Syst\u00e8mes",
     "booth_scan_lead_count": 1,
     "personas": [
       {
         "name": "Gilbert Gaspard",
         "title": "Head of AI",
         "lifecycle_stage": "In Progress (MEL)",
-        "owner": "Joe Tarantino"
+        "owner": "Abrahem Miya"
       }
     ],
     "lifecycle_stage_counts": {
@@ -1829,7 +1829,7 @@
         "name": "Th\u00e9o DING",
         "title": "Senior AI Engineer",
         "lifecycle_stage": "In Progress (MEL)",
-        "owner": "Joe Tarantino"
+        "owner": "Abrahem Miya"
       }
     ],
     "lifecycle_stage_counts": {
@@ -1879,7 +1879,7 @@
         "name": "Virgile Dier",
         "title": "Ai partnership",
         "lifecycle_stage": "In Progress (MQL)",
-        "owner": "Joe Tarantino"
+        "owner": "Abrahem Miya"
       }
     ],
     "lifecycle_stage_counts": {
