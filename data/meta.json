@@ -2,7 +2,10 @@
   "campaign_ids": [
     "701TV00000oNI18YAG",
     "701TV00000o71ibYAA",
-    "701TV00000o6wcTYAQ"
+    "701TV00000o6wcTYAQ",
+    "701TV00000sNZu9YAG",
+    "701TV00000sNsqGYAS",
+    "701TV00000sNm8AYAS"
   ],
   "rep_names": [
     "Sean Coughlin",
@@ -11,12 +14,12 @@
     "Chris Bowen"
   ],
   "default_opp_amount": 200000,
-  "lead_count": 110,
-  "opp_count": 7,
-  "distinct_companies": 92,
-  "companies_already_engaged": 20,
-  "companies_net_new": 72,
-  "potential_pipeline_real_open_opportunity_total": 2400000.0,
-  "potential_pipeline_estimated_total": 17400000,
-  "potential_pipeline_total": 19800000.0
+  "lead_count": 139,
+  "opp_count": 14,
+  "distinct_companies": 120,
+  "companies_already_engaged": 34,
+  "companies_net_new": 86,
+  "potential_pipeline_real_open_opportunity_total": 3800000.0,
+  "potential_pipeline_estimated_total": 22200000,
+  "potential_pipeline_total": 26000000.0
 }

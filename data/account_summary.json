@@ -75,6 +75,31 @@
     "potential_pipeline_basis": "estimated"
   },
   {
+    "domain": "advancy.com",
+    "company": "Advancy",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Basile Guyonvarch",
+        "title": "Senior strategy consultant",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
     "domain": "airhelp.com",
     "company": "AirHelp",
     "booth_scan_lead_count": 1,
@@ -341,6 +366,56 @@
     "potential_pipeline_basis": "estimated"
   },
   {
+    "domain": "botifull.ai",
+    "company": "Botifull",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Maxime Le Berre",
+        "title": "Co-founder",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
+    "domain": "breakingviews.com",
+    "company": "Reuters Breakingviews",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Karen Kwok",
+        "title": "Global Tech columnist",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Chris Bowen"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
     "domain": "bull.com",
     "company": "Bull",
     "booth_scan_lead_count": 1,
@@ -466,6 +541,31 @@
     "potential_pipeline_basis": "estimated"
   },
   {
+    "domain": "cerebras.ai",
+    "company": "Cerebras",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Kriselle Laran",
+        "title": "Communications leader",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": true,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
     "domain": "cfex.ai",
     "company": "CFEX AI",
     "booth_scan_lead_count": 1,
@@ -553,6 +653,75 @@
     "potential_pipeline_basis": "real_open_opportunity"
   },
   {
+    "domain": "cnbc.com",
+    "company": "CNBC",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Arjun Kharpal",
+        "title": "Senior Tech Correspondent",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Chris Bowen"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
+    "domain": "coreweave.com",
+    "company": "CoreWeave",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Anthony Kolodynski",
+        "title": "Head of UKI & Northern Europe GTM",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Sean Coughlin"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": true,
+    "engaged_via_existing_contact": true,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": [
+      {
+        "opp_id": "006TV00000CRorRYAT",
+        "owner": "Dan Zheng",
+        "account": "CoreWeave",
+        "stage": "Closed Lost",
+        "amount": 250000.0,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000CRorRYAT/view"
+      },
+      {
+        "opp_id": "006TV00000U4duMYAR",
+        "owner": "Sean Coughlin",
+        "account": "CoreWeave",
+        "stage": "03 - Technical Validation",
+        "amount": 550000.0,
+        "is_open": true,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000U4duMYAR/view"
+      }
+    ],
+    "has_open_opportunity": true,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 550000.0,
+    "potential_pipeline_basis": "real_open_opportunity"
+  },
+  {
     "domain": "crms.org",
     "company": "Crms",
     "booth_scan_lead_count": 1,
@@ -611,6 +780,31 @@
     "is_qualified_contact": false,
     "potential_pipeline_amount": 200000.0,
     "potential_pipeline_basis": "real_open_opportunity"
+  },
+  {
+    "domain": "cursor.com",
+    "company": "Cursor",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Katy Abbaszadeh",
+        "title": "VP Revenue Marketing",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
   },
   {
     "domain": "danone.com",
@@ -950,6 +1144,31 @@
     "potential_pipeline_basis": "estimated"
   },
   {
+    "domain": "fieldai.com",
+    "company": "FieldAI",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Ali Agha",
+        "title": "Co-founder & CEO",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
     "domain": "fronius.com",
     "company": "Fronius International GmbH",
     "booth_scan_lead_count": 1,
@@ -1027,6 +1246,93 @@
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
     "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
+    "domain": "gimletlabs.ai",
+    "company": "Gimlet Labs",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Zain Asgar",
+        "title": "Co-Founder & CEO",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
+    "domain": "google.com",
+    "company": "Google",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Caelum Rosenkranz",
+        "title": "AI & Cloud GTM",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": true,
+    "engaged_via_existing_contact": true,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": [
+      {
+        "opp_id": "006Kb00000JlkSHIAZ",
+        "owner": "Dan Zheng",
+        "account": "Google",
+        "stage": "Closed Lost",
+        "amount": 200000,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkSHIAZ/view"
+      },
+      {
+        "opp_id": "006Kb00000JlkTIIAZ",
+        "owner": "Kent Kawahara",
+        "account": "Google",
+        "stage": "Closed Lost",
+        "amount": 200000,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkTIIAZ/view"
+      },
+      {
+        "opp_id": "006Kb00000JlkUvIAJ",
+        "owner": "Kent Kawahara",
+        "account": "Google",
+        "stage": "Closed Lost",
+        "amount": 200000,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkUvIAJ/view"
+      },
+      {
+        "opp_id": "006Kb00000JlkUxIAJ",
+        "owner": "Kent Kawahara",
+        "account": "Google",
+        "stage": "Closed Lost",
+        "amount": 200000,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkUxIAJ/view"
+      }
+    ],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
     "potential_pipeline_amount": 200000,
     "potential_pipeline_basis": "estimated"
   },
@@ -1256,6 +1562,31 @@
     "potential_pipeline_basis": "estimated"
   },
   {
+    "domain": "intermodalics.ai",
+    "company": "Intermodalics",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Peter Soetens",
+        "title": "CEO",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
     "domain": "internetdownloadmanager.com",
     "company": "IDM",
     "booth_scan_lead_count": 1,
@@ -1306,6 +1637,50 @@
     "potential_pipeline_basis": "estimated"
   },
   {
+    "domain": "iren.com",
+    "company": "IREN",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Anthony Stead",
+        "title": "Account Executive",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": true,
+    "engaged_via_existing_contact": true,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": [
+      {
+        "opp_id": "006TV00000FTNwkYAH",
+        "owner": "Sean Coughlin",
+        "account": "IREN",
+        "stage": "Closed Lost",
+        "amount": 100000.0,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000FTNwkYAH/view"
+      },
+      {
+        "opp_id": "006TV00000bo5jxYAA",
+        "owner": "Greg Mark",
+        "account": "IREN",
+        "stage": "00 - Prospecting",
+        "amount": 200000.0,
+        "is_open": true,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000bo5jxYAA/view"
+      }
+    ],
+    "has_open_opportunity": true,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000.0,
+    "potential_pipeline_basis": "real_open_opportunity"
+  },
+  {
     "domain": "ironmountain.com",
     "company": "Iron Mountain",
     "booth_scan_lead_count": 1,
@@ -1338,6 +1713,31 @@
       {
         "name": "Vangjush Stavro",
         "title": "Co-Founder",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
+    "domain": "ledger.com",
+    "company": "Ledger",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Ariel Wengroff",
+        "title": "EVP, Communications & Marketing",
         "lifecycle_stage": "In Progress (MEL)",
         "owner": "Abrahem Miya"
       }
@@ -1456,6 +1856,31 @@
     "potential_pipeline_basis": "estimated"
   },
   {
+    "domain": "make.com",
+    "company": "Make (by Celonis)",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Sara Maldon",
+        "title": "AI Automation & Transformation lead",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
     "domain": "maman.consulting",
     "company": "Maman Consulting",
     "booth_scan_lead_count": 1,
@@ -1502,6 +1927,31 @@
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
     "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
+    "domain": "metronome.com",
+    "company": "Metronome",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Scott Woody",
+        "title": "Founder & CEO",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
     "potential_pipeline_amount": 200000,
     "potential_pipeline_basis": "estimated"
   },
@@ -1724,6 +2174,68 @@
     "potential_pipeline_basis": "estimated"
   },
   {
+    "domain": "nasdaq.com",
+    "company": "Nasdaq",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Bianca Monica",
+        "title": "New Listings & Capital Markets",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Chris Bowen"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": true,
+    "engaged_via_existing_contact": true,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": [
+      {
+        "opp_id": "006Kb00000JlkRdIAJ",
+        "owner": "Dan Zheng",
+        "account": "Nasdaq",
+        "stage": "Closed Won",
+        "amount": 400000.0,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkRdIAJ/view"
+      },
+      {
+        "opp_id": "006Kb00000JlkRhIAJ",
+        "owner": "Dan Zheng",
+        "account": "Nasdaq",
+        "stage": "Closed Won",
+        "amount": 300000.0,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkRhIAJ/view"
+      },
+      {
+        "opp_id": "006Kb00000JlkSIIAZ",
+        "owner": "Dan Zheng",
+        "account": "Nasdaq",
+        "stage": "Closed Lost",
+        "amount": 100000.0,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkSIIAZ/view"
+      },
+      {
+        "opp_id": "006Kb00000JlkXcIAJ",
+        "owner": "Dan Zheng",
+        "account": "Nasdaq",
+        "stage": "Closed Lost",
+        "amount": 250000.0,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkXcIAJ/view"
+      }
+    ],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
     "domain": "nebul.com",
     "company": "Nebul",
     "booth_scan_lead_count": 1,
@@ -1843,6 +2355,100 @@
     "potential_pipeline_basis": "estimated"
   },
   {
+    "domain": "nvidia.com",
+    "company": "NVIDIA",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Jim Fan",
+        "title": "Director of AI & Distinguished Scientist",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Sean Coughlin"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": true,
+    "engaged_via_existing_contact": true,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": [
+      {
+        "opp_id": "006Kb00000JlkXIIAZ",
+        "owner": "Dan Zheng",
+        "account": "Nvidia",
+        "stage": "02 - Pilot Kick Off",
+        "amount": 250000.0,
+        "is_open": true,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkXIIAZ/view"
+      },
+      {
+        "opp_id": "006TV00000LLYgvYAH",
+        "owner": "Sean Coughlin",
+        "account": "Nvidia",
+        "stage": "01 - Qualified",
+        "amount": 200000.0,
+        "is_open": true,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000LLYgvYAH/view"
+      }
+    ],
+    "has_open_opportunity": true,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 450000.0,
+    "potential_pipeline_basis": "real_open_opportunity"
+  },
+  {
+    "domain": "nyobolt.com",
+    "company": "Nyobolt",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Sai Shivareddy",
+        "title": "CEO & Co-Founder",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
+    "domain": "nyse.com",
+    "company": "NYSE",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Brian J. Baumann",
+        "title": "Technology Innovation",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Chris Bowen"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
     "domain": "outscale.com",
     "company": "OUTSCALE \u201a\u00c4\u00ec Dassault Syst\u00e8mes",
     "booth_scan_lead_count": 1,
@@ -1918,6 +2524,31 @@
     "potential_pipeline_basis": "estimated"
   },
   {
+    "domain": "parallel.ai",
+    "company": "Parallel Web Systems",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Travers Nisbet",
+        "title": "Co-Founder",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
     "domain": "pearlresearch.ai",
     "company": "Pearl Research Labs",
     "booth_scan_lead_count": 1,
@@ -1968,6 +2599,31 @@
     "potential_pipeline_basis": "estimated"
   },
   {
+    "domain": "pindrop.com",
+    "company": "Pindrop",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Adriana Gil Miner",
+        "title": "CMO",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Chris Bowen"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
     "domain": "portaone.com",
     "company": "PortaOne",
     "booth_scan_lead_count": 1,
@@ -1987,6 +2643,101 @@
     "engaged_via_existing_contact": false,
     "engaged_via_other_open_lead": false,
     "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
+    "domain": "replit.com",
+    "company": "Replit",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Brendan Dugan",
+        "title": "events/demand gen marketing",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
+    "domain": "runwayml.com",
+    "company": "Runway.ai",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Anastasis Germanidis",
+        "title": "CEO",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Sean Coughlin"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": true,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": [
+      {
+        "opp_id": "006TV00000WyvdjYAB",
+        "owner": "Sean Coughlin",
+        "account": "Runway AI",
+        "stage": "00 - Prospecting",
+        "amount": 200000.0,
+        "is_open": true,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000WyvdjYAB/view"
+      }
+    ],
+    "has_open_opportunity": true,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000.0,
+    "potential_pipeline_basis": "real_open_opportunity"
+  },
+  {
+    "domain": "scaleway.com",
+    "company": "Scaleway",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "B\u00e9atrice Harrois",
+        "title": "Fractional CMO",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": true,
+    "engaged_via_existing_contact": true,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": [
+      {
+        "opp_id": "006TV00000MB0RTYA1",
+        "owner": "Sean Coughlin",
+        "account": "Scaleway",
+        "stage": "Closed Lost",
+        "amount": 200000.0,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000MB0RTYA1/view"
+      }
+    ],
     "has_open_opportunity": false,
     "is_qualified_contact": false,
     "potential_pipeline_amount": 200000,
@@ -2043,6 +2794,31 @@
     "potential_pipeline_basis": "estimated"
   },
   {
+    "domain": "skhynix.com",
+    "company": "SK hynix",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Hoshik Kim",
+        "title": "SVP & Fellow, Memory Systems Research",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Joe Tarantino"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": true,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
     "domain": "spitze.ai",
     "company": "Spitze.AI",
     "booth_scan_lead_count": 1,
@@ -2064,6 +2840,31 @@
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
     "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
+    "domain": "starcloud.com",
+    "company": "Starcloud",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Philip Johnston",
+        "title": "Co-Founder & CEO",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
     "potential_pipeline_amount": 200000,
     "potential_pipeline_basis": "estimated"
   },
@@ -2118,9 +2919,34 @@
     "potential_pipeline_basis": "estimated"
   },
   {
+    "domain": "stryker.com",
+    "company": "Stryker",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Jean Chaoui",
+        "title": "Vice President Enabling Technologies",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Sean Coughlin"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
     "domain": "supermicro.com",
     "company": "Supermicro",
-    "booth_scan_lead_count": 2,
+    "booth_scan_lead_count": 3,
     "personas": [
       {
         "name": "Vik Malyala",
@@ -2133,10 +2959,16 @@
         "title": "Business Development Manager",
         "lifecycle_stage": "In Progress (MQL)",
         "owner": "Greg Mark"
+      },
+      {
+        "name": "Vik Malyala",
+        "title": "Chief Business Officer",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Greg Mark"
       }
     ],
     "lifecycle_stage_counts": {
-      "In Progress (SAL)": 1,
+      "In Progress (SAL)": 2,
       "In Progress (MQL)": 1
     },
     "company_already_engaged": "Yes",
@@ -2181,6 +3013,41 @@
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
     "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
+    "domain": "synopsys.com",
+    "company": "Synopsys",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Thomas Lejune",
+        "title": "Product Marketing",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Sean Coughlin"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": true,
+    "engaged_via_existing_contact": true,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": [
+      {
+        "opp_id": "006TV00000SESQvYAP",
+        "owner": "Greg Mark",
+        "account": "Synopsys",
+        "stage": "Closed Lost",
+        "amount": 200000,
+        "is_open": false,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000SESQvYAP/view"
+      }
+    ],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
     "potential_pipeline_amount": 200000,
     "potential_pipeline_basis": "estimated"
   },
