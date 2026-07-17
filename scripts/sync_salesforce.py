@@ -37,11 +37,14 @@ SF_LOGIN_URL = os.environ["SF_LOGIN_URL"]
 CLIENT_ID = os.environ["SF_CLIENT_ID"]
 CLIENT_SECRET = os.environ["SF_CLIENT_SECRET"]
 
-# The 3 RAISE 2026 Booth Scan campaigns (Paris)
+# The RAISE 2026 Booth Scan + venue-track campaigns (Paris)
 CAMPAIGN_IDS = [
     "701TV00000oNI18YAG",  # Booth Scans | 07-07-2026
     "701TV00000o71ibYAA",  # Booth Scans | 07-08-2026
     "701TV00000o6wcTYAQ",  # Booth Scans | 07-09-2026
+    "701TV00000sNZu9YAG",  # [Raise26Paris] Machina | 07-09-2026
+    "701TV00000sNsqGYAS",  # [Raise26Paris] HumanX | 07-09-2026
+    "701TV00000sNm8AYAS",  # [Raise26Paris] VIP Access | 07-09-2026
 ]
 
 REP_NAMES = ["Sean Coughlin", "Greg Mark", "Abrahem Miya", "Chris Bowen"]  # NOTE: "Abrahem" matches the exact spelling of this Owner.Name in Salesforce
@@ -572,7 +575,8 @@ def main():
 
     comparison = {
         "methodology": ("Booth-only comparison: RAISE 2025 'Booth Visitors | Post-Conf' campaign "
-                         "vs RAISE 2026's 3 'Booth Scans' campaigns. Opportunities matched to booth "
+                         "vs RAISE 2026's 6 in-person campaigns (3 'Booth Scans' + Machina, HumanX, "
+                         "and VIP Access). Opportunities matched to booth "
                          "leads by website domain (not CampaignId, which undercounts for both years). "
                          "Pipegen potential uses a UNIFORM $200,000 per Opportunity for both years "
                          "(not real Opportunity Amounts), per explicit request, so the two years are "
