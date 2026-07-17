@@ -11,12 +11,12 @@
     "Chris Bowen"
   ],
   "default_opp_amount": 200000,
-  "lead_count": 104,
-  "opp_count": 6,
-  "distinct_companies": 88,
-  "companies_already_engaged": 17,
-  "companies_net_new": 71,
-  "potential_pipeline_real_open_opportunity_total": 2250000.0,
-  "potential_pipeline_estimated_total": 16800000,
-  "potential_pipeline_total": 19050000.0
+  "lead_count": 110,
+  "opp_count": 7,
+  "distinct_companies": 92,
+  "companies_already_engaged": 20,
+  "companies_net_new": 72,
+  "potential_pipeline_real_open_opportunity_total": 2400000.0,
+  "potential_pipeline_estimated_total": 17400000,
+  "potential_pipeline_total": 19800000.0
 }

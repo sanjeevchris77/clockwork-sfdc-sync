@@ -82,21 +82,22 @@
       "701TV00000o71ibYAA",
       "701TV00000o6wcTYAQ"
     ],
-    "lead_count": 104,
-    "opportunity_count": 18,
+    "lead_count": 110,
+    "opportunity_count": 19,
     "lifecycle_stage_counts": {
       "In Progress (MQL)": 6,
       "In Progress (MEL)": 90,
-      "In Progress (SAL)": 8
+      "In Progress (SAL)": 14
     },
     "opp_stage_counts": {
       "Closed Lost": 12,
       "Closed Won": 2,
       "03 - Technical Validation": 2,
-      "00 - Prospecting": 2
+      "00 - Prospecting": 2,
+      "01 - Qualified": 1
     },
-    "pipegen_potential": 3600000,
-    "real_opportunity_amount_total": 7780000.0,
+    "pipegen_potential": 3800000,
+    "real_opportunity_amount_total": 7930000.0,
     "opportunities": [
       {
         "opp_id": "006Kb00000JlkRyIAJ",
@@ -385,6 +386,16 @@
           }
         ],
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000SnzDVYAZ/view"
+      },
+      {
+        "opp_id": "006TV00000Wz6VtYAJ",
+        "owner": "Greg Mark",
+        "account": "Modal Labs",
+        "domain": "modal.com",
+        "amount": 150000.0,
+        "stage": "01 - Qualified",
+        "contacts": [],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000Wz6VtYAJ/view"
       }
     ]
   },

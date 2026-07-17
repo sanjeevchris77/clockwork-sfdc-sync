@@ -391,6 +391,31 @@
     "potential_pipeline_basis": "estimated"
   },
   {
+    "domain": "cassavatechnologies.com",
+    "company": "Cassava",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Oswald Jumira",
+        "title": "SVP Strategic Partnerships",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Chris Bowen"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
     "domain": "cea.nic.in",
     "company": "CEA",
     "booth_scan_lead_count": 1,
@@ -1131,6 +1156,31 @@
     "potential_pipeline_basis": "estimated"
   },
   {
+    "domain": "hyperstack.cloud",
+    "company": "Hyperstack",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Karl Kloppenborg",
+        "title": "Vice President Engineering",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Greg Mark"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
     "domain": "iforce.uk",
     "company": "iForce Connect",
     "booth_scan_lead_count": 1,
@@ -1577,6 +1627,53 @@
     "potential_pipeline_basis": "estimated"
   },
   {
+    "domain": "modal.com",
+    "company": "Modal",
+    "booth_scan_lead_count": 3,
+    "personas": [
+      {
+        "name": "Matt Zebert",
+        "title": "GTM",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Sean Coughlin"
+      },
+      {
+        "name": "Ellen Lee",
+        "title": "GTM",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Sean Coughlin"
+      },
+      {
+        "name": "Erik Bernhardsson",
+        "title": "CEO & Co-founder",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Sean Coughlin"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 3
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": true,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": [
+      {
+        "opp_id": "006TV00000Wz6VtYAJ",
+        "owner": "Greg Mark",
+        "account": "Modal Labs",
+        "stage": "01 - Qualified",
+        "amount": 150000.0,
+        "is_open": true,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000Wz6VtYAJ/view"
+      }
+    ],
+    "has_open_opportunity": true,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 150000.0,
+    "potential_pipeline_basis": "real_open_opportunity"
+  },
+  {
     "domain": "multiversecomputing.com",
     "company": "Multiverse Computing",
     "booth_scan_lead_count": 1,
@@ -1682,6 +1779,31 @@
     "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": true,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": true,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated"
+  },
+  {
+    "domain": "nexgencloud.com",
+    "company": "NexGen Cloud (Hyperstack)",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Hiren Parekh",
+        "title": "Global AI & HPC Infrastructure",
+        "lifecycle_stage": "In Progress (SAL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (SAL)": 1
+    },
+    "company_already_engaged": "Yes",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": true,
     "engaged_via_other_open_lead": true,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,

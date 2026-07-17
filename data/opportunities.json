@@ -120,5 +120,19 @@
       }
     ],
     "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000SnzDVYAZ/view"
+  },
+  {
+    "opp_id": "006TV00000Wz6VtYAJ",
+    "owner": "Greg Mark",
+    "account": "Modal Labs",
+    "account_website": "www.modal.com",
+    "domain": "modal.com",
+    "amount": 150000.0,
+    "stage": "01 - Qualified",
+    "is_open": true,
+    "lead_source": "Sales",
+    "campaign": null,
+    "contacts": [],
+    "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000Wz6VtYAJ/view"
   }
 ]
