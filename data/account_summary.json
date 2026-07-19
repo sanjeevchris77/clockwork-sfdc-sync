@@ -913,7 +913,7 @@
     "personas": [
       {
         "name": "Selim Nowicki",
-        "title": "CEO",
+        "title": "Co-founder",
         "lifecycle_stage": "In Progress (MEL)",
         "owner": "Abrahem Miya"
       }
@@ -2267,7 +2267,7 @@
     "personas": [
       {
         "name": "Alex Saroyan",
-        "title": "CEO",
+        "title": "CEO & Co-founder",
         "lifecycle_stage": "In Progress (MQL)",
         "owner": "Greg Mark"
       },
@@ -3412,8 +3412,8 @@
         "owner": "Chris Bowen"
       },
       {
-        "name": "Brian ONeil",
-        "title": "SVP, AI & Platform Engineering",
+        "name": "Brian O'Neil",
+        "title": "SVP, AI and Data Platforms",
         "lifecycle_stage": "In Progress (MEL)",
         "owner": "Chris Bowen"
       }

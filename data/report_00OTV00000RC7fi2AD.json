@@ -9573,14 +9573,14 @@
               "value": "00QTV00000UeFjt2AF"
             },
             {
-              "label": "CEO",
+              "label": "CEO & Co-founder",
               "recordId": "00QTV00000UeFjt2AF",
-              "value": "CEO"
+              "value": "CEO & Co-founder"
             },
             {
-              "escapedLabel": "-",
-              "label": "-",
-              "value": null
+              "escapedLabel": "VPC networking for on-prem/edge/bare metal. he stopped by our booth along with a few others.",
+              "label": "VPC networking for on-prem/edge/bare metal. he stopped by our booth along with a few others.",
+              "value": "VPC networking for on-prem/edge/bare metal. he stopped by our booth along with a few others."
             },
             {
               "label": "alex@netris.io",
@@ -9737,14 +9737,14 @@
               "value": "00QTV00000ZuGqj2AF"
             },
             {
-              "label": "CEO",
+              "label": "Co-founder",
               "recordId": "00QTV00000ZuGqj2AF",
-              "value": "CEO"
+              "value": "Co-founder"
             },
             {
-              "escapedLabel": "-",
-              "label": "-",
-              "value": null
+              "escapedLabel": "replacing LLMs with custom SLMs",
+              "label": "replacing LLMs with custom SLMs",
+              "value": "replacing LLMs with custom SLMs"
             },
             {
               "label": "selim@distillabs.ai",
@@ -9793,14 +9793,14 @@
               "value": "Event"
             },
             {
-              "label": "Business Executive",
+              "label": "Technical Executive",
               "recordId": "00QTV00000ZuGqj2AF",
-              "value": "Business Executive"
+              "value": "Technical Executive"
             },
             {
-              "escapedLabel": "Partner ISV; ",
-              "label": "Partner ISV; ",
-              "value": "Partner ISV; "
+              "escapedLabel": "Enterprise; Partner ISV; ",
+              "label": "Enterprise; Partner ISV; ",
+              "value": "Enterprise; Partner ISV; "
             },
             {
               "escapedLabel": "Technology",
@@ -9808,9 +9808,9 @@
               "value": "Technology"
             },
             {
-              "escapedLabel": "Low",
-              "label": "Low",
-              "value": "Low"
+              "escapedLabel": "High",
+              "label": "High",
+              "value": "High"
             },
             {
               "label": "-",
@@ -16620,14 +16620,14 @@
               "value": "00QTV00000ZuGsj2AF"
             },
             {
-              "label": "ONeil",
+              "label": "O'Neil",
               "recordId": "00QTV00000ZuGsj2AF",
               "value": "00QTV00000ZuGsj2AF"
             },
             {
-              "label": "SVP, AI & Platform Engineering",
+              "label": "SVP, AI and Data Platforms",
               "recordId": "00QTV00000ZuGsj2AF",
-              "value": "SVP, AI & Platform Engineering"
+              "value": "SVP, AI and Data Platforms"
             },
             {
               "escapedLabel": "-",
