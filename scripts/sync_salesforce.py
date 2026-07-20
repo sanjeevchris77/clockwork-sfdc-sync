@@ -152,6 +152,46 @@ def is_open_stage(stage):
     return "closed" not in (stage or "").lower()
 
 
+# RAISE 2026 event start date (Paris). Used to distinguish an Opportunity
+# that is genuinely NEW because of this event from one that already existed
+# in the pipeline and merely happens to match a booth-scan account by domain.
+RAISE_2026_START_DATE = "2026-07-07"
+
+
+def opp_origin(created_date, lead_source):
+    """Classify an Opportunity as "Net New" (genuinely sourced from RAISE
+    2026) vs "Existing" (a pre-existing pipeline deal).
+
+    Existing = Created Date on or before RAISE_2026_START_DATE, for a
+    domain-matched account -- true regardless of Lead Source, stage, or
+    whether it's since closed. A deal that was already Closed Lost, or
+    already deep into later stages, obviously predates a booth conversation
+    that happened only days ago.
+
+    Net New requires ALL of:
+      (a) Lead Source is exactly "RAISE 2026" (not a generic "Event" tag,
+          which could reflect any past event/conference), AND
+      (b) Created Date is on/after RAISE_2026_START_DATE, AND
+      (c) it's already domain-matched to a RAISE 2026 booth-scan account
+          (guaranteed by the domain-match filter this runs inside of).
+
+    "Day 0" opportunities are expected and valid: a booth conversation can
+    be extensive enough to justify creating an Opportunity straight at a
+    later stage (skipping earlier lead stages), or to progress quickly
+    through stages post-event. The one thing that's NOT plausible for a
+    genuine Net New deal is already being Closed Lost within days of the
+    event -- but that's naturally excluded here since it would require both
+    the exact "RAISE 2026" Lead Source tag AND a created date in-window,
+    which a truly pre-existing/lost deal won't have.
+    """
+    if not created_date:
+        return "Existing"
+    created_day = created_date[:10]  # ISO datetime "YYYY-MM-DDTHH:MM:SS..." -> date prefix
+    if created_day >= RAISE_2026_START_DATE and lead_source == "RAISE 2026":
+        return "Net New"
+    return "Existing"
+
+
 def pull_campaign_leads(instance_url, token, campaign_ids):
     """Pull CampaignMember->Lead rows for a list of Campaign Ids, shaped
     identically for both the 2026 booth-scan campaigns and the 2025
@@ -221,7 +261,7 @@ def main():
     # won't be tagged with the campaign directly).
     opp_query = """
         SELECT Id, OwnerId, Owner.Name, AccountId, Account.Name, Account.Website,
-               Amount, StageName, LeadSource, CampaignId, Campaign.Name,
+               Amount, StageName, LeadSource, CreatedDate, CampaignId, Campaign.Name,
                (SELECT Contact.Name, Contact.Title, Contact.Email FROM OpportunityContactRoles)
         FROM Opportunity
         WHERE Account.Website != null
@@ -269,6 +309,8 @@ def main():
                 "stage": o.get("StageName"),
                 "is_open": is_open_stage(o.get("StageName")),
                 "lead_source": o.get("LeadSource"),
+                "created_date": o.get("CreatedDate"),
+                "origin": opp_origin(o.get("CreatedDate"), o.get("LeadSource")),
                 "campaign": (o.get("Campaign") or {}).get("Name"),
                 "contacts": [
                     {"name": (r.get("Contact") or {}).get("Name"),
