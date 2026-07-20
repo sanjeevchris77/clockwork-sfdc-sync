@@ -90,7 +90,8 @@
     "lifecycle_stage_counts": {
       "In Progress (MQL)": 6,
       "In Progress (MEL)": 98,
-      "In Progress (SAL)": 35
+      "In Progress (SAL)": 33,
+      "Unqualified": 2
     },
     "opp_stage_counts": {
       "Closed Won": 4,
@@ -661,7 +662,7 @@
       },
       {
         "opp_id": "006TV00000Wz6VtYAJ",
-        "owner": "Greg Mark",
+        "owner": "Chris Bowen",
         "account": "Modal Labs",
         "domain": "modal.com",
         "amount": 150000.0,

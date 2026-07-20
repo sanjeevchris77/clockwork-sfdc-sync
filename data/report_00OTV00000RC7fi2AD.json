@@ -17640,9 +17640,9 @@
               "value": ""
             },
             {
-              "label": "<a href=\"javascript:openPopupFocus%28%27http%3A%2F%2Flinkedin.com%2Fin%2Fhiren-parekh-%3Acloud%27%2C%20%27_blank%27%2C%20620%2C%20430%2C%20%27width%3D620%2Cheight%3D430%2Cresizable%3Dyes%2Ctoolbar%3Dyes%2Cstatus%3Dyes%2Cscrollbars%3Dyes%2Cmenubar%3Dyes%2Cdirectories%3Dyes%2Clocation%3Dyes%2Cdependant%3Dno%27%2C%20false%2C%20true%29%3B\" title=\"http://linkedin.com/in/hiren-parekh-:cloud (New Window)\">http://linkedin.com/in/hiren-parekh-:cloud</a>",
+              "label": "<a href=\"javascript:openPopupFocus%28%27https%3A%2F%2Fwww.linkedin.com%2Fin%2Fhiren-parekh-%E2%98%81%27%2C%20%27_blank%27%2C%20620%2C%20430%2C%20%27width%3D620%2Cheight%3D430%2Cresizable%3Dyes%2Ctoolbar%3Dyes%2Cstatus%3Dyes%2Cscrollbars%3Dyes%2Cmenubar%3Dyes%2Cdirectories%3Dyes%2Clocation%3Dyes%2Cdependant%3Dno%27%2C%20false%2C%20true%29%3B\" title=\"https://www.linkedin.com/in/hiren-parekh-\u2601 (New Window)\">https://www.linkedin.com/in/hiren-parekh-\u2601</a>",
               "recordId": "00QTV00000a3ttJ2AQ",
-              "value": "http://linkedin.com/in/hiren-parekh-:cloud"
+              "value": "https://www.linkedin.com/in/hiren-parekh-\u2601"
             },
             {
               "escapedLabel": "Marketing",
@@ -19562,9 +19562,9 @@
               "value": "Sales Accepted Lead"
             },
             {
-              "label": "In Progress (SAL)",
+              "label": "Unqualified",
               "recordId": "00QTV00000a3tt02AA",
-              "value": "In Progress (SAL)"
+              "value": "Unqualified"
             },
             {
               "label": "Brian J.",
@@ -21038,9 +21038,9 @@
               "value": "Sales Accepted Lead"
             },
             {
-              "label": "In Progress (SAL)",
+              "label": "Unqualified",
               "recordId": "00QTV00000a3tss2AA",
-              "value": "In Progress (SAL)"
+              "value": "Unqualified"
             },
             {
               "label": "Karen",
