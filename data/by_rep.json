@@ -253,6 +253,8 @@
         "stage": "Closed Lost",
         "is_open": false,
         "lead_source": "Event",
+        "created_date": "2024-09-12T17:42:46.000+0000",
+        "origin": "Existing",
         "campaign": null,
         "contacts": [
           {
@@ -273,6 +275,8 @@
         "stage": "Closed Lost",
         "is_open": false,
         "lead_source": "Sales",
+        "created_date": "2024-09-12T17:42:46.000+0000",
+        "origin": "Existing",
         "campaign": null,
         "contacts": [],
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000A9g0nYAB/view"
@@ -287,6 +291,8 @@
         "stage": "Closed Lost",
         "is_open": false,
         "lead_source": "Sales",
+        "created_date": "2025-01-24T18:51:49.000+0000",
+        "origin": "Existing",
         "campaign": null,
         "contacts": [],
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000FBuB7YAL/view"
@@ -301,6 +307,8 @@
         "stage": "Closed Lost",
         "is_open": false,
         "lead_source": "Sales",
+        "created_date": "2025-01-31T22:13:32.000+0000",
+        "origin": "Existing",
         "campaign": null,
         "contacts": [
           {
@@ -321,6 +329,8 @@
         "stage": "01 - Qualified",
         "is_open": true,
         "lead_source": "Sales",
+        "created_date": "2025-06-27T17:15:42.000+0000",
+        "origin": "Existing",
         "campaign": null,
         "contacts": [
           {
@@ -341,6 +351,8 @@
         "stage": "Closed Lost",
         "is_open": false,
         "lead_source": "Sales",
+        "created_date": "2025-07-18T20:58:08.000+0000",
+        "origin": "Existing",
         "campaign": "On-Site Meetings | Post-Conf | RAISE 2025",
         "contacts": [
           {
@@ -361,6 +373,8 @@
         "stage": "00 - Prospecting",
         "is_open": true,
         "lead_source": "Sales",
+        "created_date": "2025-09-22T16:48:47.000+0000",
+        "origin": "Existing",
         "campaign": null,
         "contacts": [],
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000OtANWYA3/view"
@@ -375,6 +389,8 @@
         "stage": "03 - Technical Validation",
         "is_open": true,
         "lead_source": "Sales",
+        "created_date": "2026-01-16T18:54:27.000+0000",
+        "origin": "Existing",
         "campaign": null,
         "contacts": [
           {
@@ -430,6 +446,8 @@
         "stage": "00 - Prospecting",
         "is_open": true,
         "lead_source": "Sales",
+        "created_date": "2026-03-25T16:54:48.000+0000",
+        "origin": "Existing",
         "campaign": null,
         "contacts": [],
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000WyvdjYAB/view"
@@ -1150,6 +1168,8 @@
         "stage": "Closed Lost",
         "is_open": false,
         "lead_source": "Sales",
+        "created_date": "2025-09-22T16:58:17.000+0000",
+        "origin": "Existing",
         "campaign": null,
         "contacts": [
           {
@@ -1170,6 +1190,8 @@
         "stage": "Closed Lost",
         "is_open": false,
         "lead_source": "Event",
+        "created_date": "2025-12-01T17:48:10.000+0000",
+        "origin": "Existing",
         "campaign": null,
         "contacts": [],
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000SESQvYAP/view"
@@ -1184,6 +1206,8 @@
         "stage": "03 - Technical Validation",
         "is_open": true,
         "lead_source": "Event",
+        "created_date": "2025-12-15T19:33:30.000+0000",
+        "origin": "Existing",
         "campaign": null,
         "contacts": [
           {
@@ -1224,6 +1248,8 @@
         "stage": "01 - Qualified",
         "is_open": true,
         "lead_source": "Sales",
+        "created_date": "2026-03-25T17:11:19.000+0000",
+        "origin": "Existing",
         "campaign": null,
         "contacts": [],
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000Wz6VtYAJ/view"
@@ -1238,6 +1264,8 @@
         "stage": "00 - Prospecting",
         "is_open": true,
         "lead_source": "Sales",
+        "created_date": "2026-07-13T17:01:58.000+0000",
+        "origin": "Existing",
         "campaign": null,
         "contacts": [],
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000bo5jxYAA/view"
