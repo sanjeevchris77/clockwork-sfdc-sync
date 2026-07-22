@@ -1,9 +1,17 @@
 #!/usr/bin/env python3
 """
-Sync Salesforce Leads / Opportunities / Campaign Members for the RAISE booth-scan
-campaigns into flat JSON files under data/, so they can be read by other tools
-(e.g. Claude via the GitHub connector) without ever needing direct Salesforce API
-access.
+Sync Salesforce Leads / Opportunities / Campaign Members for an event's booth-scan
+campaigns into flat JSON files under an output directory, so they can be read by
+other tools (e.g. Claude via the GitHub connector) without ever needing direct
+Salesforce API access.
+
+This script is EVENT-GENERIC: everything specific to one event/campaign (which
+Campaign Ids to pull, which reps own the pipeline, the event's start date, the
+Lead Source value that marks an Opportunity as sourced from this event, the
+comparison campaign for a year-over-year view, the Account custom field for ABM
+tier, etc.) lives in a small JSON config file, not in this file. To stand up a
+new event, copy events/<name>/config.json from an existing one, adjust the
+values, and point EVENT_CONFIG at it -- no code changes required.
 
 Auth: OAuth 2.0 "Client Credentials" flow, via a Salesforce External Client
 App (the newer replacement for classic Connected Apps). This flow only needs
@@ -17,6 +25,12 @@ Required env vars:
                       (use the sandbox My Domain URL for a sandbox org)
   SF_CLIENT_ID       External Client App Consumer Key
   SF_CLIENT_SECRET   External Client App Consumer Secret
+
+Optional env var:
+  EVENT_CONFIG       path (relative to the repo root) to this run's event
+                      config JSON. Defaults to events/raise2026/config.json
+                      for backward compatibility with the original RAISE 2026
+                      setup.
 
 Note: Client Credentials Flow authenticates as whatever "Run As" user is
 configured under the External Client App's Policies tab -> Client
@@ -33,31 +47,45 @@ import sys
 from pathlib import Path
 from urllib import request, parse, error
 
+REPO_ROOT = Path(__file__).resolve().parent.parent
+
 SF_LOGIN_URL = os.environ["SF_LOGIN_URL"]
 CLIENT_ID = os.environ["SF_CLIENT_ID"]
 CLIENT_SECRET = os.environ["SF_CLIENT_SECRET"]
 
-# The RAISE 2026 Booth Scan + venue-track campaigns (Paris)
-CAMPAIGN_IDS = [
-    "701TV00000oNI18YAG",  # Booth Scans | 07-07-2026
-    "701TV00000o71ibYAA",  # Booth Scans | 07-08-2026
-    "701TV00000o6wcTYAQ",  # Booth Scans | 07-09-2026
-    "701TV00000sNZu9YAG",  # [Raise26Paris] Machina | 07-09-2026
-    "701TV00000sNsqGYAS",  # [Raise26Paris] HumanX | 07-09-2026
-    "701TV00000sNm8AYAS",  # [Raise26Paris] VIP Access | 07-09-2026
-]
+# --- Event config: everything specific to ONE event/campaign lives here, not
+# hardcoded in this script, so the exact same sync logic can be reused for a
+# different event just by pointing EVENT_CONFIG at a different file.
+CONFIG_PATH = REPO_ROOT / os.environ.get("EVENT_CONFIG", "events/raise2026/config.json")
+CONFIG = json.loads(CONFIG_PATH.read_text())
 
-REP_NAMES = ["Sean Coughlin", "Greg Mark", "Abrahem Miya", "Chris Bowen"]  # NOTE: "Abrahem" matches the exact spelling of this Owner.Name in Salesforce
-DEFAULT_OPP_AMOUNT = 200000
-QUALIFIED_STAGES = {"In Progress (MQL)", "In Progress (SAL)"}  # matches dashboard's "Qualified" definition
+CAMPAIGN_IDS = CONFIG["campaign_ids"]
+REP_NAMES = CONFIG["rep_names"]
+DEFAULT_OPP_AMOUNT = CONFIG["default_opp_amount"]
+QUALIFIED_STAGES = set(CONFIG["qualified_stages"])  # matches dashboard's "Qualified" definition
 
-# RAISE 2025's directly-comparable in-person booth campaign (booth-only
-# apples-to-apples comparison, per user direction -- NOT the full RAISE 2025
-# event, which also has separate Sponsors/Attendees/Speakers/On-Site-Meetings
-# /Virtual-Booth campaigns under the same "RAISE Summit 2025" parent).
-RAISE_2025_BOOTH_CAMPAIGN_ID = "701TV00000SLsriYAD"  # Booth Visitors | Post-Conf | RAISE 2025
+# The prior event's directly-comparable in-person booth campaign (booth-only
+# apples-to-apples comparison, per user direction -- NOT necessarily the full
+# prior event, which may also have separate Sponsors/Attendees/Speakers/
+# On-Site-Meetings/Virtual-Booth campaigns under the same parent Campaign).
+COMPARISON_CAMPAIGN_ID = CONFIG["comparison_campaign_id"]
 
-OUT_DIR = Path(__file__).resolve().parent.parent / "data"
+# Event start date. Used to distinguish an Opportunity that is genuinely NEW
+# because of this event from one that already existed in the pipeline and
+# merely happens to match a booth-scan account by domain.
+EVENT_START_DATE = CONFIG["event_start_date"]
+
+# Exact Lead Source value reps tag on Opportunities sourced from this event.
+NET_NEW_LEAD_SOURCE = CONFIG["net_new_lead_source"]
+
+# Account custom field holding this org's ABM tier classification (e.g. Tier
+# 1-4). Confirm the exact API name with the user before changing -- it varies
+# per Salesforce org.
+ABM_TIER_FIELD = CONFIG.get("abm_tier_field", "ABM_Tier__c")
+
+AD_HOC_REPORT_ID = CONFIG.get("ad_hoc_report_id")
+
+OUT_DIR = REPO_ROOT / CONFIG.get("output_dir", "data")
 
 
 def get_access_token():
@@ -152,28 +180,22 @@ def is_open_stage(stage):
     return "closed" not in (stage or "").lower()
 
 
-# RAISE 2026 event start date (Paris). Used to distinguish an Opportunity
-# that is genuinely NEW because of this event from one that already existed
-# in the pipeline and merely happens to match a booth-scan account by domain.
-RAISE_2026_START_DATE = "2026-07-07"
-
-
 def opp_origin(created_date, lead_source):
-    """Classify an Opportunity as "Net New" (genuinely sourced from RAISE
-    2026) vs "Existing" (a pre-existing pipeline deal).
+    """Classify an Opportunity as "Net New" (genuinely sourced from this
+    event) vs "Existing" (a pre-existing pipeline deal).
 
-    Existing = Created Date on or before RAISE_2026_START_DATE, for a
+    Existing = Created Date on or before the event's start date, for a
     domain-matched account -- true regardless of Lead Source, stage, or
     whether it's since closed. A deal that was already Closed Lost, or
     already deep into later stages, obviously predates a booth conversation
     that happened only days ago.
 
     Net New requires ALL of:
-      (a) Lead Source is exactly "RAISE 2026" (not a generic "Event" tag,
-          which could reflect any past event/conference), AND
-      (b) Created Date is on/after RAISE_2026_START_DATE, AND
-      (c) it's already domain-matched to a RAISE 2026 booth-scan account
-          (guaranteed by the domain-match filter this runs inside of).
+      (a) Lead Source exactly matches NET_NEW_LEAD_SOURCE (not a generic
+          "Event" tag, which could reflect any past event/conference), AND
+      (b) Created Date is on/after the event's start date, AND
+      (c) it's already domain-matched to a booth-scan account (guaranteed by
+          the domain-match filter this runs inside of).
 
     "Day 0" opportunities are expected and valid: a booth conversation can
     be extensive enough to justify creating an Opportunity straight at a
@@ -181,13 +203,13 @@ def opp_origin(created_date, lead_source):
     through stages post-event. The one thing that's NOT plausible for a
     genuine Net New deal is already being Closed Lost within days of the
     event -- but that's naturally excluded here since it would require both
-    the exact "RAISE 2026" Lead Source tag AND a created date in-window,
-    which a truly pre-existing/lost deal won't have.
+    the exact NET_NEW_LEAD_SOURCE tag AND a created date in-window, which a
+    truly pre-existing/lost deal won't have.
     """
     if not created_date:
         return "Existing"
     created_day = created_date[:10]  # ISO datetime "YYYY-MM-DDTHH:MM:SS..." -> date prefix
-    if created_day >= RAISE_2026_START_DATE and lead_source == "RAISE 2026":
+    if created_day >= EVENT_START_DATE and lead_source == NET_NEW_LEAD_SOURCE:
         return "Net New"
     return "Existing"
 
@@ -243,7 +265,7 @@ def main():
     # below can correctly exclude EACH year's own attendees (not just 2026's)
     # when looking for "some other Lead already at this company" evidence.
     leads_out = pull_campaign_leads(instance_url, token, CAMPAIGN_IDS)
-    leads_2025 = pull_campaign_leads(instance_url, token, [RAISE_2025_BOOTH_CAMPAIGN_ID])
+    leads_2025 = pull_campaign_leads(instance_url, token, [COMPARISON_CAMPAIGN_ID])
 
     lead_domains = {l["domain"] for l in leads_out if l.get("domain")}
     domains_2025 = {l["domain"] for l in leads_2025 if l.get("domain")}
@@ -326,8 +348,8 @@ def main():
     # be read off the Lead/CampaignMember rows above -- it has to come from
     # here, joined back onto the booth-scan domains the same way everything
     # else is: by website domain).
-    account_query = """
-        SELECT Id, Name, Website, ABM_Tier__c
+    account_query = f"""
+        SELECT Id, Name, Website, {ABM_TIER_FIELD}
         FROM Account
         WHERE Website != null
     """
@@ -335,8 +357,8 @@ def main():
     domain_to_tier = {}
     for a in all_accounts:
         d = domain_of(a.get("Website"))
-        if d and a.get("ABM_Tier__c"):
-            domain_to_tier[d] = a.get("ABM_Tier__c")
+        if d and a.get(ABM_TIER_FIELD):
+            domain_to_tier[d] = a.get(ABM_TIER_FIELD)
 
     # --- Contacts: any Contact already sitting on one of these Accounts is a
     # strong "someone here is already a known relationship" signal, regardless
@@ -647,7 +669,7 @@ def main():
                          "(not real Opportunity Amounts), per explicit request, so the two years are "
                          "compared on the same yardstick."),
         "raise_2025": {
-            "campaign_id": RAISE_2025_BOOTH_CAMPAIGN_ID,
+            "campaign_id": COMPARISON_CAMPAIGN_ID,
             "lead_count": len(leads_2025),
             "opportunity_count": len(opps_2025),
             "lifecycle_stage_counts": stage_funnel(leads_2025),
@@ -682,17 +704,17 @@ def main():
           f"and year_comparison.json to {OUT_DIR}")
 
     # --- One-off, exploratory pull of a specific saved Salesforce Report
-    # (Report Id, "00O" prefix -- NOT a Campaign) that the user referenced.
-    # Read-only, non-fatal: dumps the raw Reports API response as-is so its
-    # actual structure (tabular/summary/matrix) can be inspected before any
-    # further processing is built around it.
-    AD_HOC_REPORT_ID = "00OTV00000RC7fi2AD"
-    report_data = fetch_report(instance_url, token, AD_HOC_REPORT_ID)
-    if report_data is not None:
-        (OUT_DIR / f"report_{AD_HOC_REPORT_ID}.json").write_text(json.dumps(report_data, indent=2))
-        print(f"Wrote raw Report {AD_HOC_REPORT_ID} data to {OUT_DIR}/report_{AD_HOC_REPORT_ID}.json")
-    else:
-        print(f"Report {AD_HOC_REPORT_ID} fetch failed or unavailable (see stderr above) -- non-fatal.", file=sys.stderr)
+    # (Report Id, "00O" prefix -- NOT a Campaign), if this event's config
+    # names one. Read-only, non-fatal: dumps the raw Reports API response
+    # as-is so its actual structure (tabular/summary/matrix) can be inspected
+    # before any further processing is built around it.
+    if AD_HOC_REPORT_ID:
+        report_data = fetch_report(instance_url, token, AD_HOC_REPORT_ID)
+        if report_data is not None:
+            (OUT_DIR / f"report_{AD_HOC_REPORT_ID}.json").write_text(json.dumps(report_data, indent=2))
+            print(f"Wrote raw Report {AD_HOC_REPORT_ID} data to {OUT_DIR}/report_{AD_HOC_REPORT_ID}.json")
+        else:
+            print(f"Report {AD_HOC_REPORT_ID} fetch failed or unavailable (see stderr above) -- non-fatal.", file=sys.stderr)
 
 
 if __name__ == "__main__":
