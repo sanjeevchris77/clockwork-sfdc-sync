@@ -321,6 +321,23 @@ def main():
                 "sfdc_link": f"{instance_url}/lightning/r/Opportunity/{o.get('Id')}/view",
             })
 
+    # --- Accounts: pull the ABM_Tier__c field directly from the Account
+    # object (Leads aren't linked to Account until converted, so tier can't
+    # be read off the Lead/CampaignMember rows above -- it has to come from
+    # here, joined back onto the booth-scan domains the same way everything
+    # else is: by website domain).
+    account_query = """
+        SELECT Id, Name, Website, ABM_Tier__c
+        FROM Account
+        WHERE Website != null
+    """
+    all_accounts = soql(instance_url, token, account_query)
+    domain_to_tier = {}
+    for a in all_accounts:
+        d = domain_of(a.get("Website"))
+        if d and a.get("ABM_Tier__c"):
+            domain_to_tier[d] = a.get("ABM_Tier__c")
+
     # --- Contacts: any Contact already sitting on one of these Accounts is a
     # strong "someone here is already a known relationship" signal, regardless
     # of who owns the Account.
@@ -449,6 +466,7 @@ def main():
             "is_qualified_contact": is_qualified,
             "potential_pipeline_amount": pipeline_amount,
             "potential_pipeline_basis": pipeline_basis,
+            "abm_tier": domain_to_tier.get(d),
         })
 
     # Rep-specific breakdown (leads + opps each rep owns)
@@ -479,6 +497,11 @@ def main():
             a["potential_pipeline_amount"] for a in account_summary
             if a["potential_pipeline_basis"] == "estimated"),
         "potential_pipeline_total": sum(a["potential_pipeline_amount"] for a in account_summary),
+        "abm_tier_counts": {
+            tier: sum(1 for a in account_summary if a["abm_tier"] == tier)
+            for tier in sorted({a["abm_tier"] for a in account_summary if a["abm_tier"]})
+        },
+        "accounts_without_abm_tier": sum(1 for a in account_summary if not a["abm_tier"]),
     }, indent=2))
 
     print(f"Wrote {len(leads_out)} leads, {len(opps_out)} rep-owned opportunities, "
