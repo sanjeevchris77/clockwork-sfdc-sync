@@ -118,10 +118,10 @@
     "lifecycle_stage_counts": {
       "In Progress (MEL)": 1
     },
-    "company_already_engaged": "No",
+    "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
-    "engaged_via_other_open_lead": false,
+    "engaged_via_other_open_lead": true,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
     "is_qualified_contact": false,
@@ -445,10 +445,10 @@
     "lifecycle_stage_counts": {
       "In Progress (MEL)": 1
     },
-    "company_already_engaged": "No",
+    "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
-    "engaged_via_other_open_lead": false,
+    "engaged_via_other_open_lead": true,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
     "is_qualified_contact": false,
@@ -747,7 +747,7 @@
     "abm_tier": "Tier 1"
   },
   {
-    "domain": "crms.org",
+    "domain": "crms-software.com",
     "company": "Crms",
     "booth_scan_lead_count": 1,
     "personas": [
@@ -1049,7 +1049,7 @@
     "personas": [
       {
         "name": "Bilal Lamsili",
-        "title": "Doctoral researcher",
+        "title": "Doctoral Researcher",
         "lifecycle_stage": "In Progress (MEL)",
         "owner": "Abrahem Miya"
       }
@@ -1121,10 +1121,10 @@
     "lifecycle_stage_counts": {
       "In Progress (MEL)": 1
     },
-    "company_already_engaged": "No",
+    "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
-    "engaged_via_other_open_lead": false,
+    "engaged_via_other_open_lead": true,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
     "is_qualified_contact": false,
@@ -1147,10 +1147,10 @@
     "lifecycle_stage_counts": {
       "In Progress (MEL)": 1
     },
-    "company_already_engaged": "No",
+    "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
-    "engaged_via_other_open_lead": false,
+    "engaged_via_other_open_lead": true,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
     "is_qualified_contact": false,
@@ -1217,7 +1217,7 @@
     "personas": [
       {
         "name": "Marouane Zhani",
-        "title": "Team Lead GenAI & Data Analytics",
+        "title": "Data Scientist",
         "lifecycle_stage": "In Progress (MEL)",
         "owner": "Abrahem Miya"
       }
@@ -1225,10 +1225,10 @@
     "lifecycle_stage_counts": {
       "In Progress (MEL)": 1
     },
-    "company_already_engaged": "No",
+    "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
-    "engaged_via_other_open_lead": false,
+    "engaged_via_other_open_lead": true,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
     "is_qualified_contact": false,
@@ -1467,7 +1467,7 @@
     "booth_scan_lead_count": 5,
     "personas": [
       {
-        "name": "Zhen Zhang",
+        "name": "Zheng ZHANG",
         "title": "CSI",
         "lifecycle_stage": "In Progress (MEL)",
         "owner": "Abrahem Miya"
@@ -1479,8 +1479,8 @@
         "owner": "Abrahem Miya"
       },
       {
-        "name": "liang zhang",
-        "title": "Director",
+        "name": "Liang Zhang",
+        "title": "Director of France Research Center",
         "lifecycle_stage": "In Progress (MQL)",
         "owner": "Abrahem Miya"
       },
@@ -2124,13 +2124,13 @@
     "abm_tier": null
   },
   {
-    "domain": "mister-e-liquid.com",
-    "company": "Mister-E",
+    "domain": "mistere.art",
+    "company": "Mister_E",
     "booth_scan_lead_count": 1,
     "personas": [
       {
         "name": "edouard cockenpot",
-        "title": "Developper",
+        "title": "Software ingineer",
         "lifecycle_stage": "In Progress (MEL)",
         "owner": "Chris Bowen"
       }
@@ -2327,10 +2327,10 @@
     "lifecycle_stage_counts": {
       "In Progress (MEL)": 1
     },
-    "company_already_engaged": "No",
+    "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
-    "engaged_via_other_open_lead": false,
+    "engaged_via_other_open_lead": true,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
     "is_qualified_contact": false,
@@ -2547,10 +2547,10 @@
     "lifecycle_stage_counts": {
       "In Progress (MEL)": 1
     },
-    "company_already_engaged": "No",
+    "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
-    "engaged_via_other_open_lead": false,
+    "engaged_via_other_open_lead": true,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
     "is_qualified_contact": false,
@@ -2599,10 +2599,10 @@
     "lifecycle_stage_counts": {
       "In Progress (MEL)": 1
     },
-    "company_already_engaged": "No",
+    "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
-    "engaged_via_other_open_lead": false,
+    "engaged_via_other_open_lead": true,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
     "is_qualified_contact": false,
@@ -2677,10 +2677,10 @@
     "lifecycle_stage_counts": {
       "In Progress (MEL)": 1
     },
-    "company_already_engaged": "No",
+    "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": false,
-    "engaged_via_other_open_lead": false,
+    "engaged_via_other_open_lead": true,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
     "is_qualified_contact": false,

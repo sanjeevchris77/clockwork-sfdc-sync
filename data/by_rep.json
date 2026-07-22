@@ -133,7 +133,7 @@
         "last_name": "Radnai",
         "title": "Director of Product",
         "email": "zoltan.radnai@blackrock.com",
-        "mobile": "17702658928",
+        "mobile": "36304225190",
         "linkedin_url": "https://linkedin.com/in/zoltanradnai",
         "lead_source": "Event",
         "notes": null,
@@ -722,14 +722,14 @@
         "lead_id": "00QTV00000ZuB6Q2AV",
         "owner": "Greg Mark",
         "company": "Crms",
-        "website": "http://crms.org",
-        "domain": "crms.org",
+        "website": "http://crms-software.com",
+        "domain": "crms-software.com",
         "first_name": "simon",
         "last_name": "kaperski",
         "title": "Ai engineer",
         "email": "skaperski@crms.sncf",
-        "mobile": null,
-        "linkedin_url": null,
+        "mobile": "33643032788",
+        "linkedin_url": "https://www.linkedin.com/in/simon-kaperski-210065114?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
         "lead_source": "Event",
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
@@ -1346,8 +1346,8 @@
         "company": "Huawei",
         "website": "http://huawei.com",
         "domain": "huawei.com",
-        "first_name": "Zhen",
-        "last_name": "Zhang",
+        "first_name": "Zheng",
+        "last_name": "ZHANG",
         "title": "CSI",
         "email": "zhen.zhang.fr@huawei.com",
         "mobile": "16502234332",
@@ -1376,7 +1376,7 @@
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGqp2AF/view",
-        "company_already_engaged": "No"
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-09-2026",
@@ -1396,7 +1396,7 @@
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGqq2AF/view",
-        "company_already_engaged": "No"
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-09-2026",
@@ -1463,12 +1463,12 @@
         "member_status": "Visited Booth",
         "lead_id": "00QTV00000ZuGqx2AF",
         "owner": "Abrahem Miya",
-        "company": "huawei",
+        "company": "Huawei",
         "website": "http://huawei.com",
         "domain": "huawei.com",
-        "first_name": "liang",
-        "last_name": "zhang",
-        "title": "Director",
+        "first_name": "Liang",
+        "last_name": "Zhang",
+        "title": "Director of France Research Center",
         "email": "zhangliang1@huawei.com",
         "mobile": "15086670992",
         "linkedin_url": "https://www.linkedin.com/in/liang-zhang-56ab87112",
@@ -1576,7 +1576,7 @@
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsQ2AV/view",
-        "company_already_engaged": "No"
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-09-2026",
@@ -1588,7 +1588,7 @@
         "domain": "fronius.com",
         "first_name": "Marouane",
         "last_name": "Zhani",
-        "title": "Team Lead GenAI & Data Analytics",
+        "title": "Data Scientist",
         "email": "zhani.marouane@fronius.com",
         "mobile": null,
         "linkedin_url": "https://www.linkedin.com/in/marouane-zhani",
@@ -1596,7 +1596,7 @@
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsT2AV/view",
-        "company_already_engaged": "No"
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-09-2026",
@@ -1736,7 +1736,7 @@
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsc2AF/view",
-        "company_already_engaged": "No"
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-09-2026",
@@ -1816,7 +1816,7 @@
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsi2AF/view",
-        "company_already_engaged": "No"
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-09-2026",
@@ -1908,9 +1908,9 @@
         "domain": "efrei.fr",
         "first_name": "Bilal",
         "last_name": "Lamsili",
-        "title": "Doctoral researcher",
+        "title": "Doctoral Researcher",
         "email": "bilal.lamsili@efrei.fr",
-        "mobile": null,
+        "mobile": "33615736895",
         "linkedin_url": "https://linkedin.com/in/bilallamsili",
         "lead_source": "Event",
         "notes": "Not qualified",
@@ -2216,7 +2216,7 @@
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuBFz2AN/view",
-        "company_already_engaged": "No"
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
@@ -2456,7 +2456,7 @@
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuEXB2A3/view",
-        "company_already_engaged": "No"
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
@@ -2576,7 +2576,7 @@
         "notes": null,
         "lifecycle_stage": "In Progress (MEL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuFEj2AN/view",
-        "company_already_engaged": "No"
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
@@ -2808,12 +2808,12 @@
         "member_status": "Visited Booth",
         "lead_id": "00QTV00000ZuGqt2AF",
         "owner": "Chris Bowen",
-        "company": "Mister-E",
-        "website": "http://mister-e-liquid.com",
-        "domain": "mister-e-liquid.com",
+        "company": "Mister_E",
+        "website": "http://mistere.art",
+        "domain": "mistere.art",
         "first_name": "edouard",
         "last_name": "cockenpot",
-        "title": "Developper",
+        "title": "Software ingineer",
         "email": "edouard@mister-e.fr",
         "mobile": null,
         "linkedin_url": "https://www.linkedin.com/in/edouardcockenpot",
