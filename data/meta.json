@@ -21,5 +21,12 @@
   "companies_net_new": 86,
   "potential_pipeline_real_open_opportunity_total": 3800000.0,
   "potential_pipeline_estimated_total": 22200000,
-  "potential_pipeline_total": 26000000.0
+  "potential_pipeline_total": 26000000.0,
+  "abm_tier_counts": {
+    "Tier 1": 18,
+    "Tier 2": 15,
+    "Tier 3": 4,
+    "Tier 4": 3
+  },
+  "accounts_without_abm_tier": 80
 }
