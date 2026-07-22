@@ -6,11 +6,15 @@ they can be read by other tools (e.g. Claude via the GitHub connector)
 without giving anyone direct Salesforce credentials.
 
 The sync logic (`scripts/sync_salesforce.py`) is event-generic: everything
-specific to one event (which Campaigns, which reps, the event's start date,
-etc.) lives in a small config file under `events/<name>/config.json`. Adding
-a new event -- a different conference, a different quarter, a different
-booth -- means adding a new config file, not touching the script. See
-"Adding a new event" below.
+specific to this event (which Campaigns, which reps, the event's start date,
+etc.) lives in `events/raise2026/config.json`, not in the script itself.
+
+**Each event gets its own pair of repos and its own link, not a shared one.**
+This repo (`clockwork-sfdc-sync`) and its paired dashboard repo
+(`ClockWorkRAISESUMMIT`) are both marked as GitHub template repositories, so
+a new event is spun up by cloning both as fresh, independent repos -- own
+git history, own secrets, own Netlify site, own URL. See "Adding a new
+event" below.
 
 ## One-time setup
 
@@ -65,43 +69,40 @@ booth -- means adding a new config file, not touching the script. See
 
 ## Adding a new event
 
-1. Copy `events/raise2026/config.json` to `events/<new-name>/config.json`
-   and fill in the new event's values:
-   - `campaign_ids` -- the Salesforce Campaign Ids for this event's
-     booth-scan / venue-track campaigns
-   - `rep_names` -- exact `Owner.Name` spelling for the reps whose pipeline
-     should be tracked individually
-   - `default_opp_amount` -- flat estimate used when a qualified account has
-     no real open Opportunity yet
-   - `qualified_stages` -- Lead Status values that count as "qualified"
-   - `comparison_campaign_id` -- a prior event's campaign, for a
-     year-over-year comparison (optional, but the script expects a value)
-   - `event_start_date` -- this event's start date, used to separate
-     genuinely new pipeline from pre-existing deals that happen to match a
-     booth-scan account by domain
-   - `net_new_lead_source` -- the exact Lead Source value reps tag on
-     Opportunities sourced from this event
-   - `abm_tier_field` -- the Account custom field holding this org's ABM
-     tier classification, if any (ask the user for the exact API name --
-     it varies per org and isn't guessable)
-   - `ad_hoc_report_id` -- an optional saved Salesforce Report Id to pull
-     as-is (set to `null` if not needed)
-   - `output_dir` -- where this event's JSON files should be written, e.g.
-     `events/<new-name>/data` (keep as `data` only for the original event,
-     to stay backward-compatible with existing consumers of that path)
-2. Point the GitHub Action at the new config by setting the `EVENT_CONFIG`
-   env var (e.g. `events/<new-name>/config.json`) on the sync step in
-   `.github/workflows/sync.yml` -- either edit that one workflow to run
-   multiple events in sequence with different `EVENT_CONFIG` values, or add
-   a second workflow file for the new event.
-3. Run the workflow once manually to produce the first data files, same as
-   the one-time setup above.
-4. Build the dashboard from the new event's data files following the same
-   chart/table conventions as the existing dashboard (KPI cards, engagement
-   pie chart, persona funnel, Opportunity table, etc.) -- ask Claude to do
-   this from the new `data/*.json` files; classification-heavy charts (like
-   company segment or ABM tier) still need a human decision on categories
-   the first time, same as they did here.
+Each event is a fully independent pair of repos -- its own sync repo, own
+dashboard repo, own Netlify site, own link. Nothing about a new event can
+accidentally affect RAISE 2026's live site or data.
+
+1. **Mark both repos as GitHub templates** (one-time, already done for
+   `clockwork-sfdc-sync` and `ClockWorkRAISESUMMIT`): repo Settings ->
+   check "Template repository".
+2. **Spin up the new sync repo**: on `clockwork-sfdc-sync`, click "Use this
+   template" -> "Create a new repository", name it for the new event (e.g.
+   `clockwork-sfdc-sync-<event>`). In the new repo:
+   - Edit `events/raise2026/config.json` (rename the folder to
+     `events/<new-name>/` if you like, or just edit the file in place --
+     since this repo now serves only this one event, the exact path
+     doesn't matter) with the new event's `campaign_ids`, `rep_names`,
+     `default_opp_amount`, `qualified_stages`, `comparison_campaign_id`,
+     `event_start_date`, `net_new_lead_source`, `abm_tier_field` (ask the
+     user for the exact Account field API name -- it varies per org and
+     isn't guessable), and `ad_hoc_report_id`.
+   - Add that repo's own `SF_LOGIN_URL` / `SF_CLIENT_ID` / `SF_CLIENT_SECRET`
+     secrets (same Salesforce org's External Client App, or a different
+     one, as needed).
+   - Run the "Sync Salesforce data" workflow once manually to produce the
+     first `data/*.json` files.
+3. **Spin up the new dashboard repo**: on `ClockWorkRAISESUMMIT`, click "Use
+   this template" -> "Create a new repository", name it for the new event.
+   Build that event's dashboard HTML from the new sync repo's `data/*.json`
+   files, following the same chart/table conventions as the existing
+   dashboard (KPI cards, engagement pie chart, persona funnel, Opportunity
+   table, etc.) -- classification-heavy charts (like company segment or ABM
+   tier) still need a fresh human decision on categories, same as they did
+   for RAISE 2026. Push it into the new repo.
+4. **Connect a new Netlify site**: Netlify -> Add new site -> Import from
+   Git -> pick the new dashboard repo. Netlify assigns a fresh, unique link
+   for it automatically, entirely separate from RAISE 2026's.
 
 ## Notes / caveats
 
