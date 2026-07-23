@@ -6,9 +6,11 @@
     "701TV00000o6wcTYAQ",
     "701TV00000sNZu9YAG",
     "701TV00000sNsqGYAS",
-    "701TV00000sNm8AYAS"
+    "701TV00000sNm8AYAS",
+    "701TV00000siYwYYAU",
+    "701TV00000o7EW5YAM"
   ],
-  "campaign_ids_comment": "RAISE 2026 Booth Scan + venue-track campaigns (Paris): 3 Booth Scans (07-07/08/09), Machina, HumanX, VIP Access",
+  "campaign_ids_comment": "RAISE 2026 Booth Scan + venue-track campaigns (Paris): 3 Booth Scans (07-07/08/09), Machina, HumanX, VIP Access, [Raise26Paris] Panel Attendees (07-09-2026), Raise 2026 Paris (07-09-2026)",
   "rep_names": ["Sean Coughlin", "Greg Mark", "Abrahem Miya", "Chris Bowen"],
   "rep_names_comment": "'Abrahem' matches the exact spelling of this Owner.Name in Salesforce",
   "default_opp_amount": 200000,
