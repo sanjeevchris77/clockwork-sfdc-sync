@@ -197,7 +197,7 @@
     "notes": null,
     "lifecycle_stage": "Nurture",
     "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000M4AzI2AV/view",
-    "company_already_engaged": "Yes"
+    "company_already_engaged": "No"
   },
   {
     "campaign": "Booth Visitors | Post-Conf | RAISE 2025",
