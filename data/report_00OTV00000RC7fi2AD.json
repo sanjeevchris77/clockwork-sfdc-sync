@@ -2501,14 +2501,14 @@
               "value": "005TV000005KfVaYAK"
             },
             {
-              "escapedLabel": "Marketing Engaged Lead",
-              "label": "Marketing Engaged Lead",
-              "value": "Marketing Engaged Lead"
+              "escapedLabel": "Marketing Qualified Lead",
+              "label": "Marketing Qualified Lead",
+              "value": "Marketing Qualified Lead"
             },
             {
-              "label": "In Progress (MEL)",
+              "label": "In Progress (MQL)",
               "recordId": "00QTV00000ZuB6Q2AV",
-              "value": "In Progress (MEL)"
+              "value": "In Progress (MQL)"
             },
             {
               "label": "simon",
@@ -4141,14 +4141,14 @@
               "value": "005Kb00000AlYFjIAN"
             },
             {
-              "escapedLabel": "Marketing Engaged Lead",
-              "label": "Marketing Engaged Lead",
-              "value": "Marketing Engaged Lead"
+              "escapedLabel": "Sales Accepted Lead",
+              "label": "Sales Accepted Lead",
+              "value": "Sales Accepted Lead"
             },
             {
-              "label": "In Progress (MEL)",
+              "label": "In Progress (SAL)",
               "recordId": "00QTV00000ZuB9c2AF",
-              "value": "In Progress (MEL)"
+              "value": "In Progress (SAL)"
             },
             {
               "label": "Zoltan",

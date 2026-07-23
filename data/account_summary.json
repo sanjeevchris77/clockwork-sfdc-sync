@@ -344,7 +344,7 @@
       {
         "name": "Zoltan Radnai",
         "title": "Director of Product",
-        "lifecycle_stage": "In Progress (MEL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "owner": "Sean Coughlin"
       },
       {
@@ -355,7 +355,8 @@
       }
     ],
     "lifecycle_stage_counts": {
-      "In Progress (MEL)": 2
+      "In Progress (SAL)": 1,
+      "In Progress (MEL)": 1
     },
     "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": true,
@@ -373,7 +374,7 @@
       }
     ],
     "has_open_opportunity": false,
-    "is_qualified_contact": false,
+    "is_qualified_contact": true,
     "potential_pipeline_amount": 200000,
     "potential_pipeline_basis": "estimated",
     "abm_tier": "Tier 1"
@@ -754,12 +755,12 @@
       {
         "name": "simon kaperski",
         "title": "Ai engineer",
-        "lifecycle_stage": "In Progress (MEL)",
+        "lifecycle_stage": "In Progress (MQL)",
         "owner": "Greg Mark"
       }
     ],
     "lifecycle_stage_counts": {
-      "In Progress (MEL)": 1
+      "In Progress (MQL)": 1
     },
     "company_already_engaged": "No",
     "engaged_via_existing_opportunity": false,
@@ -767,7 +768,7 @@
     "engaged_via_other_open_lead": false,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
-    "is_qualified_contact": false,
+    "is_qualified_contact": true,
     "potential_pipeline_amount": 200000,
     "potential_pipeline_basis": "estimated",
     "abm_tier": null

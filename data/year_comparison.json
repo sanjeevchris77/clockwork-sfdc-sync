@@ -88,9 +88,9 @@
     "lead_count": 139,
     "opportunity_count": 36,
     "lifecycle_stage_counts": {
-      "In Progress (MQL)": 6,
-      "In Progress (MEL)": 98,
-      "In Progress (SAL)": 33,
+      "In Progress (MQL)": 7,
+      "In Progress (MEL)": 96,
+      "In Progress (SAL)": 34,
       "Unqualified": 2
     },
     "opp_stage_counts": {

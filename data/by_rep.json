@@ -137,7 +137,7 @@
         "linkedin_url": "https://linkedin.com/in/zoltanradnai",
         "lead_source": "Event",
         "notes": null,
-        "lifecycle_stage": "In Progress (MEL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuB9c2AF/view",
         "company_already_engaged": "Yes"
       },
@@ -732,7 +732,7 @@
         "linkedin_url": "https://www.linkedin.com/in/simon-kaperski-210065114?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
         "lead_source": "Event",
         "notes": null,
-        "lifecycle_stage": "In Progress (MEL)",
+        "lifecycle_stage": "In Progress (MQL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuB6Q2AV/view",
         "company_already_engaged": "No"
       },
