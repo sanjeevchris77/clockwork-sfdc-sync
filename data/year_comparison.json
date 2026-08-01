@@ -929,6 +929,11 @@
         "stage": "03 - Technical Validation",
         "contacts": [
           {
+            "name": "Tara Madhyastha",
+            "title": "Senior Solutions Architect",
+            "email": "tmadhyastha@coreweave.com"
+          },
+          {
             "name": "Andreas Lundin",
             "title": null,
             "email": "alundin@coreweave.com"
