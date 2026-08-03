@@ -100,12 +100,13 @@
       "Closed Won": 5,
       "Closed Lost": 32,
       "02 - Pilot Kick Off": 2,
-      "03 - Technical Validation": 6,
+      "03 - Technical Validation": 5,
+      "04 - Negotiations": 1,
       "01 - Qualified": 2,
       "00 - Prospecting": 8
     },
     "pipegen_potential": 11000000,
-    "real_opportunity_amount_total": 14400000.0,
+    "real_opportunity_amount_total": 14675000.0,
     "opportunities": [
       {
         "opp_id": "006Kb00000JlkRdIAJ",
@@ -544,8 +545,8 @@
         "owner": "Greg Mark",
         "account": "Together AI",
         "domain": "together.ai",
-        "amount": 200000.0,
-        "stage": "03 - Technical Validation",
+        "amount": 475000.0,
+        "stage": "04 - Negotiations",
         "contacts": [
           {
             "name": "David Stringer",

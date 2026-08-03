@@ -9948,15 +9948,15 @@
         "opp_id": "006TV00000D6aMHYAZ",
         "owner": "Greg Mark",
         "account": "Together AI",
-        "stage": "03 - Technical Validation",
-        "amount": 200000.0,
+        "stage": "04 - Negotiations",
+        "amount": 475000.0,
         "is_open": true,
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000D6aMHYAZ/view"
       }
     ],
     "has_open_opportunity": true,
     "is_qualified_contact": false,
-    "potential_pipeline_amount": 200000.0,
+    "potential_pipeline_amount": 475000.0,
     "potential_pipeline_basis": "real_open_opportunity",
     "abm_tier": "Tier 1"
   },
