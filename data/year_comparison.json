@@ -1016,6 +1016,11 @@
         "stage": "02 - Pilot Kick Off",
         "contacts": [
           {
+            "name": "Narek Tatevosyan",
+            "title": "Product Director",
+            "email": "narek@nebius.com"
+          },
+          {
             "name": "Evgenii Zubairov",
             "title": null,
             "email": "evgenii.zubairov@nebius.com"
