@@ -8457,7 +8457,7 @@
     },
     "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": false,
-    "engaged_via_existing_contact": false,
+    "engaged_via_existing_contact": true,
     "engaged_via_other_open_lead": true,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
