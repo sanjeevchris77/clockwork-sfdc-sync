@@ -85,6 +85,32 @@
   },
   {
     "domain": null,
+    "company": "Gmail",
+    "booth_scan_lead_count": 1,
+    "personas": [
+      {
+        "name": "Mohamed El GAMAL",
+        "title": "Architecht",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Abrahem Miya"
+      }
+    ],
+    "lifecycle_stage_counts": {
+      "In Progress (MEL)": 1
+    },
+    "company_already_engaged": "No",
+    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_contact": false,
+    "engaged_via_other_open_lead": false,
+    "existing_opportunities_all_owners": [],
+    "has_open_opportunity": false,
+    "is_qualified_contact": false,
+    "potential_pipeline_amount": 200000,
+    "potential_pipeline_basis": "estimated",
+    "abm_tier": null
+  },
+  {
+    "domain": null,
     "company": "OpsAgents AI",
     "booth_scan_lead_count": 1,
     "personas": [
@@ -196,24 +222,17 @@
   {
     "domain": null,
     "company": "[not provided]",
-    "booth_scan_lead_count": 2,
+    "booth_scan_lead_count": 1,
     "personas": [
-      {
-        "name": "Mohamed El GAMAL",
-        "title": "Architecht",
-        "lifecycle_stage": "In Progress (MEL)",
-        "owner": "Abrahem Miya"
-      },
       {
         "name": "Anita Pandey",
         "title": "wants to make you the owner",
-        "lifecycle_stage": "Marketing Engaged Lead",
+        "lifecycle_stage": "In Progress (SAL)",
         "owner": "Anita Pandey"
       }
     ],
     "lifecycle_stage_counts": {
-      "In Progress (MEL)": 1,
-      "Marketing Engaged Lead": 1
+      "In Progress (SAL)": 1
     },
     "company_already_engaged": "No",
     "engaged_via_existing_opportunity": false,
@@ -221,7 +240,7 @@
     "engaged_via_other_open_lead": false,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
-    "is_qualified_contact": false,
+    "is_qualified_contact": true,
     "potential_pipeline_amount": 200000,
     "potential_pipeline_basis": "estimated",
     "abm_tier": null

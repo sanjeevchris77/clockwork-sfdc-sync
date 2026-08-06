@@ -2064,7 +2064,7 @@
     "member_status": "Visited Booth",
     "lead_id": "00QTV00000ZuEyb2AF",
     "owner": "Abrahem Miya",
-    "company": "[not provided]",
+    "company": "Gmail",
     "website": null,
     "domain": null,
     "first_name": "Mohamed El",
@@ -2215,7 +2215,7 @@
     "linkedin_url": null,
     "lead_source": "Sales",
     "notes": null,
-    "lifecycle_stage": "Marketing Engaged Lead",
+    "lifecycle_stage": "In Progress (SAL)",
     "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000JFzOP2A1/view",
     "company_already_engaged": "No"
   },
