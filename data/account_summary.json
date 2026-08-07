@@ -1010,12 +1010,12 @@
   },
   {
     "domain": "axelera.ai",
-    "company": "Axelera",
+    "company": "Axelera AI",
     "booth_scan_lead_count": 1,
     "personas": [
       {
         "name": "Manuel Botija Rodenas",
-        "title": "Vice President - Product Management \u00e2\u20ac\u00a2 Executive - R&PD",
+        "title": "VP - Product Management",
         "lifecycle_stage": "In Progress (MQL)",
         "owner": "Joe Tarantino"
       }
@@ -1026,7 +1026,7 @@
     "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": true,
-    "engaged_via_other_open_lead": false,
+    "engaged_via_other_open_lead": true,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
     "is_qualified_contact": true,
@@ -2956,7 +2956,7 @@
     "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": false,
     "engaged_via_existing_contact": true,
-    "engaged_via_other_open_lead": false,
+    "engaged_via_other_open_lead": true,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
     "is_qualified_contact": true,
