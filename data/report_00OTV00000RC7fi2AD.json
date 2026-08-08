@@ -3571,9 +3571,9 @@
               "value": "Other / Unknown; "
             },
             {
-              "escapedLabel": "Technology",
-              "label": "Technology",
-              "value": "Technology"
+              "escapedLabel": "Other / Unknown",
+              "label": "Other / Unknown",
+              "value": "Other / Unknown"
             },
             {
               "escapedLabel": "Low",
@@ -12919,14 +12919,14 @@
               "value": "Other / Unknown; "
             },
             {
-              "escapedLabel": "Engineering",
-              "label": "Engineering",
-              "value": "Engineering"
+              "escapedLabel": "CXO",
+              "label": "CXO",
+              "value": "CXO"
             },
             {
-              "escapedLabel": "Medium",
-              "label": "Medium",
-              "value": "Medium"
+              "escapedLabel": "Low",
+              "label": "Low",
+              "value": "Low"
             },
             {
               "label": "-",
@@ -13247,14 +13247,14 @@
               "value": "Other / Unknown; "
             },
             {
-              "escapedLabel": "Software Engineer",
-              "label": "Software Engineer",
-              "value": "Software Engineer"
+              "escapedLabel": "Other / Unknown",
+              "label": "Other / Unknown",
+              "value": "Other / Unknown"
             },
             {
-              "escapedLabel": "Medium",
-              "label": "Medium",
-              "value": "Medium"
+              "escapedLabel": "Low",
+              "label": "Low",
+              "value": "Low"
             },
             {
               "label": "-",
