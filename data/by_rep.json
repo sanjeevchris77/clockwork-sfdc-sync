@@ -683,22 +683,6 @@
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000MB0RTYA1/view"
       },
       {
-        "opp_id": "006TV00000OtANWYA3",
-        "owner": "Sean Coughlin",
-        "account": "Cudo Compute",
-        "account_website": "www.cudocompute.com",
-        "domain": "cudocompute.com",
-        "amount": 200000.0,
-        "stage": "00 - Prospecting",
-        "is_open": true,
-        "lead_source": "Sales",
-        "created_date": "2025-09-22T16:48:47.000+0000",
-        "origin": "Existing",
-        "campaign": null,
-        "contacts": [],
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000OtANWYA3/view"
-      },
-      {
         "opp_id": "006TV00000RPlsHYAT",
         "owner": "Sean Coughlin",
         "account": "Nebius",
@@ -860,8 +844,8 @@
         "account": "Nebius",
         "account_website": "https://nebius.com",
         "domain": "nebius.com",
-        "amount": 200000.0,
-        "stage": "02 - Pilot Kick Off",
+        "amount": 150000.0,
+        "stage": "01 - Qualified",
         "is_open": true,
         "lead_source": "Sales",
         "created_date": "2026-05-04T16:59:03.000+0000",
@@ -2178,7 +2162,7 @@
         "notes": null,
         "lifecycle_stage": "In Progress (SAL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000aCTHo2AO/view",
-        "company_already_engaged": "No"
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Panel Attendees | 07-09-2026",
@@ -3135,8 +3119,8 @@
         "account": "IREN",
         "account_website": "https://iren.com",
         "domain": "iren.com",
-        "amount": 200000.0,
-        "stage": "00 - Prospecting",
+        "amount": 150000.0,
+        "stage": "01 - Qualified",
         "is_open": true,
         "lead_source": "Sales",
         "created_date": "2026-07-13T17:01:58.000+0000",
@@ -3655,8 +3639,8 @@
         "lead_id": "00QTV00000ZuGsg2AF",
         "owner": "Abrahem Miya",
         "company": "OpsAgents AI",
-        "website": null,
-        "domain": null,
+        "website": "https://opagents.agency",
+        "domain": "opagents.agency",
         "first_name": "Michal",
         "last_name": "Shatz",
         "title": "Founder",
@@ -8170,7 +8154,24 @@
         "company_already_engaged": "No"
       }
     ],
-    "opportunities": []
+    "opportunities": [
+      {
+        "opp_id": "006TV00000OtANWYA3",
+        "owner": "Abrahem Miya",
+        "account": "Cudo Compute",
+        "account_website": "www.cudocompute.com",
+        "domain": "cudocompute.com",
+        "amount": 200000.0,
+        "stage": "00 - Prospecting",
+        "is_open": true,
+        "lead_source": "Sales",
+        "created_date": "2025-09-22T16:48:47.000+0000",
+        "origin": "Existing",
+        "campaign": null,
+        "contacts": [],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000OtANWYA3/view"
+      }
+    ]
   },
   "Chris Bowen": {
     "leads": [

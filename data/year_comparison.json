@@ -3,7 +3,7 @@
   "raise_2025": {
     "campaign_id": "701TV00000SLsriYAD",
     "lead_count": 41,
-    "opportunity_count": 5,
+    "opportunity_count": 7,
     "lifecycle_stage_counts": {
       "In Progress (SAL)": 9,
       "Unqualified": 20,
@@ -12,11 +12,11 @@
       "Remarket": 1
     },
     "opp_stage_counts": {
-      "Closed Lost": 3,
+      "Closed Lost": 5,
       "00 - Prospecting": 2
     },
-    "pipegen_potential": 1000000,
-    "real_opportunity_amount_total": 290000.0,
+    "pipegen_potential": 1400000,
+    "real_opportunity_amount_total": 1240000.0,
     "opportunities": [
       {
         "opp_id": "006Kb00000JlkS6IAJ",
@@ -55,8 +55,50 @@
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006Kb00000JlkV3IAJ/view"
       },
       {
-        "opp_id": "006TV00000OtANWYA3",
+        "opp_id": "006TV00000G22m5YAB",
         "owner": "Sean Coughlin",
+        "account": "ByteDance",
+        "domain": "bytedance.com",
+        "amount": 750000.0,
+        "stage": "Closed Lost",
+        "contacts": [
+          {
+            "name": "Sophie Xie",
+            "title": "Network Software Development Engineer",
+            "email": "sophie.xie@bytedance.com"
+          },
+          {
+            "name": "Yuanyuan Li",
+            "title": "Network Software Engineer",
+            "email": "yuanyuanli@bytedance.com"
+          },
+          {
+            "name": "Zhaobo Zhang",
+            "title": "GPU & Ai Application Architect",
+            "email": "zhaobo.zhang@bytedance.com"
+          }
+        ],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000G22m5YAB/view"
+      },
+      {
+        "opp_id": "006TV00000MB0RTYA1",
+        "owner": "Sean Coughlin",
+        "account": "Scaleway",
+        "domain": "scaleway.com",
+        "amount": 200000.0,
+        "stage": "Closed Lost",
+        "contacts": [
+          {
+            "name": "Fred Bardolle",
+            "title": "Head of Product, AI",
+            "email": "fbardolle@scaleway.com"
+          }
+        ],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000MB0RTYA1/view"
+      },
+      {
+        "opp_id": "006TV00000OtANWYA3",
+        "owner": "Abrahem Miya",
         "account": "Cudo Compute",
         "domain": "cudocompute.com",
         "amount": 200000.0,
@@ -99,14 +141,14 @@
     "opp_stage_counts": {
       "Closed Won": 5,
       "Closed Lost": 32,
-      "02 - Pilot Kick Off": 2,
+      "02 - Pilot Kick Off": 1,
       "03 - Technical Validation": 5,
       "04 - Negotiations": 1,
-      "01 - Qualified": 2,
-      "00 - Prospecting": 8
+      "01 - Qualified": 4,
+      "00 - Prospecting": 7
     },
     "pipegen_potential": 11000000,
-    "real_opportunity_amount_total": 14675000.0,
+    "real_opportunity_amount_total": 14575000.0,
     "opportunities": [
       {
         "opp_id": "006Kb00000JlkRdIAJ",
@@ -795,7 +837,7 @@
       },
       {
         "opp_id": "006TV00000OtANWYA3",
-        "owner": "Sean Coughlin",
+        "owner": "Abrahem Miya",
         "account": "Cudo Compute",
         "domain": "cudocompute.com",
         "amount": 200000.0,
@@ -1012,8 +1054,8 @@
         "owner": "Sean Coughlin",
         "account": "Nebius",
         "domain": "nebius.com",
-        "amount": 200000.0,
-        "stage": "02 - Pilot Kick Off",
+        "amount": 150000.0,
+        "stage": "01 - Qualified",
         "contacts": [
           {
             "name": "Narek Tatevosyan",
@@ -1058,8 +1100,8 @@
         "owner": "Greg Mark",
         "account": "IREN",
         "domain": "iren.com",
-        "amount": 200000.0,
-        "stage": "00 - Prospecting",
+        "amount": 150000.0,
+        "stage": "01 - Qualified",
         "contacts": [],
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000bo5jxYAA/view"
       }
@@ -1116,12 +1158,29 @@
     "overlapping_companies": [
       "axelera.ai",
       "cudocompute.com",
+      "scaleway.com",
       "sgdl.com"
     ],
     "overlapping_opportunities_2025": [
       {
-        "opp_id": "006TV00000OtANWYA3",
+        "opp_id": "006TV00000MB0RTYA1",
         "owner": "Sean Coughlin",
+        "account": "Scaleway",
+        "domain": "scaleway.com",
+        "amount": 200000.0,
+        "stage": "Closed Lost",
+        "contacts": [
+          {
+            "name": "Fred Bardolle",
+            "title": "Head of Product, AI",
+            "email": "fbardolle@scaleway.com"
+          }
+        ],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000MB0RTYA1/view"
+      },
+      {
+        "opp_id": "006TV00000OtANWYA3",
+        "owner": "Abrahem Miya",
         "account": "Cudo Compute",
         "domain": "cudocompute.com",
         "amount": 200000.0,
@@ -1132,8 +1191,16 @@
     ],
     "overlapping_opportunities_2026": [
       {
-        "opp_id": "006TV00000OtANWYA3",
+        "opp_id": "006TV00000MB0RTYA1",
         "owner": "Sean Coughlin",
+        "account": "Scaleway",
+        "domain": "scaleway.com",
+        "amount": 200000.0,
+        "stage": "Closed Lost"
+      },
+      {
+        "opp_id": "006TV00000OtANWYA3",
+        "owner": "Abrahem Miya",
         "account": "Cudo Compute",
         "domain": "cudocompute.com",
         "amount": 200000.0,

@@ -805,8 +805,8 @@
     "lead_id": "00QTV00000ZuGsg2AF",
     "owner": "Abrahem Miya",
     "company": "OpsAgents AI",
-    "website": null,
-    "domain": null,
+    "website": "https://opagents.agency",
+    "domain": "opagents.agency",
     "first_name": "Michal",
     "last_name": "Shatz",
     "title": "Founder",
@@ -5997,7 +5997,7 @@
     "notes": null,
     "lifecycle_stage": "In Progress (SAL)",
     "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000aCTHo2AO/view",
-    "company_already_engaged": "No"
+    "company_already_engaged": "Yes"
   },
   {
     "campaign": "[Raise26Paris] Panel Attendees | 07-09-2026",
