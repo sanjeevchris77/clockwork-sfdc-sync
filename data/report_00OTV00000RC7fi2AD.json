@@ -9573,9 +9573,9 @@
               "value": "00QTV00000UeFjt2AF"
             },
             {
-              "label": "CEO & Co-founder",
+              "label": "Co-Founder & CEO",
               "recordId": "00QTV00000UeFjt2AF",
-              "value": "CEO & Co-founder"
+              "value": "Co-Founder & CEO"
             },
             {
               "escapedLabel": "VPC networking for on-prem/edge/bare metal. he stopped by our booth along with a few others.",
@@ -9639,9 +9639,9 @@
               "value": "Neo Cloud; Enterprise; "
             },
             {
-              "escapedLabel": "Other",
-              "label": "Other",
-              "value": "Other"
+              "escapedLabel": "CXO",
+              "label": "CXO",
+              "value": "CXO"
             },
             {
               "escapedLabel": "High",

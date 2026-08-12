@@ -2515,7 +2515,7 @@
     },
     "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": false,
-    "engaged_via_existing_contact": false,
+    "engaged_via_existing_contact": true,
     "engaged_via_other_open_lead": true,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
@@ -7003,7 +7003,7 @@
     "personas": [
       {
         "name": "Alex Saroyan",
-        "title": "CEO & Co-founder",
+        "title": "Co-Founder & CEO",
         "lifecycle_stage": "In Progress (MQL)",
         "owner": "Greg Mark"
       },
