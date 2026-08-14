@@ -33,22 +33,22 @@
               "value": "Visited Booth"
             },
             {
-              "label": "Supermicro",
-              "value": "00QTV00000ZuA8b2AF"
+              "label": "SuperMicro",
+              "value": "001TV00000CdrUpYAJ"
             },
             {
               "label": "Greg Mark",
               "value": "005TV000005KfVaYAK"
             },
             {
-              "escapedLabel": "Marketing Qualified Lead",
-              "label": "Marketing Qualified Lead",
-              "value": "Marketing Qualified Lead"
+              "escapedLabel": "Sales Accepted Lead",
+              "label": "Sales Accepted Lead",
+              "value": "Sales Accepted Lead"
             },
             {
-              "label": "In Progress (MQL)",
+              "label": "In Progress (SAL)",
               "recordId": "00QTV00000ZuA8b2AF",
-              "value": "In Progress (MQL)"
+              "value": "In Progress (SAL)"
             },
             {
               "label": "Alessia",
@@ -171,8 +171,336 @@
               "value": "00QTV00000ZuA8b2AF"
             },
             {
+              "label": "003TV0000129hIb",
+              "value": "003TV0000129hIbYAI"
+            },
+            {
               "label": "-",
               "value": null
+            }
+          ]
+        },
+        {
+          "dataCells": [
+            {
+              "label": "7/11/2026",
+              "value": "2026-07-11"
+            },
+            {
+              "label": "[Raise26Paris] Booth Scans | 07-08-2026",
+              "recordId": "701TV00000o71ibYAA",
+              "recordTypeId": "012TV000001hAErYAM",
+              "value": "701TV00000o71ibYAA"
+            },
+            {
+              "label": "Visited Booth",
+              "value": "Visited Booth"
+            },
+            {
+              "label": "Sensable Inc",
+              "value": "001TV00000uITOJYA4"
+            },
+            {
+              "label": "Greg Mark",
+              "value": "005TV000005KfVaYAK"
+            },
+            {
+              "escapedLabel": "Sales Accepted Lead",
+              "label": "Sales Accepted Lead",
+              "value": "Sales Accepted Lead"
+            },
+            {
+              "label": "In Progress (SAL)",
+              "recordId": "00QTV00000Zu9qw2AB",
+              "value": "In Progress (SAL)"
+            },
+            {
+              "label": "Anurag",
+              "recordId": "00QTV00000Zu9qw2AB",
+              "value": "00QTV00000Zu9qw2AB"
+            },
+            {
+              "label": "Maunder",
+              "recordId": "00QTV00000Zu9qw2AB",
+              "value": "00QTV00000Zu9qw2AB"
+            },
+            {
+              "label": "Founder",
+              "recordId": "00QTV00000Zu9qw2AB",
+              "value": "Founder"
+            },
+            {
+              "escapedLabel": "-",
+              "label": "-",
+              "value": null
+            },
+            {
+              "label": "amaunder@getsensable.com",
+              "recordId": "00QTV00000Zu9qw2AB",
+              "value": "amaunder@getsensable.com"
+            },
+            {
+              "label": "-",
+              "recordId": "00QTV00000Zu9qw2AB",
+              "value": null
+            },
+            {
+              "label": "14084207617",
+              "recordId": "00QTV00000Zu9qw2AB",
+              "value": "14084207617"
+            },
+            {
+              "escapedLabel": "",
+              "label": "",
+              "recordId": "00QTV00000Zu9qw2AB",
+              "value": ""
+            },
+            {
+              "label": "<a href=\"javascript:openPopupFocus%28%27https%3A%2F%2Fwww.linkedin.com%2Fin%2Famaunder%27%2C%20%27_blank%27%2C%20620%2C%20430%2C%20%27width%3D620%2Cheight%3D430%2Cresizable%3Dyes%2Ctoolbar%3Dyes%2Cstatus%3Dyes%2Cscrollbars%3Dyes%2Cmenubar%3Dyes%2Cdirectories%3Dyes%2Clocation%3Dyes%2Cdependant%3Dno%27%2C%20false%2C%20true%29%3B\" title=\"https://www.linkedin.com/in/amaunder (New Window)\">https://www.linkedin.com/in/amaunder</a>",
+              "recordId": "00QTV00000Zu9qw2AB",
+              "value": "https://www.linkedin.com/in/amaunder"
+            },
+            {
+              "escapedLabel": "Marketing",
+              "label": "Marketing",
+              "value": "Marketing"
+            },
+            {
+              "escapedLabel": "Marketing",
+              "label": "Marketing",
+              "value": "Marketing"
+            },
+            {
+              "escapedLabel": "Event",
+              "label": "Event",
+              "value": "Event"
+            },
+            {
+              "escapedLabel": "Event",
+              "label": "Event",
+              "value": "Event"
+            },
+            {
+              "label": "Business Executive",
+              "recordId": "00QTV00000Zu9qw2AB",
+              "value": "Business Executive"
+            },
+            {
+              "escapedLabel": "Enterprise; ",
+              "label": "Enterprise; ",
+              "value": "Enterprise; "
+            },
+            {
+              "escapedLabel": "Other",
+              "label": "Other",
+              "value": "Other"
+            },
+            {
+              "escapedLabel": "Low",
+              "label": "Low",
+              "value": "Low"
+            },
+            {
+              "label": "-",
+              "recordId": "00QTV00000Zu9qw2AB",
+              "value": null
+            },
+            {
+              "label": "-",
+              "value": null
+            },
+            {
+              "label": "-",
+              "value": null
+            },
+            {
+              "label": "-",
+              "value": null
+            },
+            {
+              "label": "-",
+              "value": null
+            },
+            {
+              "label": "[Raise26Paris] Booth Scans | 07-08-2026",
+              "recordId": "00QTV00000Zu9qw2AB",
+              "value": "[Raise26Paris] Booth Scans | 07-08-2026"
+            },
+            {
+              "label": "-",
+              "value": null
+            },
+            {
+              "label": "00QTV00000Zu9qw",
+              "value": "00QTV00000Zu9qw2AB"
+            },
+            {
+              "label": "003TV0000129XXp",
+              "value": "003TV0000129XXpYAM"
+            },
+            {
+              "label": "-",
+              "value": null
+            }
+          ]
+        },
+        {
+          "dataCells": [
+            {
+              "label": "4/27/2026",
+              "value": "2026-04-27"
+            },
+            {
+              "label": "[Raise26Paris] Booth Scans | 07-08-2026",
+              "recordId": "701TV00000o71ibYAA",
+              "recordTypeId": "012TV000001hAErYAM",
+              "value": "701TV00000o71ibYAA"
+            },
+            {
+              "label": "Visited Booth",
+              "value": "Visited Booth"
+            },
+            {
+              "label": "Arista Networks",
+              "value": "001Kb00001Gx1plIAB"
+            },
+            {
+              "label": "Greg Mark",
+              "value": "005TV000005KfVaYAK"
+            },
+            {
+              "escapedLabel": "Sales Accepted Lead",
+              "label": "Sales Accepted Lead",
+              "value": "Sales Accepted Lead"
+            },
+            {
+              "label": "In Progress (SAL)",
+              "recordId": "00QTV00000Xc3x92AB",
+              "value": "In Progress (SAL)"
+            },
+            {
+              "label": "Thomas",
+              "recordId": "00QTV00000Xc3x92AB",
+              "value": "00QTV00000Xc3x92AB"
+            },
+            {
+              "label": "Sillaber",
+              "recordId": "00QTV00000Xc3x92AB",
+              "value": "00QTV00000Xc3x92AB"
+            },
+            {
+              "label": "Senior Technical Lead, Systems Engineering",
+              "recordId": "00QTV00000Xc3x92AB",
+              "value": "Senior Technical Lead, Systems Engineering"
+            },
+            {
+              "escapedLabel": "-",
+              "label": "-",
+              "value": null
+            },
+            {
+              "label": "ts@arista.com",
+              "recordId": "00QTV00000Xc3x92AB",
+              "value": "ts@arista.com"
+            },
+            {
+              "label": "-",
+              "recordId": "00QTV00000Xc3x92AB",
+              "value": null
+            },
+            {
+              "label": "+49 160 5231268",
+              "recordId": "00QTV00000Xc3x92AB",
+              "value": "+49 160 5231268"
+            },
+            {
+              "escapedLabel": "",
+              "label": "",
+              "recordId": "00QTV00000Xc3x92AB",
+              "value": ""
+            },
+            {
+              "label": "<a href=\"javascript:openPopupFocus%28%27http%3A%2F%2Flinkedin.com%2Fin%2Fthomas-sillaber-97341352%27%2C%20%27_blank%27%2C%20620%2C%20430%2C%20%27width%3D620%2Cheight%3D430%2Cresizable%3Dyes%2Ctoolbar%3Dyes%2Cstatus%3Dyes%2Cscrollbars%3Dyes%2Cmenubar%3Dyes%2Cdirectories%3Dyes%2Clocation%3Dyes%2Cdependant%3Dno%27%2C%20false%2C%20true%29%3B\" title=\"http://linkedin.com/in/thomas-sillaber-97341352 (New Window)\">http://linkedin.com/in/thomas-sillaber-97341352</a>",
+              "recordId": "00QTV00000Xc3x92AB",
+              "value": "http://linkedin.com/in/thomas-sillaber-97341352"
+            },
+            {
+              "escapedLabel": "Marketing",
+              "label": "Marketing",
+              "value": "Marketing"
+            },
+            {
+              "escapedLabel": "Marketing",
+              "label": "Marketing",
+              "value": "Marketing"
+            },
+            {
+              "escapedLabel": "Webinar",
+              "label": "Webinar",
+              "value": "Webinar"
+            },
+            {
+              "escapedLabel": "Event",
+              "label": "Event",
+              "value": "Event"
+            },
+            {
+              "label": "Practitioner",
+              "recordId": "00QTV00000Xc3x92AB",
+              "value": "Practitioner"
+            },
+            {
+              "escapedLabel": "Enterprise; ",
+              "label": "Enterprise; ",
+              "value": "Enterprise; "
+            },
+            {
+              "escapedLabel": "Engineering",
+              "label": "Engineering",
+              "value": "Engineering"
+            },
+            {
+              "escapedLabel": "Low",
+              "label": "Low",
+              "value": "Low"
+            },
+            {
+              "label": "-",
+              "recordId": "00QTV00000Xc3x92AB",
+              "value": null
+            },
+            {
+              "label": "-",
+              "value": null
+            },
+            {
+              "label": "-",
+              "value": null
+            },
+            {
+              "label": "-",
+              "value": null
+            },
+            {
+              "label": "-",
+              "value": null
+            },
+            {
+              "label": "[Raise26Paris] Booth Scans | 07-08-2026",
+              "recordId": "00QTV00000Xc3x92AB",
+              "value": "[Raise26Paris] Booth Scans | 07-08-2026"
+            },
+            {
+              "label": "-",
+              "value": null
+            },
+            {
+              "label": "00QTV00000Xc3x9",
+              "value": "00QTV00000Xc3x92AB"
+            },
+            {
+              "label": "003TV0000129bMz",
+              "value": "003TV0000129bMzYAI"
             },
             {
               "label": "-",
@@ -333,170 +661,6 @@
             {
               "label": "00QTV00000S4JYf",
               "value": "00QTV00000S4JYf2AN"
-            },
-            {
-              "label": "-",
-              "value": null
-            },
-            {
-              "label": "-",
-              "value": null
-            }
-          ]
-        },
-        {
-          "dataCells": [
-            {
-              "label": "4/27/2026",
-              "value": "2026-04-27"
-            },
-            {
-              "label": "[Raise26Paris] Booth Scans | 07-08-2026",
-              "recordId": "701TV00000o71ibYAA",
-              "recordTypeId": "012TV000001hAErYAM",
-              "value": "701TV00000o71ibYAA"
-            },
-            {
-              "label": "Visited Booth",
-              "value": "Visited Booth"
-            },
-            {
-              "label": "Arista Networks",
-              "value": "00QTV00000Xc3x92AB"
-            },
-            {
-              "label": "Greg Mark",
-              "value": "005TV000005KfVaYAK"
-            },
-            {
-              "escapedLabel": "Marketing Engaged Lead",
-              "label": "Marketing Engaged Lead",
-              "value": "Marketing Engaged Lead"
-            },
-            {
-              "label": "In Progress (MEL)",
-              "recordId": "00QTV00000Xc3x92AB",
-              "value": "In Progress (MEL)"
-            },
-            {
-              "label": "Thomas",
-              "recordId": "00QTV00000Xc3x92AB",
-              "value": "00QTV00000Xc3x92AB"
-            },
-            {
-              "label": "Sillaber",
-              "recordId": "00QTV00000Xc3x92AB",
-              "value": "00QTV00000Xc3x92AB"
-            },
-            {
-              "label": "Senior Technical Lead, Systems Engineering",
-              "recordId": "00QTV00000Xc3x92AB",
-              "value": "Senior Technical Lead, Systems Engineering"
-            },
-            {
-              "escapedLabel": "-",
-              "label": "-",
-              "value": null
-            },
-            {
-              "label": "ts@arista.com",
-              "recordId": "00QTV00000Xc3x92AB",
-              "value": "ts@arista.com"
-            },
-            {
-              "label": "-",
-              "recordId": "00QTV00000Xc3x92AB",
-              "value": null
-            },
-            {
-              "label": "+49 160 5231268",
-              "recordId": "00QTV00000Xc3x92AB",
-              "value": "+49 160 5231268"
-            },
-            {
-              "escapedLabel": "",
-              "label": "",
-              "recordId": "00QTV00000Xc3x92AB",
-              "value": ""
-            },
-            {
-              "label": "<a href=\"javascript:openPopupFocus%28%27http%3A%2F%2Flinkedin.com%2Fin%2Fthomas-sillaber-97341352%27%2C%20%27_blank%27%2C%20620%2C%20430%2C%20%27width%3D620%2Cheight%3D430%2Cresizable%3Dyes%2Ctoolbar%3Dyes%2Cstatus%3Dyes%2Cscrollbars%3Dyes%2Cmenubar%3Dyes%2Cdirectories%3Dyes%2Clocation%3Dyes%2Cdependant%3Dno%27%2C%20false%2C%20true%29%3B\" title=\"http://linkedin.com/in/thomas-sillaber-97341352 (New Window)\">http://linkedin.com/in/thomas-sillaber-97341352</a>",
-              "recordId": "00QTV00000Xc3x92AB",
-              "value": "http://linkedin.com/in/thomas-sillaber-97341352"
-            },
-            {
-              "escapedLabel": "Marketing",
-              "label": "Marketing",
-              "value": "Marketing"
-            },
-            {
-              "escapedLabel": "Marketing",
-              "label": "Marketing",
-              "value": "Marketing"
-            },
-            {
-              "escapedLabel": "Webinar",
-              "label": "Webinar",
-              "value": "Webinar"
-            },
-            {
-              "escapedLabel": "Event",
-              "label": "Event",
-              "value": "Event"
-            },
-            {
-              "label": "Practitioner",
-              "recordId": "00QTV00000Xc3x92AB",
-              "value": "Practitioner"
-            },
-            {
-              "escapedLabel": "Enterprise; ",
-              "label": "Enterprise; ",
-              "value": "Enterprise; "
-            },
-            {
-              "escapedLabel": "Engineering",
-              "label": "Engineering",
-              "value": "Engineering"
-            },
-            {
-              "escapedLabel": "Low",
-              "label": "Low",
-              "value": "Low"
-            },
-            {
-              "label": "-",
-              "recordId": "00QTV00000Xc3x92AB",
-              "value": null
-            },
-            {
-              "label": "-",
-              "value": null
-            },
-            {
-              "label": "-",
-              "value": null
-            },
-            {
-              "label": "-",
-              "value": null
-            },
-            {
-              "label": "-",
-              "value": null
-            },
-            {
-              "label": "[Raise26Paris] Booth Scans | 07-08-2026",
-              "recordId": "00QTV00000Xc3x92AB",
-              "value": "[Raise26Paris] Booth Scans | 07-08-2026"
-            },
-            {
-              "label": "-",
-              "value": null
-            },
-            {
-              "label": "00QTV00000Xc3x9",
-              "value": "00QTV00000Xc3x92AB"
             },
             {
               "label": "-",
@@ -825,170 +989,6 @@
             {
               "label": "00QTV00000Zu8uo",
               "value": "00QTV00000Zu8uo2AB"
-            },
-            {
-              "label": "-",
-              "value": null
-            },
-            {
-              "label": "-",
-              "value": null
-            }
-          ]
-        },
-        {
-          "dataCells": [
-            {
-              "label": "7/11/2026",
-              "value": "2026-07-11"
-            },
-            {
-              "label": "[Raise26Paris] Booth Scans | 07-08-2026",
-              "recordId": "701TV00000o71ibYAA",
-              "recordTypeId": "012TV000001hAErYAM",
-              "value": "701TV00000o71ibYAA"
-            },
-            {
-              "label": "Visited Booth",
-              "value": "Visited Booth"
-            },
-            {
-              "label": "Sensable Inc",
-              "value": "00QTV00000Zu9qw2AB"
-            },
-            {
-              "label": "Greg Mark",
-              "value": "005TV000005KfVaYAK"
-            },
-            {
-              "escapedLabel": "Marketing Engaged Lead",
-              "label": "Marketing Engaged Lead",
-              "value": "Marketing Engaged Lead"
-            },
-            {
-              "label": "In Progress (MEL)",
-              "recordId": "00QTV00000Zu9qw2AB",
-              "value": "In Progress (MEL)"
-            },
-            {
-              "label": "Anurag",
-              "recordId": "00QTV00000Zu9qw2AB",
-              "value": "00QTV00000Zu9qw2AB"
-            },
-            {
-              "label": "Maunder",
-              "recordId": "00QTV00000Zu9qw2AB",
-              "value": "00QTV00000Zu9qw2AB"
-            },
-            {
-              "label": "Founder",
-              "recordId": "00QTV00000Zu9qw2AB",
-              "value": "Founder"
-            },
-            {
-              "escapedLabel": "-",
-              "label": "-",
-              "value": null
-            },
-            {
-              "label": "amaunder@getsensable.com",
-              "recordId": "00QTV00000Zu9qw2AB",
-              "value": "amaunder@getsensable.com"
-            },
-            {
-              "label": "-",
-              "recordId": "00QTV00000Zu9qw2AB",
-              "value": null
-            },
-            {
-              "label": "14084207617",
-              "recordId": "00QTV00000Zu9qw2AB",
-              "value": "14084207617"
-            },
-            {
-              "escapedLabel": "",
-              "label": "",
-              "recordId": "00QTV00000Zu9qw2AB",
-              "value": ""
-            },
-            {
-              "label": "<a href=\"javascript:openPopupFocus%28%27https%3A%2F%2Fwww.linkedin.com%2Fin%2Famaunder%27%2C%20%27_blank%27%2C%20620%2C%20430%2C%20%27width%3D620%2Cheight%3D430%2Cresizable%3Dyes%2Ctoolbar%3Dyes%2Cstatus%3Dyes%2Cscrollbars%3Dyes%2Cmenubar%3Dyes%2Cdirectories%3Dyes%2Clocation%3Dyes%2Cdependant%3Dno%27%2C%20false%2C%20true%29%3B\" title=\"https://www.linkedin.com/in/amaunder (New Window)\">https://www.linkedin.com/in/amaunder</a>",
-              "recordId": "00QTV00000Zu9qw2AB",
-              "value": "https://www.linkedin.com/in/amaunder"
-            },
-            {
-              "escapedLabel": "Marketing",
-              "label": "Marketing",
-              "value": "Marketing"
-            },
-            {
-              "escapedLabel": "Marketing",
-              "label": "Marketing",
-              "value": "Marketing"
-            },
-            {
-              "escapedLabel": "Event",
-              "label": "Event",
-              "value": "Event"
-            },
-            {
-              "escapedLabel": "Event",
-              "label": "Event",
-              "value": "Event"
-            },
-            {
-              "label": "Business Executive",
-              "recordId": "00QTV00000Zu9qw2AB",
-              "value": "Business Executive"
-            },
-            {
-              "escapedLabel": "Enterprise; ",
-              "label": "Enterprise; ",
-              "value": "Enterprise; "
-            },
-            {
-              "escapedLabel": "Other",
-              "label": "Other",
-              "value": "Other"
-            },
-            {
-              "escapedLabel": "Low",
-              "label": "Low",
-              "value": "Low"
-            },
-            {
-              "label": "-",
-              "recordId": "00QTV00000Zu9qw2AB",
-              "value": null
-            },
-            {
-              "label": "-",
-              "value": null
-            },
-            {
-              "label": "-",
-              "value": null
-            },
-            {
-              "label": "-",
-              "value": null
-            },
-            {
-              "label": "-",
-              "value": null
-            },
-            {
-              "label": "[Raise26Paris] Booth Scans | 07-08-2026",
-              "recordId": "00QTV00000Zu9qw2AB",
-              "value": "[Raise26Paris] Booth Scans | 07-08-2026"
-            },
-            {
-              "label": "-",
-              "value": null
-            },
-            {
-              "label": "00QTV00000Zu9qw",
-              "value": "00QTV00000Zu9qw2AB"
             },
             {
               "label": "-",
@@ -5289,14 +5289,14 @@
               "value": "005TV000005KfVaYAK"
             },
             {
-              "escapedLabel": "Marketing Engaged Lead",
-              "label": "Marketing Engaged Lead",
-              "value": "Marketing Engaged Lead"
+              "escapedLabel": "Sales Accepted Lead",
+              "label": "Sales Accepted Lead",
+              "value": "Sales Accepted Lead"
             },
             {
-              "label": "In Progress (MEL)",
+              "label": "In Progress (SAL)",
               "recordId": "00QTV00000ZuBKo2AN",
-              "value": "In Progress (MEL)"
+              "value": "In Progress (SAL)"
             },
             {
               "label": "Jordan",
@@ -14965,14 +14965,14 @@
               "value": "005TV000005KfVaYAK"
             },
             {
-              "escapedLabel": "Marketing Engaged Lead",
-              "label": "Marketing Engaged Lead",
-              "value": "Marketing Engaged Lead"
+              "escapedLabel": "Sales Accepted Lead",
+              "label": "Sales Accepted Lead",
+              "value": "Sales Accepted Lead"
             },
             {
-              "label": "In Progress (MEL)",
+              "label": "In Progress (SAL)",
               "recordId": "00QTV00000ZuGsZ2AV",
-              "value": "In Progress (MEL)"
+              "value": "In Progress (SAL)"
             },
             {
               "label": "Ernest",
@@ -15621,14 +15621,14 @@
               "value": "005TV000005KfVaYAK"
             },
             {
-              "escapedLabel": "Marketing Engaged Lead",
-              "label": "Marketing Engaged Lead",
-              "value": "Marketing Engaged Lead"
+              "escapedLabel": "Sales Accepted Lead",
+              "label": "Sales Accepted Lead",
+              "value": "Sales Accepted Lead"
             },
             {
-              "label": "In Progress (MEL)",
+              "label": "In Progress (SAL)",
               "recordId": "00QTV00000ZuGsd2AF",
-              "value": "In Progress (MEL)"
+              "value": "In Progress (SAL)"
             },
             {
               "label": "Victor",
@@ -18409,14 +18409,14 @@
               "value": "005TV000005KfVaYAK"
             },
             {
-              "escapedLabel": "Marketing Engaged Lead",
-              "label": "Marketing Engaged Lead",
-              "value": "Marketing Engaged Lead"
+              "escapedLabel": "Sales Accepted Lead",
+              "label": "Sales Accepted Lead",
+              "value": "Sales Accepted Lead"
             },
             {
-              "label": "In Progress (MEL)",
+              "label": "In Progress (SAL)",
               "recordId": "00QTV00000a3tt62AA",
-              "value": "In Progress (MEL)"
+              "value": "In Progress (SAL)"
             },
             {
               "label": "Brendan",

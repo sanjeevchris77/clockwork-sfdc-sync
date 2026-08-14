@@ -1020,7 +1020,7 @@
         "linkedin_url": null,
         "lead_source": "Event",
         "notes": null,
-        "lifecycle_stage": "In Progress (MEL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsZ2AV/view",
         "company_already_engaged": "No"
       },
@@ -1040,7 +1040,7 @@
         "linkedin_url": "https://www.linkedin.com/in/victorsunden",
         "lead_source": "Event",
         "notes": null,
-        "lifecycle_stage": "In Progress (MEL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsd2AF/view",
         "company_already_engaged": "No"
       },
@@ -1087,26 +1087,6 @@
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
         "member_status": "Visited Booth",
-        "lead_id": "00QTV00000Xc3x92AB",
-        "owner": "Greg Mark",
-        "company": "Arista Networks",
-        "website": "http://arista.com",
-        "domain": "arista.com",
-        "first_name": "Thomas",
-        "last_name": "Sillaber",
-        "title": "Senior Technical Lead, Systems Engineering",
-        "email": "ts@arista.com",
-        "mobile": "+49 160 5231268",
-        "linkedin_url": "linkedin.com/in/thomas-sillaber-97341352",
-        "lead_source": "Event",
-        "notes": null,
-        "lifecycle_stage": "In Progress (MEL)",
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000Xc3x92AB/view",
-        "company_already_engaged": "Yes"
-      },
-      {
-        "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
-        "member_status": "Visited Booth",
         "lead_id": "00QTV00000Zu9qw2AB",
         "owner": "Greg Mark",
         "company": "Sensable Inc",
@@ -1120,9 +1100,29 @@
         "linkedin_url": "https://www.linkedin.com/in/amaunder",
         "lead_source": "Event",
         "notes": null,
-        "lifecycle_stage": "In Progress (MEL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000Zu9qw2AB/view",
-        "company_already_engaged": "No"
+        "company_already_engaged": "Yes"
+      },
+      {
+        "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
+        "member_status": "Visited Booth",
+        "lead_id": "00QTV00000Xc3x92AB",
+        "owner": "Greg Mark",
+        "company": "Arista Networks",
+        "website": "http://arista.com",
+        "domain": "arista.com",
+        "first_name": "Thomas",
+        "last_name": "Sillaber",
+        "title": "Senior Technical Lead, Systems Engineering",
+        "email": "ts@arista.com",
+        "mobile": "+49 160 5231268",
+        "linkedin_url": "linkedin.com/in/thomas-sillaber-97341352",
+        "lead_source": "Event",
+        "notes": null,
+        "lifecycle_stage": "In Progress (SAL)",
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000Xc3x92AB/view",
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
@@ -1240,7 +1240,7 @@
         "linkedin_url": "https://linkedin.com/in/jordan-aug\u00e9-763ba4a8",
         "lead_source": "Event",
         "notes": null,
-        "lifecycle_stage": "In Progress (MEL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuBKo2AN/view",
         "company_already_engaged": "Yes"
       },
@@ -1340,7 +1340,7 @@
         "linkedin_url": "https://www.linkedin.com/in/alemielevi",
         "lead_source": "Event",
         "notes": "Super micro BD",
-        "lifecycle_stage": "In Progress (MQL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuA8b2AF/view",
         "company_already_engaged": "Yes"
       },
@@ -1540,7 +1540,7 @@
         "linkedin_url": "http://linkedin.com/in/brendan-dugan",
         "lead_source": "Event",
         "notes": null,
-        "lifecycle_stage": "In Progress (MEL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000a3tt62AA/view",
         "company_already_engaged": "Yes"
       },
@@ -1640,7 +1640,7 @@
         "linkedin_url": "https://www.linkedin.com/in/hoshikk/",
         "lead_source": "Event",
         "notes": null,
-        "lifecycle_stage": "In Progress (MQL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000aCRz82AG/view",
         "company_already_engaged": "No"
       },
@@ -1760,7 +1760,7 @@
         "linkedin_url": "http://linkedin.com/in/christianamhollis",
         "lead_source": "Event",
         "notes": null,
-        "lifecycle_stage": "Marketing Engaged Lead",
+        "lifecycle_stage": "In Progress (SAL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000aCRzp2AG/view",
         "company_already_engaged": "No"
       },
@@ -1800,7 +1800,7 @@
         "linkedin_url": "linkedin.com/in/ellie-o-neil-695380126",
         "lead_source": "Event",
         "notes": null,
-        "lifecycle_stage": "In Progress (MEL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000aCRzt2AG/view",
         "company_already_engaged": "Yes"
       },
@@ -2200,7 +2200,7 @@
         "linkedin_url": "linkedin.com/in/yanndupas",
         "lead_source": "Event",
         "notes": null,
-        "lifecycle_stage": "In Progress (MQL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000aCTHq2AO/view",
         "company_already_engaged": "No"
       },
@@ -2300,7 +2300,7 @@
         "linkedin_url": "https://www.linkedin.com/in/ahmedfshosha",
         "lead_source": "Event",
         "notes": null,
-        "lifecycle_stage": "Marketing Engaged Lead",
+        "lifecycle_stage": "In Progress (SAL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000aCTIK2A4/view",
         "company_already_engaged": "No"
       },
@@ -2360,7 +2360,7 @@
         "linkedin_url": "http://linkedin.com/in/mehdidjabri",
         "lead_source": "Event",
         "notes": null,
-        "lifecycle_stage": "In Progress (MEL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000aCTIU2A4/view",
         "company_already_engaged": "No"
       },
@@ -2440,7 +2440,7 @@
         "linkedin_url": "https://www.linkedin.com/in/umeshwareer",
         "lead_source": "Event",
         "notes": null,
-        "lifecycle_stage": "Marketing Engaged Lead",
+        "lifecycle_stage": "In Progress (SAL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000aCTIe2AO/view",
         "company_already_engaged": "Yes"
       },
@@ -2520,7 +2520,7 @@
         "linkedin_url": "linkedin.com/in/manjit-singh-309866165",
         "lead_source": "Event",
         "notes": null,
-        "lifecycle_stage": "In Progress (MQL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000aCTJ92AO/view",
         "company_already_engaged": "Yes"
       },
@@ -2660,7 +2660,7 @@
         "linkedin_url": "http://www.linkedin.com/in/mitchliutheta",
         "lead_source": "Event",
         "notes": null,
-        "lifecycle_stage": "Marketing Engaged Lead",
+        "lifecycle_stage": "In Progress (SAL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000aCTLA2A4/view",
         "company_already_engaged": "No"
       },
@@ -2680,7 +2680,7 @@
         "linkedin_url": "https://www.linkedin.com/in/janishshah/",
         "lead_source": "Event",
         "notes": null,
-        "lifecycle_stage": "Marketing Engaged Lead",
+        "lifecycle_stage": "In Progress (SAL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000aCTLG2A4/view",
         "company_already_engaged": "No"
       },
@@ -2720,7 +2720,7 @@
         "linkedin_url": "linkedin.com/in/mahdi-bouras",
         "lead_source": "Event",
         "notes": null,
-        "lifecycle_stage": "In Progress (MQL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000aCTLO2A4/view",
         "company_already_engaged": "No"
       },
@@ -2840,7 +2840,7 @@
         "linkedin_url": "https://www.linkedin.com/in/ben-thirlwall-98a2a12",
         "lead_source": "Event",
         "notes": null,
-        "lifecycle_stage": "In Progress (MQL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000aCTLv2AO/view",
         "company_already_engaged": "Yes"
       },
@@ -2860,7 +2860,7 @@
         "linkedin_url": "https://www.linkedin.com/in/kyle-armstrong-b6ba49213",
         "lead_source": "Event",
         "notes": null,
-        "lifecycle_stage": "In Progress (MQL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000aCTLw2AO/view",
         "company_already_engaged": "No"
       },

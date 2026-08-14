@@ -149,12 +149,12 @@
       {
         "name": "Janish Shah",
         "title": "Managing Partner",
-        "lifecycle_stage": "Marketing Engaged Lead",
+        "lifecycle_stage": "In Progress (SAL)",
         "owner": "Greg Mark"
       }
     ],
     "lifecycle_stage_counts": {
-      "Marketing Engaged Lead": 1
+      "In Progress (SAL)": 1
     },
     "company_already_engaged": "No",
     "engaged_via_existing_opportunity": false,
@@ -162,7 +162,7 @@
     "engaged_via_other_open_lead": false,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
-    "is_qualified_contact": false,
+    "is_qualified_contact": true,
     "potential_pipeline_amount": 200000,
     "potential_pipeline_basis": "estimated",
     "abm_tier": null
@@ -776,7 +776,7 @@
       {
         "name": "Thomas Sillaber",
         "title": "Senior Technical Lead, Systems Engineering",
-        "lifecycle_stage": "In Progress (MEL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "owner": "Greg Mark"
       },
       {
@@ -787,15 +787,16 @@
       }
     ],
     "lifecycle_stage_counts": {
-      "In Progress (MEL)": 2
+      "In Progress (SAL)": 1,
+      "In Progress (MEL)": 1
     },
     "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": false,
-    "engaged_via_existing_contact": false,
+    "engaged_via_existing_contact": true,
     "engaged_via_other_open_lead": true,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
-    "is_qualified_contact": false,
+    "is_qualified_contact": true,
     "potential_pipeline_amount": 200000,
     "potential_pipeline_basis": "estimated",
     "abm_tier": "Tier 3"
@@ -1966,12 +1967,12 @@
       {
         "name": "Jordan Aug\u00e9",
         "title": "Tech lead",
-        "lifecycle_stage": "In Progress (MEL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "owner": "Greg Mark"
       }
     ],
     "lifecycle_stage_counts": {
-      "In Progress (MEL)": 1
+      "In Progress (SAL)": 1
     },
     "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": true,
@@ -2016,7 +2017,7 @@
       }
     ],
     "has_open_opportunity": true,
-    "is_qualified_contact": false,
+    "is_qualified_contact": true,
     "potential_pipeline_amount": 750000.0,
     "potential_pipeline_basis": "real_open_opportunity",
     "abm_tier": "Tier 1"
@@ -4010,20 +4011,20 @@
       {
         "name": "Anurag Maunder",
         "title": "Founder",
-        "lifecycle_stage": "In Progress (MEL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "owner": "Greg Mark"
       }
     ],
     "lifecycle_stage_counts": {
-      "In Progress (MEL)": 1
+      "In Progress (SAL)": 1
     },
-    "company_already_engaged": "No",
+    "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": false,
-    "engaged_via_existing_contact": false,
+    "engaged_via_existing_contact": true,
     "engaged_via_other_open_lead": false,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
-    "is_qualified_contact": false,
+    "is_qualified_contact": true,
     "potential_pipeline_amount": 200000,
     "potential_pipeline_basis": "estimated",
     "abm_tier": null
@@ -7888,12 +7889,12 @@
       {
         "name": "Ernest Zarichnyi",
         "title": "Business Development Specialist",
-        "lifecycle_stage": "In Progress (MEL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "owner": "Greg Mark"
       }
     ],
     "lifecycle_stage_counts": {
-      "In Progress (MEL)": 1
+      "In Progress (SAL)": 1
     },
     "company_already_engaged": "No",
     "engaged_via_existing_opportunity": false,
@@ -7901,7 +7902,7 @@
     "engaged_via_other_open_lead": false,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
-    "is_qualified_contact": false,
+    "is_qualified_contact": true,
     "potential_pipeline_amount": 200000,
     "potential_pipeline_basis": "estimated",
     "abm_tier": null
@@ -8154,7 +8155,7 @@
       {
         "name": "Brendan Dugan",
         "title": "events/demand gen marketing",
-        "lifecycle_stage": "In Progress (MEL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "owner": "Greg Mark"
       },
       {
@@ -8165,8 +8166,7 @@
       }
     ],
     "lifecycle_stage_counts": {
-      "In Progress (MEL)": 1,
-      "In Progress (SAL)": 1
+      "In Progress (SAL)": 2
     },
     "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": false,
@@ -8187,12 +8187,12 @@
       {
         "name": "Mehdi Djabri",
         "title": "CEO",
-        "lifecycle_stage": "In Progress (MEL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "owner": "Greg Mark"
       }
     ],
     "lifecycle_stage_counts": {
-      "In Progress (MEL)": 1
+      "In Progress (SAL)": 1
     },
     "company_already_engaged": "No",
     "engaged_via_existing_opportunity": false,
@@ -8200,7 +8200,7 @@
     "engaged_via_other_open_lead": false,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
-    "is_qualified_contact": false,
+    "is_qualified_contact": true,
     "potential_pipeline_amount": 200000,
     "potential_pipeline_basis": "estimated",
     "abm_tier": null
@@ -8665,12 +8665,12 @@
       {
         "name": "Yann Dupas",
         "title": "GTM",
-        "lifecycle_stage": "In Progress (MQL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "owner": "Greg Mark"
       }
     ],
     "lifecycle_stage_counts": {
-      "In Progress (MQL)": 1
+      "In Progress (SAL)": 1
     },
     "company_already_engaged": "No",
     "engaged_via_existing_opportunity": false,
@@ -8743,12 +8743,12 @@
       {
         "name": "Hoshik Kim",
         "title": "SVP Memory System Research",
-        "lifecycle_stage": "In Progress (MQL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "owner": "Greg Mark"
       }
     ],
     "lifecycle_stage_counts": {
-      "In Progress (MQL)": 1
+      "In Progress (SAL)": 1
     },
     "company_already_engaged": "No",
     "engaged_via_existing_opportunity": false,
@@ -9165,12 +9165,12 @@
       {
         "name": "Christiana Hollis",
         "title": "Managing Director, Strategy & Operations",
-        "lifecycle_stage": "Marketing Engaged Lead",
+        "lifecycle_stage": "In Progress (SAL)",
         "owner": "Greg Mark"
       }
     ],
     "lifecycle_stage_counts": {
-      "Marketing Engaged Lead": 1
+      "In Progress (SAL)": 1
     },
     "company_already_engaged": "No",
     "engaged_via_existing_opportunity": false,
@@ -9178,7 +9178,7 @@
     "engaged_via_other_open_lead": false,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
-    "is_qualified_contact": false,
+    "is_qualified_contact": true,
     "potential_pipeline_amount": 200000,
     "potential_pipeline_basis": "estimated",
     "abm_tier": null
@@ -9275,12 +9275,12 @@
       {
         "name": "Ahmed Shosha",
         "title": "CEO",
-        "lifecycle_stage": "Marketing Engaged Lead",
+        "lifecycle_stage": "In Progress (SAL)",
         "owner": "Greg Mark"
       }
     ],
     "lifecycle_stage_counts": {
-      "Marketing Engaged Lead": 1
+      "In Progress (SAL)": 1
     },
     "company_already_engaged": "No",
     "engaged_via_existing_opportunity": false,
@@ -9288,7 +9288,7 @@
     "engaged_via_other_open_lead": false,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
-    "is_qualified_contact": false,
+    "is_qualified_contact": true,
     "potential_pipeline_amount": 200000,
     "potential_pipeline_basis": "estimated",
     "abm_tier": null
@@ -9307,13 +9307,12 @@
       {
         "name": "Ben Thirwall",
         "title": "Head of Billing EMEA",
-        "lifecycle_stage": "In Progress (MQL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "owner": "Greg Mark"
       }
     ],
     "lifecycle_stage_counts": {
-      "In Progress (SAL)": 1,
-      "In Progress (MQL)": 1
+      "In Progress (SAL)": 2
     },
     "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": false,
@@ -9366,7 +9365,7 @@
       {
         "name": "Alessia Vitale",
         "title": "Business Development Manager",
-        "lifecycle_stage": "In Progress (MQL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "owner": "Greg Mark"
       },
       {
@@ -9377,8 +9376,7 @@
       }
     ],
     "lifecycle_stage_counts": {
-      "In Progress (SAL)": 2,
-      "In Progress (MQL)": 1
+      "In Progress (SAL)": 3
     },
     "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": true,
@@ -9633,12 +9631,12 @@
       {
         "name": "Victor Sund\u00e9n",
         "title": "Co-founder & CEO",
-        "lifecycle_stage": "In Progress (MEL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "owner": "Greg Mark"
       }
     ],
     "lifecycle_stage_counts": {
-      "In Progress (MEL)": 1
+      "In Progress (SAL)": 1
     },
     "company_already_engaged": "No",
     "engaged_via_existing_opportunity": false,
@@ -9646,7 +9644,7 @@
     "engaged_via_other_open_lead": false,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
-    "is_qualified_contact": false,
+    "is_qualified_contact": true,
     "potential_pipeline_amount": 200000,
     "potential_pipeline_basis": "estimated",
     "abm_tier": null
@@ -9873,12 +9871,12 @@
       {
         "name": "Mitch Liu",
         "title": "CEO",
-        "lifecycle_stage": "Marketing Engaged Lead",
+        "lifecycle_stage": "In Progress (SAL)",
         "owner": "Greg Mark"
       }
     ],
     "lifecycle_stage_counts": {
-      "Marketing Engaged Lead": 1
+      "In Progress (SAL)": 1
     },
     "company_already_engaged": "No",
     "engaged_via_existing_opportunity": false,
@@ -9886,7 +9884,7 @@
     "engaged_via_other_open_lead": false,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
-    "is_qualified_contact": false,
+    "is_qualified_contact": true,
     "potential_pipeline_amount": 200000,
     "potential_pipeline_basis": "estimated",
     "abm_tier": null
@@ -9951,12 +9949,12 @@
       {
         "name": "Ellie O'Neil",
         "title": "Technical Account Manager",
-        "lifecycle_stage": "In Progress (MEL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "owner": "Greg Mark"
       }
     ],
     "lifecycle_stage_counts": {
-      "In Progress (MEL)": 1
+      "In Progress (SAL)": 1
     },
     "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": true,
@@ -9974,7 +9972,7 @@
       }
     ],
     "has_open_opportunity": true,
-    "is_qualified_contact": false,
+    "is_qualified_contact": true,
     "potential_pipeline_amount": 475000.0,
     "potential_pipeline_basis": "real_open_opportunity",
     "abm_tier": "Tier 1"
@@ -10117,12 +10115,12 @@
       {
         "name": "Kyle Armstrong",
         "title": "Director of Law Enforcement Relations",
-        "lifecycle_stage": "In Progress (MQL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "owner": "Greg Mark"
       }
     ],
     "lifecycle_stage_counts": {
-      "In Progress (MQL)": 1
+      "In Progress (SAL)": 1
     },
     "company_already_engaged": "No",
     "engaged_via_existing_opportunity": false,
@@ -10181,13 +10179,12 @@
       {
         "name": "Manjit Singh",
         "title": "Director of Enterprise GTM, Uber AI Solutions,",
-        "lifecycle_stage": "In Progress (MQL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "owner": "Greg Mark"
       }
     ],
     "lifecycle_stage_counts": {
-      "In Progress (SAL)": 2,
-      "In Progress (MQL)": 1
+      "In Progress (SAL)": 3
     },
     "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": true,
@@ -10790,12 +10787,12 @@
       {
         "name": "Mahdi Bouras",
         "title": "Chief Technology Officer",
-        "lifecycle_stage": "In Progress (MQL)",
+        "lifecycle_stage": "In Progress (SAL)",
         "owner": "Greg Mark"
       }
     ],
     "lifecycle_stage_counts": {
-      "In Progress (MQL)": 1
+      "In Progress (SAL)": 1
     },
     "company_already_engaged": "No",
     "engaged_via_existing_opportunity": false,
@@ -11004,12 +11001,12 @@
       {
         "name": "Umeshwaree Ramnihora-Rai",
         "title": "Business Manager South Europe Western Digital",
-        "lifecycle_stage": "Marketing Engaged Lead",
+        "lifecycle_stage": "In Progress (SAL)",
         "owner": "Greg Mark"
       }
     ],
     "lifecycle_stage_counts": {
-      "Marketing Engaged Lead": 1
+      "In Progress (SAL)": 1
     },
     "company_already_engaged": "Yes",
     "engaged_via_existing_opportunity": false,
@@ -11017,7 +11014,7 @@
     "engaged_via_other_open_lead": true,
     "existing_opportunities_all_owners": [],
     "has_open_opportunity": false,
-    "is_qualified_contact": false,
+    "is_qualified_contact": true,
     "potential_pipeline_amount": 200000,
     "potential_pipeline_basis": "estimated",
     "abm_tier": "Tier 4"
