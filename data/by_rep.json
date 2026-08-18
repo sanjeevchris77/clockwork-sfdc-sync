@@ -4487,7 +4487,7 @@
         "notes": "Private equity company",
         "lifecycle_stage": "In Progress (MEL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuFGL2A3/view",
-        "company_already_engaged": "No"
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-08-2026",
