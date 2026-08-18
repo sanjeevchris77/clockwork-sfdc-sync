@@ -6454,7 +6454,7 @@
     "existing_opportunities_all_owners": [
       {
         "opp_id": "006TV00000Wz6VtYAJ",
-        "owner": "Chris Bowen",
+        "owner": "Sean Coughlin",
         "account": "Modal Labs",
         "stage": "01 - Qualified",
         "amount": 150000.0,
@@ -9966,14 +9966,14 @@
         "owner": "Greg Mark",
         "account": "Together AI",
         "stage": "04 - Negotiations",
-        "amount": 475000.0,
+        "amount": 460000.0,
         "is_open": true,
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000D6aMHYAZ/view"
       }
     ],
     "has_open_opportunity": true,
     "is_qualified_contact": true,
-    "potential_pipeline_amount": 475000.0,
+    "potential_pipeline_amount": 460000.0,
     "potential_pipeline_basis": "real_open_opportunity",
     "abm_tier": "Tier 1"
   },

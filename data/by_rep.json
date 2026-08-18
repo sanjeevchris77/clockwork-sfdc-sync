@@ -823,6 +823,22 @@
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000WyvdjYAB/view"
       },
       {
+        "opp_id": "006TV00000Wz6VtYAJ",
+        "owner": "Sean Coughlin",
+        "account": "Modal Labs",
+        "account_website": "www.modal.com",
+        "domain": "modal.com",
+        "amount": 150000.0,
+        "stage": "01 - Qualified",
+        "is_open": true,
+        "lead_source": "Sales",
+        "created_date": "2026-03-25T17:11:19.000+0000",
+        "origin": "Existing",
+        "campaign": null,
+        "contacts": [],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000Wz6VtYAJ/view"
+      },
+      {
         "opp_id": "006TV00000Wz7RxYAJ",
         "owner": "Sean Coughlin",
         "account": "Nebius",
@@ -2912,7 +2928,7 @@
         "account": "Together AI",
         "account_website": "www.together.ai",
         "domain": "together.ai",
-        "amount": 475000.0,
+        "amount": 460000.0,
         "stage": "04 - Negotiations",
         "is_open": true,
         "lead_source": "Event",
@@ -9437,22 +9453,6 @@
       }
     ],
     "opportunities": [
-      {
-        "opp_id": "006TV00000Wz6VtYAJ",
-        "owner": "Chris Bowen",
-        "account": "Modal Labs",
-        "account_website": "www.modal.com",
-        "domain": "modal.com",
-        "amount": 150000.0,
-        "stage": "01 - Qualified",
-        "is_open": true,
-        "lead_source": "Sales",
-        "created_date": "2026-03-25T17:11:19.000+0000",
-        "origin": "Existing",
-        "campaign": null,
-        "contacts": [],
-        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000Wz6VtYAJ/view"
-      },
       {
         "opp_id": "006TV00000akBztYAE",
         "owner": "Chris Bowen",

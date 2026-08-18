@@ -148,7 +148,7 @@
       "00 - Prospecting": 7
     },
     "pipegen_potential": 11000000,
-    "real_opportunity_amount_total": 14575000.0,
+    "real_opportunity_amount_total": 14560000.0,
     "opportunities": [
       {
         "opp_id": "006Kb00000JlkRdIAJ",
@@ -587,7 +587,7 @@
         "owner": "Greg Mark",
         "account": "Together AI",
         "domain": "together.ai",
-        "amount": 475000.0,
+        "amount": 460000.0,
         "stage": "04 - Negotiations",
         "contacts": [
           {
@@ -1031,7 +1031,7 @@
       },
       {
         "opp_id": "006TV00000Wz6VtYAJ",
-        "owner": "Chris Bowen",
+        "owner": "Sean Coughlin",
         "account": "Modal Labs",
         "domain": "modal.com",
         "amount": 150000.0,

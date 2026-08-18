@@ -122,7 +122,7 @@
     "account": "Together AI",
     "account_website": "www.together.ai",
     "domain": "together.ai",
-    "amount": 475000.0,
+    "amount": 460000.0,
     "stage": "04 - Negotiations",
     "is_open": true,
     "lead_source": "Event",
@@ -563,7 +563,7 @@
   },
   {
     "opp_id": "006TV00000Wz6VtYAJ",
-    "owner": "Chris Bowen",
+    "owner": "Sean Coughlin",
     "account": "Modal Labs",
     "account_website": "www.modal.com",
     "domain": "modal.com",
