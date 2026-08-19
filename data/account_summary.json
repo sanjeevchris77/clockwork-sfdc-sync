@@ -7078,14 +7078,24 @@
       "In Progress (SAL)": 1
     },
     "company_already_engaged": "Yes",
-    "engaged_via_existing_opportunity": false,
+    "engaged_via_existing_opportunity": true,
     "engaged_via_existing_contact": true,
     "engaged_via_other_open_lead": true,
-    "existing_opportunities_all_owners": [],
-    "has_open_opportunity": false,
+    "existing_opportunities_all_owners": [
+      {
+        "opp_id": "006TV00000dP7vtYAC",
+        "owner": "Abrahem Miya",
+        "account": "NexGen Cloud",
+        "stage": "00 - Prospecting",
+        "amount": 200000.0,
+        "is_open": true,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000dP7vtYAC/view"
+      }
+    ],
+    "has_open_opportunity": true,
     "is_qualified_contact": true,
-    "potential_pipeline_amount": 200000,
-    "potential_pipeline_basis": "estimated",
+    "potential_pipeline_amount": 200000.0,
+    "potential_pipeline_basis": "real_open_opportunity",
     "abm_tier": "Tier 1"
   },
   {

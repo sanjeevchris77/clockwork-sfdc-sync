@@ -130,7 +130,7 @@
       "701TV00000o7EW5YAM"
     ],
     "lead_count": 471,
-    "opportunity_count": 55,
+    "opportunity_count": 56,
     "lifecycle_stage_counts": {
       "In Progress (MQL)": 43,
       "In Progress (MEL)": 128,
@@ -145,10 +145,10 @@
       "03 - Technical Validation": 5,
       "04 - Negotiations": 1,
       "01 - Qualified": 4,
-      "00 - Prospecting": 7
+      "00 - Prospecting": 8
     },
-    "pipegen_potential": 11000000,
-    "real_opportunity_amount_total": 14560000.0,
+    "pipegen_potential": 11200000,
+    "real_opportunity_amount_total": 14760000.0,
     "opportunities": [
       {
         "opp_id": "006Kb00000JlkRdIAJ",
@@ -1104,6 +1104,16 @@
         "stage": "01 - Qualified",
         "contacts": [],
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000bo5jxYAA/view"
+      },
+      {
+        "opp_id": "006TV00000dP7vtYAC",
+        "owner": "Abrahem Miya",
+        "account": "NexGen Cloud",
+        "domain": "nexgencloud.com",
+        "amount": 200000.0,
+        "stage": "00 - Prospecting",
+        "contacts": [],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000dP7vtYAC/view"
       }
     ]
   },

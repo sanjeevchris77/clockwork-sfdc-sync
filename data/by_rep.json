@@ -8186,6 +8186,22 @@
         "campaign": null,
         "contacts": [],
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000OtANWYA3/view"
+      },
+      {
+        "opp_id": "006TV00000dP7vtYAC",
+        "owner": "Abrahem Miya",
+        "account": "NexGen Cloud",
+        "account_website": "www.nexgencloud.com",
+        "domain": "nexgencloud.com",
+        "amount": 200000.0,
+        "stage": "00 - Prospecting",
+        "is_open": true,
+        "lead_source": null,
+        "created_date": "2026-08-19T00:01:34.000+0000",
+        "origin": "Existing",
+        "campaign": null,
+        "contacts": [],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000dP7vtYAC/view"
       }
     ]
   },
