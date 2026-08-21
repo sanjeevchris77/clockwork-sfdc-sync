@@ -1731,17 +1731,17 @@
     "existing_opportunities_all_owners": [
       {
         "opp_id": "006TV00000dR3t3YAC",
-        "owner": "Abhijeet Bhanoori",
+        "owner": "Abrahem Miya",
         "account": "Cassava",
-        "stage": "00 - Prospecting",
-        "amount": 200000.0,
+        "stage": "01 - Qualified",
+        "amount": 150000.0,
         "is_open": true,
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000dR3t3YAC/view"
       }
     ],
     "has_open_opportunity": true,
     "is_qualified_contact": true,
-    "potential_pipeline_amount": 200000.0,
+    "potential_pipeline_amount": 150000.0,
     "potential_pipeline_basis": "real_open_opportunity",
     "abm_tier": null
   },
@@ -7097,14 +7097,14 @@
         "owner": "Abrahem Miya",
         "account": "NexGen Cloud",
         "stage": "00 - Prospecting",
-        "amount": 200000.0,
+        "amount": 75000.0,
         "is_open": true,
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000dP7vtYAC/view"
       }
     ],
     "has_open_opportunity": true,
     "is_qualified_contact": true,
-    "potential_pipeline_amount": 200000.0,
+    "potential_pipeline_amount": 75000.0,
     "potential_pipeline_basis": "real_open_opportunity",
     "abm_tier": "Tier 1"
   },
