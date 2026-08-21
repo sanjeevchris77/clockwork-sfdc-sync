@@ -6260,11 +6260,20 @@
         "amount": 300000.0,
         "is_open": true,
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000SnzDVYAZ/view"
+      },
+      {
+        "opp_id": "006TV00000dWYxmYAG",
+        "owner": "Greg Mark",
+        "account": "Microsoft",
+        "stage": "00 - Prospecting",
+        "amount": 200000.0,
+        "is_open": true,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000dWYxmYAG/view"
       }
     ],
     "has_open_opportunity": true,
     "is_qualified_contact": true,
-    "potential_pipeline_amount": 300000.0,
+    "potential_pipeline_amount": 500000.0,
     "potential_pipeline_basis": "real_open_opportunity",
     "abm_tier": "Tier 2"
   },
@@ -7096,15 +7105,15 @@
         "opp_id": "006TV00000dP7vtYAC",
         "owner": "Abrahem Miya",
         "account": "NexGen Cloud",
-        "stage": "00 - Prospecting",
-        "amount": 75000.0,
+        "stage": "01 - Qualified",
+        "amount": 150000.0,
         "is_open": true,
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000dP7vtYAC/view"
       }
     ],
     "has_open_opportunity": true,
     "is_qualified_contact": true,
-    "potential_pipeline_amount": 75000.0,
+    "potential_pipeline_amount": 150000.0,
     "potential_pipeline_basis": "real_open_opportunity",
     "abm_tier": "Tier 1"
   },
@@ -9989,11 +9998,20 @@
         "amount": 460000.0,
         "is_open": true,
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000D6aMHYAZ/view"
+      },
+      {
+        "opp_id": "006TV00000dWlAEYA0",
+        "owner": "Greg Mark",
+        "account": "Together AI",
+        "stage": "00 - Prospecting",
+        "amount": 200000.0,
+        "is_open": true,
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000dWlAEYA0/view"
       }
     ],
     "has_open_opportunity": true,
     "is_qualified_contact": true,
-    "potential_pipeline_amount": 460000.0,
+    "potential_pipeline_amount": 660000.0,
     "potential_pipeline_basis": "real_open_opportunity",
     "abm_tier": "Tier 1"
   },

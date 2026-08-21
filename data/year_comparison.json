@@ -130,7 +130,7 @@
       "701TV00000o7EW5YAM"
     ],
     "lead_count": 471,
-    "opportunity_count": 57,
+    "opportunity_count": 59,
     "lifecycle_stage_counts": {
       "In Progress (MQL)": 43,
       "In Progress (MEL)": 128,
@@ -144,11 +144,11 @@
       "02 - Pilot Kick Off": 1,
       "03 - Technical Validation": 5,
       "04 - Negotiations": 1,
-      "01 - Qualified": 5,
-      "00 - Prospecting": 8
+      "01 - Qualified": 6,
+      "00 - Prospecting": 9
     },
-    "pipegen_potential": 11400000,
-    "real_opportunity_amount_total": 14785000.0,
+    "pipegen_potential": 11800000,
+    "real_opportunity_amount_total": 15260000.0,
     "opportunities": [
       {
         "opp_id": "006Kb00000JlkRdIAJ",
@@ -1110,8 +1110,8 @@
         "owner": "Abrahem Miya",
         "account": "NexGen Cloud",
         "domain": "nexgencloud.com",
-        "amount": 75000.0,
-        "stage": "00 - Prospecting",
+        "amount": 150000.0,
+        "stage": "01 - Qualified",
         "contacts": [],
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000dP7vtYAC/view"
       },
@@ -1124,6 +1124,26 @@
         "stage": "01 - Qualified",
         "contacts": [],
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000dR3t3YAC/view"
+      },
+      {
+        "opp_id": "006TV00000dWYxmYAG",
+        "owner": "Greg Mark",
+        "account": "Microsoft",
+        "domain": "microsoft.com",
+        "amount": 200000.0,
+        "stage": "00 - Prospecting",
+        "contacts": [],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000dWYxmYAG/view"
+      },
+      {
+        "opp_id": "006TV00000dWlAEYA0",
+        "owner": "Greg Mark",
+        "account": "Together AI",
+        "domain": "together.ai",
+        "amount": 200000.0,
+        "stage": "00 - Prospecting",
+        "contacts": [],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000dWlAEYA0/view"
       }
     ]
   },
