@@ -112,13 +112,19 @@
   {
     "domain": null,
     "company": "Position2",
-    "booth_scan_lead_count": 2,
+    "booth_scan_lead_count": 3,
     "personas": [
       {
         "name": "Sanjeev Dhanaraj",
         "title": null,
         "lifecycle_stage": "Marketing Engaged Lead",
         "owner": "SFDC Integration"
+      },
+      {
+        "name": "gggg hhhh",
+        "title": "Lead",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Raghu V"
       },
       {
         "name": "Brijesh Nambiar",
@@ -128,7 +134,8 @@
       }
     ],
     "lifecycle_stage_counts": {
-      "Marketing Engaged Lead": 2
+      "Marketing Engaged Lead": 2,
+      "In Progress (MEL)": 1
     },
     "company_already_engaged": "No",
     "engaged_via_existing_opportunity": false,
