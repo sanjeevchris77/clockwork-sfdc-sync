@@ -1750,7 +1750,7 @@
     "is_qualified_contact": true,
     "potential_pipeline_amount": 150000.0,
     "potential_pipeline_basis": "real_open_opportunity",
-    "abm_tier": null
+    "abm_tier": "Tier 1"
   },
   {
     "domain": "cathayinnovation.com",
@@ -6282,7 +6282,7 @@
     "is_qualified_contact": true,
     "potential_pipeline_amount": 500000.0,
     "potential_pipeline_basis": "real_open_opportunity",
-    "abm_tier": "Tier 2"
+    "abm_tier": "Tier 1"
   },
   {
     "domain": "millerscraftmeats.com",
