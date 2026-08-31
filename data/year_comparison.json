@@ -148,7 +148,7 @@
       "00 - Prospecting": 9
     },
     "pipegen_potential": 11800000,
-    "real_opportunity_amount_total": 15260000.0,
+    "real_opportunity_amount_total": 15160000.0,
     "opportunities": [
       {
         "opp_id": "006Kb00000JlkRdIAJ",
@@ -587,7 +587,7 @@
         "owner": "Greg Mark",
         "account": "Together AI",
         "domain": "together.ai",
-        "amount": 460000.0,
+        "amount": 360000.0,
         "stage": "04 - Negotiations",
         "contacts": [
           {
