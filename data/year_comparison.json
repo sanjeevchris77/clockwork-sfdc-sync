@@ -139,11 +139,10 @@
       "Unqualified": 3
     },
     "opp_stage_counts": {
-      "Closed Won": 5,
+      "Closed Won": 6,
       "Closed Lost": 32,
       "02 - Pilot Kick Off": 1,
       "03 - Technical Validation": 5,
-      "04 - Negotiations": 1,
       "01 - Qualified": 6,
       "00 - Prospecting": 9
     },
@@ -588,7 +587,7 @@
         "account": "Together AI",
         "domain": "together.ai",
         "amount": 360000.0,
-        "stage": "04 - Negotiations",
+        "stage": "Closed Won",
         "contacts": [
           {
             "name": "David Stringer",
