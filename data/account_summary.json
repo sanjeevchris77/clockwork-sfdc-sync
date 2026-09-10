@@ -112,7 +112,7 @@
   {
     "domain": null,
     "company": "Position2",
-    "booth_scan_lead_count": 3,
+    "booth_scan_lead_count": 4,
     "personas": [
       {
         "name": "Sanjeev Dhanaraj",
@@ -127,6 +127,12 @@
         "owner": "Raghu V"
       },
       {
+        "name": "jjjj kkkk",
+        "title": "Lead",
+        "lifecycle_stage": "In Progress (MEL)",
+        "owner": "Raghu V"
+      },
+      {
         "name": "Brijesh Nambiar",
         "title": "test",
         "lifecycle_stage": "Marketing Engaged Lead",
@@ -135,7 +141,7 @@
     ],
     "lifecycle_stage_counts": {
       "Marketing Engaged Lead": 2,
-      "In Progress (MEL)": 1
+      "In Progress (MEL)": 2
     },
     "company_already_engaged": "No",
     "engaged_via_existing_opportunity": false,
