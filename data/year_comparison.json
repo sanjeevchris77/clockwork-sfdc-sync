@@ -3,7 +3,7 @@
   "raise_2025": {
     "campaign_id": "701TV00000SLsriYAD",
     "lead_count": 41,
-    "opportunity_count": 7,
+    "opportunity_count": 8,
     "lifecycle_stage_counts": {
       "In Progress (SAL)": 9,
       "Unqualified": 20,
@@ -13,10 +13,10 @@
     },
     "opp_stage_counts": {
       "Closed Lost": 5,
-      "00 - Prospecting": 2
+      "00 - Prospecting": 3
     },
-    "pipegen_potential": 1400000,
-    "real_opportunity_amount_total": 1440000.0,
+    "pipegen_potential": 1600000,
+    "real_opportunity_amount_total": 1640000.0,
     "opportunities": [
       {
         "opp_id": "006Kb00000JlkS6IAJ",
@@ -115,6 +115,16 @@
         "stage": "00 - Prospecting",
         "contacts": [],
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000Wz0aAYAR/view"
+      },
+      {
+        "opp_id": "006TV00000eNqV8YAK",
+        "owner": "Chris Bowen",
+        "account": "Buzz HPC",
+        "domain": "buzzhpc.ai",
+        "amount": 200000.0,
+        "stage": "00 - Prospecting",
+        "contacts": [],
+        "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Opportunity/006TV00000eNqV8YAK/view"
       }
     ]
   },
