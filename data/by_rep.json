@@ -3599,7 +3599,7 @@
         "notes": "fancy algorithms for compression, r&d",
         "lifecycle_stage": "In Progress (MEL)",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000ZuGsY2AV/view",
-        "company_already_engaged": "No"
+        "company_already_engaged": "Yes"
       },
       {
         "campaign": "[Raise26Paris] Booth Scans | 07-09-2026",
@@ -7371,12 +7371,12 @@
         "domain": "krai.ai",
         "first_name": "Anton",
         "last_name": "Lokhmotov",
-        "title": "Founder",
+        "title": "CEO",
         "email": "anton@krai.ai",
         "mobile": "447973417548",
         "linkedin_url": "https://www.linkedin.com/in/lokhmotov",
         "lead_source": "Event",
-        "notes": null,
+        "notes": "Contact Qualifications: Scanned by Marcello Golfieri, Scanned Marcello Golfieri, Connected with Marcello Golfieri, Viewed Marcello Golfieri",
         "lifecycle_stage": "Marketing Engaged Lead",
         "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000aCTKu2AO/view",
         "company_already_engaged": "No"
