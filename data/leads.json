@@ -4877,7 +4877,7 @@
     "notes": null,
     "lifecycle_stage": "In Progress (SAL)",
     "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000aCS0O2AW/view",
-    "company_already_engaged": "No"
+    "company_already_engaged": "Yes"
   },
   {
     "campaign": "[Raise26Paris] Panel Attendees | 07-09-2026",
@@ -5597,7 +5597,7 @@
     "notes": null,
     "lifecycle_stage": "In Progress (SAL)",
     "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000aCStp2AG/view",
-    "company_already_engaged": "No"
+    "company_already_engaged": "Yes"
   },
   {
     "campaign": "[Raise26Paris] Panel Attendees | 07-09-2026",
@@ -6557,7 +6557,7 @@
     "notes": null,
     "lifecycle_stage": "Marketing Engaged Lead",
     "sfdc_link": "https://clockworksystems.my.salesforce.com/lightning/r/Lead/00QTV00000aCTIE2A4/view",
-    "company_already_engaged": "No"
+    "company_already_engaged": "Yes"
   },
   {
     "campaign": "[Raise26Paris] Panel Attendees | 07-09-2026",
