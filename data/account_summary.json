@@ -5516,12 +5516,12 @@
       {
         "name": "Anton Lokhmotov",
         "title": "CEO",
-        "lifecycle_stage": "Marketing Engaged Lead",
+        "lifecycle_stage": "In Progress (MEL)",
         "owner": "Abrahem Miya"
       }
     ],
     "lifecycle_stage_counts": {
-      "Marketing Engaged Lead": 1
+      "In Progress (MEL)": 1
     },
     "company_already_engaged": "No",
     "engaged_via_existing_opportunity": false,

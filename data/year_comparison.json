@@ -143,9 +143,9 @@
     "opportunity_count": 59,
     "lifecycle_stage_counts": {
       "In Progress (MQL)": 43,
-      "In Progress (MEL)": 130,
+      "In Progress (MEL)": 131,
       "In Progress (SAL)": 93,
-      "Marketing Engaged Lead": 204,
+      "Marketing Engaged Lead": 203,
       "Unqualified": 3
     },
     "opp_stage_counts": {
